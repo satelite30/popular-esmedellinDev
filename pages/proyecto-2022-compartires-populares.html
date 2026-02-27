@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta property="og:title" content="Compartir ES PopularES 2022 - MASO">
+  <meta property="og:description" content="Conoce el proyecto Compartir es PopularES 2022 y su impacto en Medellín.">
+  <meta property="og:image"
+    content="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/DSC_9326-1.png">
+  <meta property="og:url" content="https://popular-esmedellin.com/pages/proyecto-2022-compartires-populares.html">
+  <meta property="og:type" content="website">
+
+  <!-- Opcional pero recomendado -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="shortcut icon" href="../recursos/img/logoLitt2.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CompartirES PopularES (2022 - Actual) - MASO</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../css/styletres.css">
+  <!-- <link rel="stylesheet" href="../style.css" /> -->
+  <style>
+    html,
+    body {
+      max-width: 100vw;
+      overflow-x: hidden;
+    }
+
+
+
+    .image-hdb {
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    .image-hdb:hover {
+      transform: scale(1.04) rotate(-1deg);
+      box-shadow: 0 8px 40px rgba(0, 0, 0, 0.28);
+    }
+
+    /* X blanca en el modal de galería */
+    .modal-content .btn-close {
+      filter: invert(1) grayscale(1) brightness(2);
+      opacity: 1;
+    }
+
+    .page-hero {
+      background: #f8f6f2;
+      padding: 60px 0 20px;
+      text-align: center;
+    }
+
+    .page-hero h1 {
+      font-weight: 800;
+    }
+
+    .page-hero h1 span {
+      color: #004200;
+    }
+
+    .page-hero p {
+      max-width: 900px;
+      margin: 10px auto 0;
+    }
+
+    .page-cover {
+      height: 100%;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .page-cover img {
+      height: 100%;
+      width: 100%;
+      max-height: 460px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+    }
+
+    .page-cover img:hover {
+      transform: scale(1.04) rotate(-1deg);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+      cursor: pointer;
+    }
+
+    .page-content {
+      max-width: 1000px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    .card-text>p {
+      font-size: 20px;
+      border: 2px solid red
+    }
+
+
+
+    .video-container {
+      max-width: 100%;
+      margin: 0 auto;
+      max-height: 50%;
+
+    }
+
+
+
+    .videoyt {
+      height: 80vh;
+    }
+
+    .conyoutubedos {
+      width: 100% !important;
+      max-width: 100% !important;
+      padding: 0;
+      margin: 0;
+    }
+
+    .conyoutubedos .videoyt {
+      height: 40vh;
+      width: 100%;
+      display: block;
+      margin: 0;
+    }
+
+
+
+    .conyoutube {
+      width: 90vw;
+
+    }
+
+    /* Efecto hover scale para las cards dentro de rowmod */
+    .rowmod .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .rowmod .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+      z-index: 1;
+    }
+
+    /* Botón de cierre con FontAwesome */
+    .btn-close-fa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.55);
+      color: #353535;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .btn-close-fa:hover {
+      background: rgba(0, 73, 28, 0.85);
+      color: #ffffff;
+    }
+
+    .btn-close-fa i { font-size: 20px; }
+
+
+    footer {
+      width: 100%;
+    }
+
+
+    /* Ocultar tooltips de timeline en col-md y menor */
+    @media (max-width: 660px) {
+      .textoDesc {
+        padding: 0px 50px;
+        text-align: justify;
+      }
+
+       /* Botón de cierre con FontAwesome size 2 */
+    .btn-close-fa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.55);
+      color: #353535;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .btn-close-fa:hover {
+      background: rgba(0, 73, 28, 0.85);
+      color: #ffffff;
+    }
+
+    .btn-close-fa i { font-size: 20px; }
+
+
+    }
+
+    @media (max-width: 400px) {
+      .textoDesc p {
+        font-size: 16px;
+        padding: 0px 20px;
+      }
+
+    }
+
+    @media (max-width: 320px) {
+      .textoDesc p {
+        font-size: 14px;
+        padding: 0px 0px;
+      }
+
+    }
+
+    /* 📌 Pantallas medianas (menos de 900px) */
+    @media (max-width: 1000px) {
+
+
+
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* Pasa a 2 columnas */
+      }
+
+      .grid-item.large {
+        grid-column: span 1;
+        /* Ocupa solo 1 columna */
+        grid-row: span 1;
+        height: 300px;
+      }
+
+      .logo {
+
+        width: 90%;
+      }
+
+
+
+      .video-container {
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: 50%;
+
+      }
+
+      .videoyt {
+        height: 40vh;
+
+      }
+
+      .conyoutube {
+        width: 90vw;
+
+      }
+
+      .espaciogaleria {
+        width: 99%;
+      }
+
+
+    }
+    /* Pie de foto debajo de imágenes */
+    .img-caption {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+    /* Ajustes para la card contenedora de cada imagen */
+    .image-card {
+      background: transparent;
+      border: none;
+      padding: 0;
+    }
+    .image-card .card-img-top {
+      border-radius: 12px;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+    /* Centrar una card específica y limitar su ancho en pantallas grandes */
+    .image-card.centered {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 520px;
+      width: 100%;
+    }
+    @media (max-width: 576px) {
+      .image-card.centered { max-width: 100%; padding-left: 12px; padding-right: 12px; }
+    }
+    
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar d-flex navbar-expand-lg navbar-light  shadow-sm ">
+      <div class="container  row justify-content-center m-auto d-flex ">
+
+        <div class="col-sm-10  col-md-12 col-lg-8  ">
+          <a class="navbar-brand m-4 col-sm-10 col-md-11 col-lg-4  d-block d-lg-flex align-items-center "
+            href="../index.html" style=" justify-content: start ;">
+            <img src="../recursos/img/logo4.png" alt="Logo" width="100%" class="logo d-block mx-auto mx-lg-0   " />
+          </a>
+
+          <!-- Modal para galería doble (carouselModal) caption -->
+        </div>
+
+        <div class="col-lg-4  col-md-12 col-sm-12 ">
+          <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+            aria-label="Toggle navigation" style="display: flex; justify-content: center; align-items: center;">
+            <span class="navbar-toggler-icon  "></span>
+          </button>
+
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../pages/red.html">Red</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/actualidades.html">Actualidades</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class=>
+    <section class="page-hero">
+      <div class="container">
+        <span class="badge-pill">proyecto</span>
+        <h1 class="mt-2">2022 - 2026 Laboratorio <span>CompartirES PopularES</span></h1>
+
+
+        <span style="color:rgb(1, 73, 1); font-weight:bold;">
+          <p>Experiencia de coproducción y apropiación social del conocimiento </p>
+        </span>
+      </div>
+    </section>
+
+    <section class="container-fluid  page-content">
+      <div class="row align-items-start g-4">
+        <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0 ">
+
+
+          <div class="col-12">
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+              src="https://open.spotify.com/embed/track/70YqtSPQo3Zz08YTjo1P0q?utm_source=generator&theme=0"
+              width="100%" height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe>
+          </div>
+
+          <div class=" col-12  ">
+            <a href="https://music.youtube.com/watch?v=SrOhSZl09VQ&si=O4a5n_cO4CA4IbxH" target="_blank"
+              rel="noopener noreferrer" class="btn btn-danger btn-lg m-2"
+              style="background: linear-gradient(90deg,#43b800,#092700); border:none; color:white; font-weight:bold; ">
+              <i class="fa fa-music" style="padding: 150px auto;"></i> Escucha "Huellas de Barrio" en YouTube Music
+            </a>
+          </div>
+
+
+          <!-- video  conyoutubedos -->
+          <div class="container m-3 align-items-center justify-content-center m-auto ">
+            <div class="video-container  d-flex justify-content-center align-items-center ">
+              <div class="col-lg-10 col-md-12 col-sm-12 mx-auto conyoutubedos">
+                <iframe class="text-center  w-100 videoyt" style=" display: block; margin: auto;"
+                  src="https://www.youtube.com/embed/W9zla7jn9VU?list=RDW9zla7jn9VU&autoplay=1&mute=1&controls=1"
+                  title="YouTube video" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- lista de imagenes -->
+
+          <div class="page-cover align-items-end d-flex justify-content-center">
+            <div class="card image-card centered  " style="margin:0; padding:20px 10px; border:0; background:white;">
+              <img class="py-2" src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true"
+                alt="CompartirES PopularES" style="object-fit: contain;"
+                class="card-img-top img-fluid rounded shadow" data-img-index="0" />
+              <div class="card-body py-2 ">
+                <p class="img-caption  mb-0"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-cover align-items-end ">
+            <div class="card image-card" style="margin:0; padding:20px 10px; border:0; background:transparent;">
+              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural1.jpeg?raw=true"
+                alt="CompartirES PopularES" style="object-fit: contain;"
+                class="card-img-top img-fluid rounded shadow" data-img-index="1" />
+              <div class="card-body py-2">
+                <p class="img-caption mb-0"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-cover align-items-end ">
+            <div class="card image-card" style="margin:0; padding:20px 10px; border:0; background:transparent;">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg"
+                alt="CompartirES PopularES" style="object-fit: contain;"
+                class="card-img-top img-fluid rounded shadow" data-img-index="2" />
+              <div class="card-body py-2">
+                <p class="img-caption mb-0"></p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!-- cancion huellas de barrio -->
+          <div class="contenidoMusica row ">
+
+
+
+
+
+          </div>
+
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-6 pt-4">
+          <div class="textoDesc2 container  px-4" style="text-align: justify;">
+            <article>
+              <h3>Descripción</h3>
+
+
+              <p> El laboratorio “Compartir-es Popular-es”, tiene como pilar los conocimientos teóricos y metodológicos
+                generados en la investigación “Transformación en favelas de Río de Janeiro y barrios populares de
+                Medellín por prácticas de turismo 2019-25372”, culminada en 2022, registrada en SIIU y financiada por la
+                Universidad de Antioquia, El Banco de la República, sede Medellín, El Sistema de Bibliotecas Públicas de
+                Medellín y diversos colectivos comunitarios de las comunas 1 (Popular), 2 (Santa Cruz), 8 (Doce de
+                Octubre) y 13 (San Javier). </p>
+
+              <p>
+                Dada la realidad de una creciente actividad turística en la ciudad y en el país, es menester que la UdeA
+                como universidad pública continúe promoviendo y fortaleciendo espacios para el diálogo, la coproducción
+                y la apropiación de conocimientos de utilidad social que, en este caso, enfoca en las consecuencias
+                extractivistas del turismo en barrios populares de Medellín. En razón de lo anterior, con el laboratorio
+                se da continuidad al principio ético de la investigación culminada, asociado con la generación de un
+                conocimiento contextualizado, intencionado y participativo derivado del diálogo de saberes entre actores
+                del sector académico, barrial y gubernamental.
+              </p>
+
+              <p>
+                Con estos productos -videoclip, mural-postal, artículo periodístico y fanzine- se aporta al campo
+                urbano-popular con contenidos divulgativos y de apropiación social del conocimiento. El objetivo del
+                laboratorio “Compartir-es Popular-es” es diseñar, recrear y difundir tales productos en formatos
+                comunicativos y artísticos para el cuidado y protección barrial como expresión de paz territorial.
+                Su importancia radica en que contiene productos individuales que, vistos en conjunto, sirven como
+                dispositivo cultural para que ciudadanía y visitantes ganen conciencia sobre las implicaciones de las
+                contradicciones del turismo en el cotidiano de los barrios populares. Además de importante, es potente
+                dado que los contenidos, los formatos, los públicos objetivo, las estrategias de socialización y los
+                alcances intencionados en cada producto acuden a creaciones gráficas, musicales, de lectura, escritura y
+                oralidad para comunicar, sensibilizar y promover la juntanza.
+              </p>
+
+
+            </article>
+          </div>
+          <!-- carrousel logos move fluid -->
+          <section class="container-fluid ">
+
+            <div class="container py-2 col-lg-12  slideNuevo ">
+              <!-- carrousel -->
+              <div class="container col-lg-12   ">
+                <div class="slide-track">
+
+                  <div class="slide">
+                    <img src="https://github.com/Sektor30/dise-oProyecto3/blob/main/assets/logo-remove.png?raw=true"
+                      alt="" class="moveimg">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/logo03.png?raw=true" alt="Logo MASO"
+                      class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/Micomuna1.png?raw=true"
+                      alt="Logo MiComuna1" class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/calleytinta-1.jpeg?raw=true"
+                      alt="Logo calleytinta" class="moveimg"
+                      style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/HdB.jpeg?raw=true" alt="Logo HdB2"
+                      class="moveimg" style="max-width:200px;max-height:200px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/lasierra2.png?raw=true"
+                      alt="Logo La Sierra" class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/SBPM.jpeg?raw=true" alt="Logo SBPM"
+                      class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img
+                      src="https://github.com/satelite30/-logossitio/blob/main/Casa%20Piedra%20en%20el%20Camino.png?raw=true"
+                      alt="Logo Casa Piedra" class="moveimg"
+                      style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true" alt="Logo UdeA"
+                      class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/satelite30/-logossitio/blob/main/sonbat%C3%A1.png?raw=true"
+                      alt="Logo Sonbatá" class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+                  </div>
+                  <div class="slide">
+                    <img src="https://github.com/Sektor30/dise-oProyecto3/blob/main/assets/logo-remove.png?raw=true"
+                      alt="" class="moveimg">
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="container nuevotexto">
+
+
+          <div class="rowmod container-fluid">
+            <div class="d-flex align-items-start w-100 mt-2">
+              <!-- Left: 80% width container with 6 horizontal cards -->
+              <div style="width:100%;">
+                <div class="cardContain">
+
+                  <div class="card bg-light border-info me-2 mb-2 col-lg-12">
+                    <div class="card-body">
+                      <div class="row align-items-center " style="text-align: justify;">
+                        <div class="col-12 col-md-9 order-2 order-md-1" style="text-align: justify;">
+                          <h5 class="card-title">Videoclip: "Huellas de Barrio"</h5>
+                          <p class="card-text">La canción Huellas de Barrio es resultado de la reunión de diferentes
+                            ritmos musicales y de artistas de comunas del Distrito de Ciencia Tecnología e innovación de
+                            Medellín, Departamento de Antioquia, Colombia. Además de compartir la pasión por el arte,
+                            tienen en común un interés decidido por la defensa de sus barrios mediante la bandera del
+                            arte. El contenido de este videoclip es producto de un proceso formativo crítico realizado
+                            entre 2018 y 2022, en el cual confluyen espacios de reflexión sobre diferentes temáticas y
+                            recorridos territoriales con énfasis en cuidado de los barrios.</p>
+                        </div>
+                        <div class="col-12 col-md-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
+                          <img
+                            src="https://github.com/satelite30/blog-Popular-es/blob/main/1d606aee-2e14-4974-95d3-f36f924ec53b.jpg?raw=true"
+                            class="img-fluid rounded d-block mx-auto" type="button"
+                            data-bs-toggle="modal" data-bs-target="#videoModal" alt="Ejemplo actividad 1">
+                          <div class="col-12  justify-content-center d-flex ">
+                            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                              data-bs-target="#videoModal">
+                              Ver videoclip
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoModalLabel">Videoclip: "Huellas de Barrio"</h5>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div class="ratio ratio-16x9">
+                            <iframe src="https://www.youtube.com/embed/W9zla7jn9VU" title="Huellas de Barrio"
+                              allowfullscreen>
+                            </iframe>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+    <!--card 2---------------------------------------------------------------------------------------------------------->
+
+
+                  <div class="card bg-light border-info me-2 mb-2 col-lg-12">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-12 col-md-9 order-2 order-md-1" style="text-align: justify;">
+                          <h5 class="card-title">Mural: SentirEs PopularEs</h5>
+                          <p class="card-text">En el marco de la inauguración del Salón Juvenil de la Parroquia Santa
+                            María La Sierra, el arte urbano popular posibilitó un espacio abierto para que habitantes
+                            del barrio La Sierra y representantes de instituciones como Engim, UdeA (estudiantes de
+                            trabajo social), Huellas de Barrio, congregación Giuseppini di Murialdo, Mesa Juvenil La
+                            Sierra es Otro Cuento, Parque Biblioteca La Ladera; se reunieran en un espacio público para
+                            jugar, hacer manualidades, leer y escribir, pintar, estampar, diseñar y comer. Una toma
+                            cultural de encuentro intergeneracional posibilitó la reflexión del cuidado del barrio con
+                            apropiación de lo público como bien común.</p>
+                        </div>
+                        <div class="col-12 col-md-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
+                          <img
+                            src="https://github.com/satelite30/blog-Popular-es/blob/main/fotoMuralLaSierra.jpeg?raw=true"
+                            class="img-fluid rounded d-block mx-auto" alt="Ejemplo actividad 2" type="button" data-bs-toggle="modal"
+                            data-bs-target="#fotoModal1">
+                          <div class="col-12  justify-content-center d-flex ">
+                            <button type="button" class="btn btn-outline-primary mt-2" data-bs-toggle="modal"
+                              data-bs-target="#fotoModal1">
+                              Ver más
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modal 2-->
+                  <div class="modal fade" id="fotoModal1" tabindex="-1" aria-labelledby="fotoModal1" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoModalLabel">Foto Mural: SentirEs PopularEs, barrio la
+                            Sierra</h5>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
+                        </div>
+
+                        <div class="modal-body  ">
+                          <div class="image  m-2 gap-2 rounded-3 d-flex flex-column align-items-center justify-content-center">
+                            <div class="col-12 pb-2 text-center">
+                              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/fotoMuralLaSierra.jpeg?raw=true"
+                                class="w-50 mx-auto d-block" alt="">
+                            </div>
+
+                            <div class="col-12 text-center">
+                              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural2.jpeg?raw=true"
+                                class="w-50 mx-auto d-block" alt="">
+                            </div>
+                            
+                            <div class="col-12 text-center">
+                              <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural1.jpeg?raw=true"
+                                class="w-50 mx-auto d-block" alt="">
+                            </div>
+                            
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="card bg-light border-info me-2 mb-2 col-lg-12">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-12 col-md-9 order-2 order-md-1" style="text-align: justify;">
+                          <h5 class="card-title">Mural: El corazón del barrio II. Oficios y haceres populares</h5>
+                          <p class="card-text">Obra materializada en el diseño de un mural de 2x4metros ubicado en el
+                            barrio Santo Domingo Savio en la plazoleta pública del Parque Biblioteca Nororiental. Esta
+                            creación exalta el valor de las acciones y prácticas cotidianas de los habitantes de barrios
+                            populares como símbolos de apropiación de la memoria colectiva y resistencia a la visión
+                            globalizada de desarrollo y a la histórica ausencia estatal, por ello plasma los convites,
+                            los liderazgos y las festividades comunitarias, actividades que fomentan el cuidado de lo
+                            común y vinculan a la comunidad en acciones colectivas que fomentan la paz territorial y el
+                            cuidado barrial. Participaron habitantes, colectivos comunitarios como Casa Galeria, Trash
+                            Art, El Megáfono, Red Árbol Bello Oriente, representantes del Parque Biblioteca Nororiental,
+                            colectivo profesoral y estudiantil de la Universidad de Antioquia (grupo MASO)</p>
+                        </div>
+                        <div class="col-12 col-md-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
+                          <img
+                            src="https://github.com/satelite30/blog-Popular-es/blob/main/FotoMuralSantoDom.jpeg?raw=true"
+                            class="img-fluid rounded d-block mx-auto" alt="Ejemplo actividad 3" type="button" data-bs-toggle="modal"
+                            data-bs-target="#fotoModal3">
+
+                          <div class="col-12  justify-content-center d-flex ">
+                            <button type="button" class="btn btn-outline-primary mt-2 text-center d-flex"
+                              data-bs-toggle="modal" data-bs-target="#fotoModal3">
+                              Ver más
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <!-- -------------------------------------------- -->
+
+                  <!-- Modal 3-->
+                  <div class="modal fade" id="fotoModal3" tabindex="-1" aria-labelledby="fotoModal3" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoModalLabel">Foto Mural: El corazón del barrio II. Oficios y
+                            haceres populares</h5>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div class="ratio ratio-16x9">
+                            <img
+                              src="https://github.com/satelite30/blog-Popular-es/blob/main/FotoMuralSantoDom.jpeg?raw=true"
+                              alt="">
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="card bg-light border-info me-2 mb-2 col-lg-12">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-12 col-md-9 order-2 order-md-1" style="text-align: justify;">
+                          <h5 class="card-title">Fanzine: "El barrio es mi casa"</h5>
+                          <p class="card-text">Producto colaborativo realizado con población infantil que reúne
+                            reflexiones en torno a los patrimonios populares barriales. Implicó el desarrollo de un
+                            proceso participativo con niños y niñas entre los 6 y los 14 años mediante encuentros de
+                            lectura, escritura, juego y dinamización para conversar sobre el cuidado del barrio. Fue un
+                            proceso de base comunitaria y autogestionado.</p>
+                        </div>
+                        <div class="col-12 col-md-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
+                          <img
+                            src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine4.jpeg?raw=true"
+                            class="img-fluid rounded d-block mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#fotoModal4"
+                            alt="Ejemplo actividad 4">
+
+                          <div class="col-12  justify-content-center d-flex ">
+                            <button type="button" class="btn btn-outline-primary mt-2 text-center d-flex"
+                              data-bs-toggle="modal" data-bs-target="#fotoModal4">
+                              Ver más
+                            </button>
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <!-- -------------------------------------------- -->
+
+                  <!-- Modal 4-->
+                  <div class="modal fade" id="fotoModal4" tabindex="-1" aria-labelledby="fotoModal4" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoModalLabel">Foto Mural: El corazón del barrio II. Oficios y
+                            haceres populares</h5>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div class="ratio ratio-16x9">
+                            <iframe src="../recursos/docs/FANZINE_DIGITAL.pdf" frameborder="0"></iframe>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="card bg-light border-info me-2 mb-2 col-lg-12">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-12 col-md-9 order-2 order-md-1" style="text-align: justify;">
+                          <h5 class="card-title">Artículo periodístico</h5>
+                          <p class="card-text">Artículo periodístico en medio comunitario "Lo que no aparece en la
+                            postal: Invisibilidades del turismo en la Medellín popular". Con esta publicación se busca
+                            impactar directamente a público no especializado, ofreciendo información sobre cotidianos
+                            barriales que aportan a diagnósticos territoriales.</p>
+                        </div>
+                        <div class="col-12 col-md-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
+                          <img
+                            src="https://github.com/satelite30/blog-Popular-es/blob/main/ArticuloMiComuna.jpeg?raw=true"
+                            class="img-fluid rounded d-block mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#fotoModal5"
+                            alt="Ejemplo actividad 5">
+
+                          <div class="col-12  justify-content-center d-flex ">
+                            <button type="button" class="btn btn-outline-primary mt-2 text-center d-flex"
+                              data-bs-toggle="modal" data-bs-target="#fotoModal5">
+                              Ver más
+                            </button>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- modal 5 -->
+
+                  <div class="modal fade" id="fotoModal5" tabindex="-1" aria-labelledby="fotoModal5" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoModalLabel">Artículo periodístico en medio comunitario </h5>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div class="container">
+                            <div class="row">
+
+
+                              <div class="col-4">
+                                <a
+                                  href="https://www.micomunados.com/lo-que-no-aparece-en-la-postal-invisibilidades-del-turismo-en-la-medellin-popular/">
+                                  <img
+                                    src="https://github.com/satelite30/blog-Popular-es/blob/main/ArticuloMiComuna.jpeg?raw=true"
+                                    type="button" target="_blank" alt="PeriodicoMiComuna"></a>
+                              </div>
+
+                              <div class="col-8 "><iframe style="width: 100%; height: 70vh;"
+                                  src="https://www.micomunados.com/lo-que-no-aparece-en-la-postal-invisibilidades-del-turismo-en-la-medellin-popular/"
+                                  frameborder="0"></iframe>
+                              </div>
+
+                            </div>
+
+
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <div class="card  bg-light border-info me-2 mb-2 col-lg-12">
+                    <div class="card-body">
+                      <div class="row align-items-center">
+                        <div class="col-12 col-md-9 order-2 order-md-1" style="text-align: justify;">
+                          <h5 class="card-title">Postal urbana Huellas de Barrio </h5>
+                          <p class="card-text">Dispositivo flexible y potencial como recurso divulgativo y de
+                            recordación del colectivo Huellas de Barrio. Por ser un formato simple, pequeño y de bajo
+                            costo fue el instrumento a través de la cual se instigaron reflexiones sobre el cuidado del
+                            barrio a través de la pregunta. Por ello, el diseño de la postal en sus dos caras contiene
+                            en espíritu de lo que a lo largo del proceso de investigación que este fondo divulga y
+                            durante el tiempo de ejecución de este fondo surgió de nuevo con mucha fuerza y es el poder
+                            de la metáfora “el corazón del barrio” para la promoción de conversaciones para el cuidado,
+                            la protección, la defensa de los barrios populares. Es por ello que la cara principal de la
+                            postal contiene el corazón del barrio diseñado por un artista barrial como metáfora y cuyas
+                            interpretaciones son múltiples y diversas a la vez que siempre convocan palabras como amor,
+                            cuidado, vida.</p>
+                        </div>
+                        <div class="col-12 col-md-3 order-1 order-md-2 mb-3 mb-md-0 text-center">
+                          <img src="https://github.com/satelite30/blog-Popular-es/blob/main/postalBarrio.jpeg?raw=true"
+                            class="img-fluid rounded d-block mx-auto" type="button" data-bs-toggle="modal" data-bs-target="#fotoModal6"
+                            alt="Ejemplo actividad 6">
+
+                          <div class="col-12  justify-content-center d-flex ">
+                            <button type="button" class="btn btn-outline-primary mt-2 text-center d-flex"
+                              data-bs-toggle="modal" data-bs-target="#fotoModal6">
+                              Ver más
+                            </button>
+
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modal 6-->
+                  <div class="modal fade" id="fotoModal6" tabindex="-1" aria-labelledby="fotoModal6" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content">
+
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="videoModalLabel">Foto Mural :El corazón del barrio II. Oficios y
+                            haceres populares"</h5>
+                          <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                          </button>
+                        </div>
+
+                        <div class="modal-body">
+                          <div class="container justify-content-center d-flex ">
+                            <img src="../recursos/img/corazon1.jpeg" style=" width:90vw" alt="">
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+          <div class=" container ">
+
+            <div class="col-12  justify-content-center d-flex ">
+              <button type="button" class="btn btn-outline-primary mt-2 text-center d-flex" data-bs-toggle="modal"
+                data-bs-target="#modalfinal">
+                Ver informe (PDF)
+              </button>
+            </div>
+
+
+            <!-- modal final -->
+
+
+            <div class="modal fade" id="modalfinal" tabindex="-1" aria-labelledby="modalfinal" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Informe
+                      final fondo de apropiación social</h5>
+                    <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="image  rounded-3 justify-content-center d-flex ">
+                      <iframe src="../recursos/docs/Informe final Fondo Apropiacion Social del Conocimiento (1).pdf"
+                        frameborder="0" style="width:90vw;height:99vh;"></iframe>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+  </main>
+
+  <div class="container-fluid paginacion">
+    <div class="container  nuevapaginacion py-5">
+      <nav aria-label="Paginación de proyectos" class="my-3">
+        <ul class="pagination justify-content-center flex-wrap">
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2023-juntanzas-latinoamericanas.html" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2023 - Juntanzas latinoamericanas">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item active">
+            <span class="page-link bg-success text-white border-success" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2022 - CompartirES PopularES">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </span>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2018-transformacion-favelas.html" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2018 - Transformación de favelas">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2017-sentipensar-barrio.html" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2017 - Sentipensar el barrio">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2016-memoria-caminando.html" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2016 - La memoría se construye caminando">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2015-barrios-medellin-favelas-sp.html" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2015 - Barrios Medellín y favelas SP">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2014-apropiacion-conocimiento.html" data-bs-toggle="tooltip"
+              data-bs-placement="top" title="2014 - Apropiación social del conocimiento">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+  </script>
+
+ <footer class="footer text-center">
+        <div class="container" id="pie">
+            <h5 class="text-light"> Grupo de investigación <br> Medio
+                Ambiente y Sociedad - MASO, Facultad de Ciencias Sociales y Humanas  - Universidad de Antioquia - UdeA
+            </h5>
+
+            <div class="row text-start mt-5   d-flex flex-wrap">
+                <div class="what-we col-md-3 ">
+                    <h6 class="text-light">Nuestro sitio web</h6>
+                    <p class="text-light">
+                        Este sitio muestra la relación de la línea de investigación "Planeación, Ciudadanía, Territorio y Ambiente" del grupo MASO, con la sociedad.
+                    </p>
+
+                    <div class="socialNet">
+                         <div class="social-icons mt-4 text-center " style="justify-content: space-between;">
+                        <a href="https://www.youtube.com/@lilianamariasanchezmazo9442/videos" target="_blank"><i
+                                class="col-3 fab fa-youtube" style="font-size: 34px;"></i></a>
+                        <a href="#pie"><i class="fa-solid fa-envelope" style="font-size: 34px;"></i></a>
+                        <a href="https://www.instagram.com/cancionhuellasdebarrio/"><i class="col-3 fab fa-instagram"
+                                target="_blank" style="font-size: 34px;"></i></a>
+                    </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-3 what-we">
+                    <div class="bloque" >
+                      <a href="./index.html">
+                            <img src="https://github.com/satelite30/-logossitio/blob/main/Udea1-3.png?raw=true" style="filter: brightness(0) invert(1);" alt="" >
+                        </a>
+
+                        <a href="./index.html" class="text-center">
+                            <img  src="https://github.com/satelite30/-logossitio/blob/main/logo03.png?raw=true"
+                                style="filter: brightness(0) invert(1); width: 90%;" alt="" class="text-center justify-content-center ">
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 what-we">
+                    <h6 class="text-light">Visita también</h6>
+                    <div class="mt-2 imagen-foot">
+                        <a href="https://maps.app.goo.gl/Z26f1sb9rBiyAX83A">
+                            <img src="https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5438.jpg?w=648"
+                                alt="Social Image">
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-3 text-light what-we fs-5">
+                    <h6>Contacto e información</h6>
+
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:info@maatratrust.org">grupomaso@udea.edu.co</a></li>
+                        <li>Contáctanos</li>
+                        <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/sede-investigacion-universitaria/acerca-siu" target="_blank"><b>Sede de Investigación Universitaria (SIU)</b></a>  <br> Calle 62 #52-59</li>
+                        <li>Medellín - Colombia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Modal para galería de imágenes -->
+  <div class="modal fade " id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-dark ">
+        <div class="modal-header border-0 flex-column align-items-start">
+          <h4 class="modal-title w-100 text-center text-light fw-bold mb-2" id="galleryModalLabel">Compartir-ES
+            popular-ES</h4>
+          <button type="button" class="btn-close-fa ms-auto" data-bs-dismiss="modal" aria-label="Cerrar">
+            <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="modal-body d-flex justify-content-center align-items-center position-relative"
+          style="min-height:60vh;">
+          <button id="prevImgBtn" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y"
+            style="z-index:2;" aria-label="Anterior"><i class="fa fa-chevron-left fa-2x"></i></button>
+          <img id="modalGalleryImg" src="" alt="Imagen ampliada" class="img-fluid rounded shadow mx-auto d-block"
+            style="max-height:70vh; object-fit:contain; background:#646464;" />
+          <button id="nextImgBtn" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y"
+            style="z-index:2;" aria-label="Siguiente"><i class="fa fa-chevron-right fa-2x"></i></button>
+        </div>
+        <div class="modal-footer d-flex flex-column align-items-center">
+          <p id="modalGalleryCaption" class="text-light small mb-2" style="max-width:90%; margin:0 auto;"></p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Array de URLs de las imágenes de la columna y sus descripciones
+    const galleryImages = [
+      'https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true',
+      'https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/mural1.jpeg?raw=true',
+      'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural3.jpeg'
+    ];
+    const galleryCaptions = [
+      'Fanzine: Trabajo colectivo y gráficas comunitarias.',
+      'Foto: Imagen del proyecto CompartirES PopularES.',
+      'Mural: Intervención urbana realizada por participantes del proyecto.'
+    ];
+
+    let currentImgIdx = 0;
+
+    // Asignar evento click a cada imagen de la columna
+    document.addEventListener('DOMContentLoaded', function () {
+      const imgNodes = document.querySelectorAll('.col-lg-5 .page-cover img');
+      imgNodes.forEach((img, idx) => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function () {
+          openGalleryModal(idx);
+        });
+      });
+      document.getElementById('prevImgBtn').addEventListener('click', function (e) {
+        e.stopPropagation();
+        showGalleryImg(currentImgIdx - 1);
+      });
+      document.getElementById('nextImgBtn').addEventListener('click', function (e) {
+        e.stopPropagation();
+        showGalleryImg(currentImgIdx + 1);
+      });
+      // Rellenar pies de foto bajo cada imagen (ahora dentro de .image-card)
+      const cardEls = document.querySelectorAll('.col-lg-5 .page-cover .image-card');
+      cardEls.forEach((card, i) => {
+        const cap = card.querySelector('.img-caption');
+        if (cap) cap.textContent = galleryCaptions[i] || '';
+      });
+    });
+
+    function openGalleryModal(idx) {
+      currentImgIdx = idx;
+      showGalleryImg(currentImgIdx);
+      const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+      modal.show();
+    }
+
+    function showGalleryImg(idx) {
+      if (idx < 0) idx = galleryImages.length - 1;
+      if (idx >= galleryImages.length) idx = 0;
+      currentImgIdx = idx;
+      // Preferir la imagen y la descripción que están dentro de la card correspondiente
+      const cardEls = document.querySelectorAll('.col-lg-5 .page-cover .image-card');
+      const card = cardEls[currentImgIdx] || null;
+      const imgInCard = card ? card.querySelector('img') : null;
+      const captionInCard = card ? (card.querySelector('.img-caption') ? card.querySelector('.img-caption').textContent : '') : '';
+
+      const modalImgEl = document.getElementById('modalGalleryImg');
+      if (imgInCard && imgInCard.src) {
+        modalImgEl.src = imgInCard.src;
+      } else {
+        modalImgEl.src = galleryImages[currentImgIdx];
+      }
+
+      const capEl = document.getElementById('modalGalleryCaption');
+      if (capEl) capEl.textContent = captionInCard || galleryCaptions[currentImgIdx] || '';
+    }
+  </script>
+
+
+  <script>
+    // JS para ampliar imágenes dentro de .imagenes-carousel-dos
+    document.addEventListener('DOMContentLoaded', function () {
+      const imgNodes = Array.from(document.querySelectorAll('.imagenes-carousel-dos img'));
+      if (!imgNodes.length) return;
+      const imgs = imgNodes.map(img => img.src);
+      const imgCaptions = imgNodes.map((img, i) => {
+        // Provide default captions or use data-caption attribute if present on the image
+        return img.getAttribute('data-caption') || ['Fanzine: trabajo colectivo', 'Foto proyecto', 'Mural comunitario'][i] || '';
+      });
+      let idx = 0;
+      const modalEl = document.getElementById('carouselModal');
+      const modalImg = document.getElementById('carouselModalImg');
+      let modalCaption = document.getElementById('carouselModalCaption');
+      if (!modalCaption && modalEl) {
+        const footer = modalEl.querySelector('.modal-footer');
+        if (footer) {
+          modalCaption = document.createElement('p');
+          modalCaption.id = 'carouselModalCaption';
+          modalCaption.className = 'text-light small mb-2';
+          modalCaption.style.maxWidth = '90%';
+          modalCaption.style.margin = '0 auto';
+          footer.insertBefore(modalCaption, footer.firstElementChild);
+        }
+      }
+      const bsModal = new bootstrap.Modal(modalEl);
+
+      imgNodes.forEach((img, i) => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+          idx = i;
+          modalImg.src = imgs[idx];
+          if (modalCaption) modalCaption.textContent = imgCaptions[idx] || '';
+          bsModal.show();
+        });
+      });
+
+      document.getElementById('carouselPrev').addEventListener('click', function (e) {
+        e.stopPropagation();
+        idx = (idx - 1 + imgs.length) % imgs.length;
+        modalImg.src = imgs[idx];
+        if (modalCaption) modalCaption.textContent = imgCaptions[idx] || '';
+      });
+
+      document.getElementById('carouselNext').addEventListener('click', function (e) {
+        e.stopPropagation();
+        idx = (idx + 1) % imgs.length;
+        modalImg.src = imgs[idx];
+        if (modalCaption) modalCaption.textContent = imgCaptions[idx] || '';
+      });
+    });
+  </script>
+</body>
+
+</html>

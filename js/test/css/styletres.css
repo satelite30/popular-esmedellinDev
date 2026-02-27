@@ -1,0 +1,1196 @@
+/* Hero Section */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.navbar {
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+  margin-top: -20px;
+  background: #004200;
+}
+
+/* Estilos para alinear el logo con los elementos de navegación */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  max-height: 90px;
+  object-fit: contain;
+  justify-content: start;
+  
+}
+
+.navbar-nav {
+  align-items: center;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 15px;
+  color: rgb(255, 255, 255);
+  transition: color 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #85bb85;
+}
+
+.navbar-nav > li {
+  font-size: 24px;
+}
+
+.nav-item:hover {
+  text-decoration: 3px underline #33cc66;
+}
+
+/* Toggler blanco y hover */
+.navbar-toggler {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  transition: ease-in-out 0.2s;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  height: 4rem;
+  width: 4rem;
+}
+.navbar-toggler:hover, .navbar-toggler:focus {
+  border: 3px solid #fff !important;
+  border-radius: 8px;
+  transition: ease-in-out 0.2s;
+}
+.navbar-toggler:hover .navbar-toggler-icon, .navbar-toggler:focus .navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+/* Cambiar el color del subrayado cuando el navbar está cubierto */
+.navbar.filled .nav-item:hover {
+  text-decoration: 3px underline white;
+}
+
+.footer {
+  background-color: #0B2447;
+  padding: 40px 0;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.subscribe-input {
+  max-width: 400px;
+  margin: auto;
+}
+.social-icons a {
+  margin: 0 5px;
+  font-size: 24px;
+  color: white;
+}
+.social-icons a:hover {
+  color: #00A8E8;
+}
+.footer img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.imagen-foot:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 100ms;
+}
+
+@media (max-width: 490px) {
+  .nuevofoot {
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nuevofoot .col-md-3 {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+    
+  .current-img:hover{
+    object-fit: cover;
+    
+  }
+
+  
+
+  /* Overlay en la imagen del carrusel */
+  .carousel-item {
+    position: relative;
+  }
+
+
+   /* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); */ /* Capa oscura sobre la imagen */
+     
+    
+/*   }  */
+
+  .overlay:hover {
+    opacity: 100%;
+    border: 3px solid red;
+  }
+
+  /* Información encima del carrusel */
+  .container-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  .container-texto h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    
+  }
+
+  .text-green {
+    color: #33cc66;
+  }
+
+  .btn-green {
+    background-color: #33cc66;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btn-green:hover {
+    background-color: #28a745;
+    color: white;
+  }
+
+  /* .hero {
+    position: relative;
+    background: url('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc4533-editar-5.jpg?w=648')
+      center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  } */
+  
+ /*  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+   */
+  /* Adorno de triángulos en el lado izquierdo */
+  .decor-left {
+    position: relative;
+    top: 30%;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 4;
+  }
+  
+  /* Triángulo verde */
+  .decor-left::before {
+    content: '';
+    position: absolute;
+    left: -80px;
+    width: 0;
+    height: 0;
+    top: -250px;
+    border-style: solid;
+    border-width: 80px 80px 0 0;
+    border-color: #33cc66 transparent #e2c41ada transparent; /* Verde */
+    transform: rotate(135deg) scale(2);
+    z-index: 4;
+  }
+  
+  /* Triángulo amarillo */
+  .decor-left::after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: -290px;
+    width: 0;
+    height: 0;
+    z-index: 3;
+    border-style: solid;
+    border-width: 60px 60px 0 0;
+    border-color: #ffd900da transparent transparent transparent; /* Amarillo */
+    transform: rotate(135deg) scale(2);
+  }
+
+
+  .w-90 {
+        width: 100% !important;
+        margin: 0;
+        padding: 0;
+      }
+      
+      .carousel-item img {
+        object-fit: cover;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .carousel-item {
+        height: 100vh;
+        position: relative;
+      }
+
+      /* Estilos para el overlay del carrusel */
+      .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      .carousel-container {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos para el lightbox */
+      .lightbox-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 2000;
+      }
+
+      .lightbox-content {
+        max-width: 90%;
+        max-height: 90vh;
+        position: relative;
+      }
+
+      .lightbox-content img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: -40px;
+        right: 0;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 5px;
+      }
+
+      .carousel-item img {
+        cursor: pointer;
+      }
+
+      /* Estilos para el nav flotante */
+      .floating-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 15px rgba(51, 204, 102, 0.3);
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        z-index: 1000;
+        transform: translateY(-100%);
+        opacity: 0;
+        border-bottom: 2px solid #004200;
+      }
+
+      .floating-nav.show {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+      }
+
+      .floating-nav.hide {
+        transform: translateY(-100%) scale(0.95);
+        opacity: 0;
+      }
+      
+      .floating-nav.ready {
+        transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+      
+      /* Efectos para los elementos del menú en el navbar flotante */
+      .floating-nav .nav-link {
+        position: relative;
+        transition: color 0.3s ease;
+      }
+      
+      .floating-nav .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: #004200;
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+      }
+      
+      .floating-nav .nav-link:hover::after {
+        width: 80%;
+      }
+
+      #videoCarousel {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      #videoCarousel .carousel-item {
+        height: 70vh;
+      }
+
+      #videoCarousel video {
+        height: 100%;
+        object-fit: cover;
+      }
+
+      #videoCarousel .carousel-control-prev,
+      #videoCarousel .carousel-control-next {
+        width: 5%;
+        opacity: 0.8;
+      }
+
+      #videoCarousel .carousel-control-prev:hover,
+      #videoCarousel .carousel-control-next:hover {
+        opacity: 1;
+      }
+
+      .video-container {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+
+      .video-container video {
+        height: 70vh;
+        object-fit: cover;
+        width: 100%;
+      }
+  
+ /*  .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .hero .text-green {
+    color: #33cc66;
+  }
+  
+  .btn-green {
+    background-color: #33cc66;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .btn-green:hover {
+    background-color: #28a745;
+    color: white;
+  }
+ */
+  
+  
+  /* Nueva Sección */
+  .projects {
+    position: relative;
+  
+    justify-content: center;
+    background-color: #f8f6f2;
+    padding: 40px 0;
+    text-align: center;
+    z-index: 0;
+  }
+  
+  .gradient-bar {
+    width: 100px;
+    height: 110px;
+    background: linear-gradient(to bottom, #90ee90, #ffff00);
+    margin-bottom: 10px;
+    z-index: -1;
+    left: 100px;
+    top: 0px;
+    position: absolute;
+  }
+  
+  /* Borde ondulado superior */
+  .wave-top {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+  
+    background: url('wave-top.svg') repeat-x;
+  }
+  
+  /* Etiqueta "proyectos" */
+  .badge-pill {
+    display: inline-block;
+    background-color: #e5f2d7;
+    color: #2d7f3e;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  /* Títulos */
+  .text-green {
+    color: #33cc66;
+  }
+  
+  .text-dark {
+    color: #222;
+  }
+  
+  /* Sección de tarjetas azules */
+  .blue-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 90px;
+    
+   
+  }
+  
+  .blue-card {
+    background-color: #002c5f;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+
+
+  .blue-card:hover{ 
+    background-color: rgba(0, 0, 255, 0.699);
+    transform: scale(1.2);
+    transition: ease-in-out 100ms;
+  }
+
+  /* Estilos para los enlaces de las tarjetas azules */
+  .blue-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .blue-card-link:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Estilos para el carousel de logos */
+  #logoCarousel {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+  }
+
+  /* Estilos específicos para el carrusel de logos del grupo MASO */
+  #masoLogoCarousel {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    border-radius: 20px;
+    padding: 20px 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    height: 30%; /* Altura reducida al 30% como solicitado */
+    overflow: hidden;
+  }
+
+  .logo-carousel-item {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .logo-carousel-img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+  }
+
+  /* Ajustes específicos para las imágenes del carrusel MASO */
+  #masoLogoCarousel .logo-carousel-img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .logo-carousel-img:hover {
+    transform: scale(1.05);
+  }
+
+  .logo-carousel-caption {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Ajustes específicos para las leyendas del carrusel MASO */
+  #masoLogoCarousel .logo-carousel-caption {
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  .logo-carousel-caption h3 {
+    color: #002c5f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+
+  #masoLogoCarousel .logo-carousel-caption h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .logo-carousel-caption p {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  #masoLogoCarousel .logo-carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  #logoCarousel .carousel-indicators,
+  #masoLogoCarousel .carousel-indicators {
+    bottom: -40px;
+  }
+
+  #logoCarousel .carousel-indicators button,
+  #masoLogoCarousel .carousel-indicators button {
+    background-color: #33cc66;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+  }
+
+  #logoCarousel .carousel-indicators button.active,
+  #masoLogoCarousel .carousel-indicators button.active {
+    background-color: #002c5f;
+  }
+
+  #logoCarousel .carousel-control-prev,
+  #logoCarousel .carousel-control-next,
+  #masoLogoCarousel .carousel-control-prev,
+  #masoLogoCarousel .carousel-control-next {
+    width: 10%;
+    opacity: 0.8;
+  }
+
+  #logoCarousel .carousel-control-prev:hover,
+  #logoCarousel .carousel-control-next:hover,
+  #masoLogoCarousel .carousel-control-prev:hover,
+  #masoLogoCarousel .carousel-control-next:hover {
+    opacity: 1;
+  }
+
+  #logoCarousel .carousel-control-prev-icon,
+  #logoCarousel .carousel-control-next-icon,
+  #masoLogoCarousel .carousel-control-prev-icon,
+  #masoLogoCarousel .carousel-control-next-icon {
+    background-color: rgba(0, 44, 95, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  /* Etiqueta "proyectos" */
+  .badge-pill {
+    display: inline-block;
+    background-color: #e5f2d7;
+    color: #2d7f3e;
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    z-index: 1;
+  }
+  
+  /* Títulos */
+  .text-green {
+    color: #33cc66;
+  }
+  
+  .text-dark {
+    color: #222;
+  }
+  
+  /* Tarjetas personalizadas */
+  
+  .encabezado {
+      text-align: center;
+      
+  }
+  .encabezado h1 {
+      font-weight: bold;
+  }
+  .encabezado span {
+      color: #0ead69;
+  }
+  .badge-custom {
+      background: linear-gradient(to right, #ffde59, #ffffff);
+      border-radius: 20px;
+      padding: 5px 15px;
+      display: inline-block;
+  }
+  
+  
+  
+  
+  .card-custom {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+
+  .card-custom:hover{
+    
+    transform: scale(1.1);
+    transition: ease-in-out 100ms;
+  } 
+
+
+  
+  /* Imagen circular */
+  .circle-img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .circle-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Botón flotante sobre la imagen */
+  .btn-circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #33cc66;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .btn-green:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 100ms;
+  }
+  
+  /* Botón estilo píldora */
+  .btn-pill {
+    display: inline-block;
+    background-color: #004200;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Botón principal "More Courses" */
+  .btn-green {
+    display: inline-block;
+    background-color: #33cc66;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* /* Decoración en el lado derecho */
+  /* .decor-right {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    width: 80px;
+    height: 150px;
+    background: linear-gradient(to bottom, #ffd700, #33cc66);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%); }*/
+  
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se adapta automáticamente */
+        gap: 10px;
+        padding: 2px;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .grid-item:hover{
+      transform: scale(1.05);
+      transition: ease-in-out 100ms;
+    }
+    
+    .grid-item {
+        position: relative;
+        color: white;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center;
+        height: 180px;
+        border-radius: 5px;
+    }
+    
+    /* Estilos para el grid-item grande */
+    .grid-item.large {
+        grid-column: span 2;
+        grid-row: span 2;
+        height: 380px;
+    }
+    
+    /* Overlay oscuro */
+    .grid-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .grid-item h3,
+    .grid-item p {
+        position: relative;
+        z-index: 2;
+    }
+    
+    /* Botón */
+    .btn-custom {
+        background-color: #ffcc00;
+        color: #000;
+        border-radius: 20px;
+        padding: 5px 15px;
+        font-weight: bold;
+    }
+
+
+    .moveimg {
+      width: 160px;
+      height: 100px;
+      animation: scroll 60s linear infinite;
+    }
+    
+    .slide-track {
+      width: 100%;
+      display: flex;
+      gap: 4em;
+      overflow: hidden;
+    }
+    
+    .slider {
+      margin-top: 70px;
+      background-color: whitesmoke;
+      padding: 8em 2em;
+    }
+    
+    @keyframes scroll {
+      0% {transform: translateX(0);}
+      100% {transform: translatex(-1000%)}
+    }
+
+    .footer {
+      background-color: #0B2447;
+      padding: 40px 0;
+  }
+
+  .footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.subscribe-input {
+    max-width: 400px;
+    margin: auto;
+}
+.social-icons a {
+    margin: 0 5px;
+    font-size: 24px;
+    color: white;
+}
+.social-icons a:hover {
+    color: #00A8E8;
+}
+.footer img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.imagen-foot:hover{
+    transform: scale(1.05);
+      transition: ease-in-out 100ms;
+}
+    
+/* 🔹 RESPONSIVE DESIGN */
+
+
+
+@media (min-width: 1000px) {
+
+   .overlay {
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 115%;
+    
+  }
+
+  .logo{
+    width: 100%;
+  }
+
+  
+ 
+  
+    
+}
+
+
+/* 📌 Pantallas medianas (menos de 900px) */
+@media (max-width: 1000px) {
+
+  
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Pasa a 2 columnas */
+    }
+    .grid-item.large {
+        grid-column: span 1; /* Ocupa solo 1 columna */
+        grid-row: span 1;
+        height: 300px;
+    }
+
+    .logo{
+     
+      width: 90%;
+    }
+
+    
+    
+      
+    
+}
+
+@media screen and (min-width: 990px) { 
+
+  
+
+
+  .projects {
+    display: flex;
+  }
+  
+  .info {
+    width: 45%;
+  }
+  
+  .blue-cards {
+    width: 50%;
+  }
+  
+  .blue-card {
+    padding: 0 60px;
+  }
+
+ /*  .overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  } */
+
+ 
+
+ 
+  
+}
+
+
+  @media screen and (max-width: 990px) {
+    .overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 115%;
+    }
+
+    .what-we{
+      margin:auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 60%;
+    }
+   }
+
+   
+
+  
+
+
+  /* 📌 Pantallas pequeñas (menos de 600px) */
+@media (max-width: 600px) {
+
+    .navbar-brand{
+        
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+
+
+  .logo{
+    
+    width: 100%;
+  }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Solo una columna */
+    }
+    .grid-item.large {
+        height: 250px;
+    }
+
+     /* Adorno de triángulos en el lado izquierdo */
+  .decor-left {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .overlay {
+    top: 180px;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    
+  }
+  
+  /* Triángulo verde */
+  .decor-left::before {
+    content: '';
+    position: absolute;
+    left: -80px;
+    width: 0;
+    height: 0;
+    top: 260px;
+    border-style: solid;
+    border-width: 80px 80px 0 0;
+    border-color: #33cc6656 transparent #e2c41ada transparent; /* Verde */
+    transform: rotate(135deg) scale(2);
+  }
+  
+  /* Triángulo amarillo */
+  .decor-left::after {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: 220px;
+    width: 0;
+    height: 0;
+  
+    border-style: solid;
+    border-width: 60px 60px 0 0;
+    border-color: #ffd90059 transparent transparent transparent; /* Amarillo */
+    transform: rotate(135deg) scale(2);
+  }
+
+  .navbar-brand{
+    width: 100%;
+    margin: auto;
+  }
+
+  .container-texto{
+    width: 100%;
+    font-size: 16px;
+    
+  }
+
+  .container-texto h1{
+    font-size: 33px;
+  }
+
+  .container-texto .text-green{
+    width: 80%;
+    font-size: 33px;
+    
+  }
+
+
+  }
+
+
+  @media (max-width: 470px){ 
+    .container-texto{
+      font-size: 18px;
+    }
+
+    .container-texto h1{
+      font-size: 14px;
+    }
+
+    .text-green{
+      font-size: 12px;
+    }
+
+    .container-texto p {
+      font-size: 10px;
+      
+    }
+    .container-texto a{
+        
+        width: 100%;
+        font-size: 12px;
+    }
+
+  }
+
+
+
+  /* 📌 Pantallas mas pequeñas (menos de 270px) */
+@media (max-width: 270px) {
+    
+  .logo{
+    width: 110%;
+  }
+
+  
+
+  .gradient-bar {
+   visibility: collapse;
+  }
+  
+  .container-texto{
+      width: 100%;
+      font-size: 16px;
+      
+    }
+
+    .container-texto h1{
+      font-size: 33px;
+    }
+
+    .container-texto .text-green{
+      width: 80%;
+      font-size: 22px;
+    }
+
+    .overlay {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 120%;
+      
+    }
+
+}
+  

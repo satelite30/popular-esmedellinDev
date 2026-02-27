@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <link rel="shortcut icon" href="../recursos/img/logoLitt2.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2016 - La memoria se construye caminando - MASO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../css/styletres.css">  
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <link rel="stylesheet" href="../css/galeriagrid.css">
+    
+    <style>
+      .page-hero { background: #f8f6f2; padding: 60px 0 20px; text-align: center; }
+      .page-hero h1 { font-weight: 800; }
+.page-hero h1 span { color: #004200; }
+      .page-hero p { max-width: 900px; margin: 10px auto 0; }
+      .page-cover img { max-height: 460px; object-fit: cover; border-radius: 12px; width: 100%; }
+      .page-content { max-width: 1000px; margin: 30px auto; }
+
+      /* Cambia el color de los íconos prev/next del carousel */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+      /* Puedes ajustar el filtro para el color deseado, o usar background-image si prefieres un SVG personalizado */
+    }
+
+    /* Separar los controles prev/next del carousel 20px hacia afuera de la imagen */
+    .carousel-control-prev {
+      left: -20px;
+    }
+    .carousel-control-next {
+      right: -20px;
+    }
+
+  .shadow{ box-shadow: 11px 22px 32px rgb(34, 34, 34) !important; }
+
+       #videoDots img {
+      transition: border 0.8s, transform 0.2s;
+    }
+    #videoDots img:hover {
+      transform: scale(1.18);
+      z-index: 2;
+      transition: ease-in-out;
+    }
+
+    .img-thumbnail:hover {
+        border: 2px solid #198754 !important; /* Bootstrap success color */
+        box-shadow: 0 0 8px #19875455;
+        filter: brightness(1.1);
+        transform: scale(1.5,1.5);
+        transition: border 0.2s, box-shadow 0.2s, filter 0.2s;
+      }
+
+    .fotosThumb img {
+      width: 50%;
+      height: 50% ;
+    }
+
+    .thumbImg{
+      height: 65vh;
+        
+    }
+
+    
+    .thumbImg img{
+      max-height:60vh;
+    }
+
+
+
+
+@media (max-width: 900px) { 
+  
+    .img-thumbnail:hover {
+        border: 2px solid #8ff3c5 !important; /* Bootstrap success color */
+        box-shadow: 0 0 8px #b4ffdc55;
+        filter: brightness(1.1);
+        transform: scale(1.2,1.2);
+        
+      }
+     
+    }
+
+    /* apagar visiualizacion thumnail */
+
+      @media (max-width: 990px) {
+      .fotosThumb{
+        border: 4px dashed purple;
+        visibility: collapse;
+        height: 0px;
+        
+      }
+      }
+
+
+
+/* apagar visiualizacion thumnail */
+
+      @media (max-width: 660px) {
+      .fotosThumb{
+        border: 4px dashed purple;
+        visibility: collapse;
+        height: 0px;
+        
+      }
+      }
+
+
+
+    @media (max-width: 400px) { 
+      .fotosThumb img {
+      width: 80%;
+      height: 80% ;
+    }
+
+    .thumbImg{
+      height: 65vh;
+        
+    }
+
+  
+    .thumbImg img{
+      max-height:60vh;
+    }
+
+     
+    }
+
+    
+    </style>
+  </head>
+  <body>
+    <header>
+    <nav class="navbar d-flex navbar-expand-lg navbar-light  shadow-sm ">
+      <div class="container  row justify-content-center m-auto d-flex ">
+
+        <div class="col-sm-10  col-md-12 col-lg-8  ">
+          <a class="navbar-brand m-4 col-sm-10 col-md-11 col-lg-4  d-block d-lg-flex align-items-center "
+            href="../index.html" style=" justify-content: start ;">
+            <img src="../recursos/img/logo4.png" alt="Logo" width="100%" class="logo d-block mx-auto mx-lg-0   " />
+          </a>
+        </div>
+
+        <div class="col-lg-4  col-md-12 col-sm-12 ">
+          <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="display: flex; justify-content: center; align-items: center;">
+            <span class="navbar-toggler-icon  "></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../pages/red.html">Red</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/actualidades.html">Actualidades</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="badge-pill">proyecto</span>
+          <h1 class="mt-2">2016 <br> <span>La memoria se </span><br> construye caminando</h1>
+          
+        </div>
+      </section>
+
+    <!--   <section class="container page-content">
+        <div class="row align-items-start g-4">
+          <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0">
+            <div class="page-cover">
+              <img src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_308,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg" alt="2016 La memoria se construye caminando" class="img-fluid rounded shadow" />
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-6 col-12">
+            <article class="content">
+              <h3>Descripción</h3>
+              <p>
+                Reconstrucción de memorias colectivas y de los territorios a través de metodologías de caminatas,
+                relatos y cartografías sociales.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <div class="contenidosLamemoria container">
+        <div class="fs-2" style="color: gray; font-style: italic;">
+          <h2 class="text-center mt-2"> Foto-poemario: La memoria se construye caminando</h2>
+          
+        </div>
+        
+          <div class="fotopoem container my-5 ">
+  <div class="row justify-content-center align-items-center">
+    <div class="col-lg-8 col-md-12 col-sm-12  d-flex justify-content-center align-items-center mb-3 mb-lg-0" >
+      <div id="fotopoemCarousel" class="carousel slide w-100 px-4 " data-bs-ride="carousel" data-bs-interval="5000" style="height: 65vh;">
+
+        <!-- inicio de items carousel img -->
+
+        <div class="macroThum carousel-inner w-100 " >
+          <div class="thumbImg carousel-item active px-4" >
+            <img src="https://static.wixstatic.com/media/697903_47e071177b884191b93a280348c30ebc~mv2_d_2750_2353_s_2.jpg/v1/fill/w_608,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_47e071177b884191b93a280348c30ebc~mv2_d_2750_2353_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 1" style="object-fit:contain; background:#f8f8f8;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_fd320a7e226e4e18be0b9b689c18a524~mv2_d_1417_1417_s_2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_fd320a7e226e4e18be0b9b689c18a524~mv2_d_1417_1417_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 2" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_787cb515d3e8409b919bb004aff8d2ea~mv2_d_2750_2551_s_4_2.jpg/v1/fill/w_561,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_787cb515d3e8409b919bb004aff8d2ea~mv2_d_2750_2551_s_4_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 3" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_47ad00b97aaf4b81ba63000658a2eb23~mv2_d_2750_2268_s_2.jpg/v1/fill/w_631,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_47ad00b97aaf4b81ba63000658a2eb23~mv2_d_2750_2268_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 4" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_179f43e9605747c082e552852abc0986~mv2_d_1332_2409_s_2.jpg/v1/fill/w_288,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_179f43e9605747c082e552852abc0986~mv2_d_1332_2409_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 5" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_d1902d173fa240f79783a513acba6824~mv2_d_3800_4724_s_4_2.jpg/v1/fill/w_418,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_d1902d173fa240f79783a513acba6824~mv2_d_3800_4724_s_4_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 6" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_b1249dbbca444d709a681b9abe664a72~mv2_d_5924_3118_s_4_2.jpg/v1/fill/w_988,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_b1249dbbca444d709a681b9abe664a72~mv2_d_5924_3118_s_4_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 7" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_57c032603e194127a8ce7d8f94b1d468~mv2_d_2750_1899_s_2.jpg/v1/fill/w_753,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_57c032603e194127a8ce7d8f94b1d468~mv2_d_2750_1899_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 8" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_a70b694544fd4f06bf2bc564dcf27594~mv2_d_2750_2409_s_4_2.jpg/v1/fill/w_594,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_a70b694544fd4f06bf2bc564dcf27594~mv2_d_2750_2409_s_4_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 9" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_ab2d17b743fc407fa3f8446e193185de~mv2_d_1899_3118_s_2.jpg/v1/fill/w_317,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_ab2d17b743fc407fa3f8446e193185de~mv2_d_1899_3118_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 10" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_90fd00ad57ef4a4aa2a8cc2e705c320c~mv2_d_2750_2268_s_2.jpg/v1/fill/w_631,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_90fd00ad57ef4a4aa2a8cc2e705c320c~mv2_d_2750_2268_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 11" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_cb6a34ab151640e089112006983087cf~mv2_d_2721_2324_s_2.jpg/v1/fill/w_609,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_cb6a34ab151640e089112006983087cf~mv2_d_2721_2324_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 12" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_e864aec55079428a834a6f4a2d90ddc7~mv2_d_6048_4176_s_4_2.jpg/v1/fill/w_753,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_e864aec55079428a834a6f4a2d90ddc7~mv2_d_6048_4176_s_4_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 13" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_876ecfdc24974f349c8f0a180cc580cb~mv2_d_2750_2324_s_2.jpg/v1/fill/w_616,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_876ecfdc24974f349c8f0a180cc580cb~mv2_d_2750_2324_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 14" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_b37d037218f24bc1942b44b9a7eb8925~mv2_d_1871_1701_s_2.jpg/v1/fill/w_572,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_b37d037218f24bc1942b44b9a7eb8925~mv2_d_1871_1701_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 15" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_9b30e21c5b3c4b27959e3ef168253b68~mv2_d_1956_1843_s_2.jpg/v1/fill/w_552,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_9b30e21c5b3c4b27959e3ef168253b68~mv2_d_1956_1843_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 16" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_bcb26b34d307482d97cae82a2a04d26d~mv2_d_1276_2268_s_2.jpg/v1/fill/w_293,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_bcb26b34d307482d97cae82a2a04d26d~mv2_d_1276_2268_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 17" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_c2293327ee764ff29896e94113ec0cf8~mv2_d_1559_1333_s_2.jpg/v1/fill/w_608,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_c2293327ee764ff29896e94113ec0cf8~mv2_d_1559_1333_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 18" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+          <div class="carousel-item px-4" style="height: 65vh;">
+            <img src="https://static.wixstatic.com/media/697903_e26af32331bd482e9613d8f6040a9a5c~mv2_d_1956_1701_s_2.jpg/v1/fill/w_598,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_e26af32331bd482e9613d8f6040a9a5c~mv2_d_1956_1701_s_2.jpg" class="d-block w-100 rounded shadow img-fluid" alt="Foto 19" style="object-fit:contain; background:#f8f8f8; max-height:60vh;" onclick="showModalImg(this.src)">
+          </div>
+
+    <!-- Modal para macroThum -->
+    <div class="modal fade" id="macroThumModal" tabindex="-1" aria-labelledby="macroThumModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-lg-10">
+        <div class="modal-content bg-dark">
+          <div class="modal-body p-0 text-center">
+            <img id="macroThumModalImg" src="" alt="Foto ampliada" style="width:100%;max-height:80vh;object-fit:contain;  padding: 10px 0px;">
+          </div>
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      </div>
+    </div>
+
+   <!-- ...cierre slide y cominzo thumnail imagenes ... -->
+    <!-- ...controladores de carousel ... -->
+        </div>
+
+        <button class="carousel-control-prev " type="button" data-bs-target="#fotopoemCarousel" data-bs-slide="prev" >
+          <span class="carousel-control-prev-icon " style="color: #000;" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#fotopoemCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" style="color: #000;" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+
+      </div>
+
+    </div>
+    <div class="fotosThumb col-lg-3 col-md-12 col-sm-12  d-flex flex-column align-items-center " style="max-height:60vh; overflow-y:auto; ">
+      <div class="d-flex flex-column w-100 align-items-center" style="gap:10px;">
+        <img src="https://static.wixstatic.com/media/697903_47e071177b884191b93a280348c30ebc~mv2_d_2750_2353_s_2.jpg/v1/fill/w_608,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_47e071177b884191b93a280348c30ebc~mv2_d_2750_2353_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="0" aria-current="true" aria-label="Foto 1">
+
+        <img src="https://static.wixstatic.com/media/697903_fd320a7e226e4e18be0b9b689c18a524~mv2_d_1417_1417_s_2.jpg/v1/fill/w_520,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_fd320a7e226e4e18be0b9b689c18a524~mv2_d_1417_1417_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="1" aria-label="Foto 2">
+
+        <img src="https://static.wixstatic.com/media/697903_787cb515d3e8409b919bb004aff8d2ea~mv2_d_2750_2551_s_4_2.jpg/v1/fill/w_561,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_787cb515d3e8409b919bb004aff8d2ea~mv2_d_2750_2551_s_4_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="2" aria-label="Foto 3">
+
+        <img src="https://static.wixstatic.com/media/697903_47ad00b97aaf4b81ba63000658a2eb23~mv2_d_2750_2268_s_2.jpg/v1/fill/w_631,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_47ad00b97aaf4b81ba63000658a2eb23~mv2_d_2750_2268_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="3" aria-label="Foto 4">
+
+        <img src="https://static.wixstatic.com/media/697903_179f43e9605747c082e552852abc0986~mv2_d_1332_2409_s_2.jpg/v1/fill/w_288,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_179f43e9605747c082e552852abc0986~mv2_d_1332_2409_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="4" aria-label="Foto 5">
+
+        <img src="https://static.wixstatic.com/media/697903_d1902d173fa240f79783a513acba6824~mv2_d_3800_4724_s_4_2.jpg/v1/fill/w_418,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_d1902d173fa240f79783a513acba6824~mv2_d_3800_4724_s_4_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="5" aria-label="Foto 6">
+
+        <img src="https://static.wixstatic.com/media/697903_b1249dbbca444d709a681b9abe664a72~mv2_d_5924_3118_s_4_2.jpg/v1/fill/w_988,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_b1249dbbca444d709a681b9abe664a72~mv2_d_5924_3118_s_4_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="6" aria-label="Foto 7">
+
+        <img src="https://static.wixstatic.com/media/697903_57c032603e194127a8ce7d8f94b1d468~mv2_d_2750_1899_s_2.jpg/v1/fill/w_753,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_57c032603e194127a8ce7d8f94b1d468~mv2_d_2750_1899_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="7" aria-label="Foto 8">
+
+        <img src="https://static.wixstatic.com/media/697903_a70b694544fd4f06bf2bc564dcf27594~mv2_d_2750_2409_s_4_2.jpg/v1/fill/w_594,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_a70b694544fd4f06bf2bc564dcf27594~mv2_d_2750_2409_s_4_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="8" aria-label="Foto 9">
+
+        <img src="https://static.wixstatic.com/media/697903_ab2d17b743fc407fa3f8446e193185de~mv2_d_1899_3118_s_2.jpg/v1/fill/w_317,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_ab2d17b743fc407fa3f8446e193185de~mv2_d_1899_3118_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="9" aria-label="Foto 10">
+
+        <img src="https://static.wixstatic.com/media/697903_90fd00ad57ef4a4aa2a8cc2e705c320c~mv2_d_2750_2268_s_2.jpg/v1/fill/w_631,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_90fd00ad57ef4a4aa2a8cc2e705c320c~mv2_d_2750_2268_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="10" aria-label="Foto 11">
+
+        <img src="https://static.wixstatic.com/media/697903_cb6a34ab151640e089112006983087cf~mv2_d_2721_2324_s_2.jpg/v1/fill/w_609,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_cb6a34ab151640e089112006983087cf~mv2_d_2721_2324_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="11" aria-label="Foto 12">
+
+        <img src="https://static.wixstatic.com/media/697903_e864aec55079428a834a6f4a2d90ddc7~mv2_d_6048_4176_s_4_2.jpg/v1/fill/w_753,h_520,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_e864aec55079428a834a6f4a2d90ddc7~mv2_d_6048_4176_s_4_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="12" aria-label="Foto 13">
+
+        <img src="https://static.wixstatic.com/media/697903_876ecfdc24974f349c8f0a180cc580cb~mv2_d_2750_2324_s_2.jpg/v1/fill/w_616,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_876ecfdc24974f349c8f0a180cc580cb~mv2_d_2750_2324_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="13" aria-label="Foto 14">
+
+        <img src="https://static.wixstatic.com/media/697903_b37d037218f24bc1942b44b9a7eb8925~mv2_d_1871_1701_s_2.jpg/v1/fill/w_572,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_b37d037218f24bc1942b44b9a7eb8925~mv2_d_1871_1701_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="14" aria-label="Foto 15">
+
+        <img src="https://static.wixstatic.com/media/697903_9b30e21c5b3c4b27959e3ef168253b68~mv2_d_1956_1843_s_2.jpg/v1/fill/w_552,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_9b30e21c5b3c4b27959e3ef168253b68~mv2_d_1956_1843_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="15" aria-label="Foto 16">
+
+        <img src="https://static.wixstatic.com/media/697903_bcb26b34d307482d97cae82a2a04d26d~mv2_d_1276_2268_s_2.jpg/v1/fill/w_293,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_bcb26b34d307482d97cae82a2a04d26d~mv2_d_1276_2268_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="16" aria-label="Foto 17">
+
+        <img src="https://static.wixstatic.com/media/697903_c2293327ee764ff29896e94113ec0cf8~mv2_d_1559_1333_s_2.jpg/v1/fill/w_608,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_c2293327ee764ff29896e94113ec0cf8~mv2_d_1559_1333_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="17" aria-label="Foto 18">
+
+        <img src="https://static.wixstatic.com/media/697903_e26af32331bd482e9613d8f6040a9a5c~mv2_d_1956_1701_s_2.jpg/v1/fill/w_598,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_e26af32331bd482e9613d8f6040a9a5c~mv2_d_1956_1701_s_2.jpg" class="img-thumbnail" style=" object-fit:cover; cursor:pointer;" data-bs-target="#fotopoemCarousel" data-bs-slide-to="18" aria-label="Foto 19">
+      </div>
+    </div>
+  </div>
+        </div>
+        </div>
+        
+
+
+<section class="container-fluid pt-4 videoscompleto " >
+        <!-- Texto descripcion -->
+<div class="container ">
+  <p class="col-9 pt-3 text-center justify-content-center fs-5 m-auto" style="text-align: justify;"><b> La descripción y espacialización de la memoria urbana de la población que habita el área de influencia de la intervención PUI-NOR</b> , realizada en la centralidad de Santo Domingo Savio, comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011</p>
+</div>
+
+
+    <div class="videosMaso container ">
+      <div class="row"></div>
+  
+  <div id="videoCarouselContainer" class="container-fluid " style="max-width:900px;margin:0 auto;">
+    <h4 class="mb-3 mt-4 text-center">Videos </h4>
+
+<!-- inicio edicion videos -->
+    <div class="row align-items-center ">
+      
+
+      <div class="col-md-8 col-lg-8 col-sm-12 pb-4    ">
+        <div style="position:relative;">
+          <iframe id="carouselVideoIframe" width="100%" height="400" style="background:#000;max-width:100%;box-shadow:0 2px 8px rgba(0,0,0,0.12);object-fit:contain;" src="https://www.youtube.com/embed/IP8gBA3Yr3I?rel=0&mute=1" title="Video del proyecto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button id="unmuteBtn" class="btn btn-success position-absolute top-0 end-0 m-2" style="z-index:10;">Activar sonido</button>
+          <!-- <button onclick="prevVideo()" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:#fff;border:none;border-radius:50%;width:36px;height:36px;box-shadow:0 2px 8px rgba(0,0,0,0.12);font-size:1.5rem;cursor:pointer;z-index:2;">&#10094;</button>
+          <button onclick="nextVideo()" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:#fff;border:none;border-radius:50%;width:36px;height:36px;box-shadow:0 2px 8px rgba(0,0,0,0.12);font-size:1.5rem;cursor:pointer;z-index:2;">&#10095;</button> -->
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-3 col-sm-10 m-auto my-2 d-flex flex-md-column flex-row justify-content-center align-items-center " id="videoThumbnailsCol" style="gap:30px;">
+        <div  id="videoDots" style="display:flex;flex-direction:column;gap:20px;width:100%;align-items:center; "></div>
+  </div>
+    </div>
+
+  </div>
+    </div>
+
+</section>
+
+
+          <div class="canciones container-fluid m-auto " style="background: #ececec;">
+            <h3 class="text-center pt-5">Canciones</h3>
+            
+            <div class="conetidocancio"> </div>
+          <div class="container row  p-4 col-10 m-auto justify-content-center ">
+            <div class="col-lg-5 col-sm-12 col-md-12 ">
+            <iframe width="100%" height="160" scrolling="no" framerr="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305134089&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-580720655" title="Liliana Sánchez" target="_blank" style="color: #cccccc; text-decoration: none;">Liliana Sánchez</a> · <a href="https://soundcloud.com/user-580720655/contracausa" title="Contracausa" target="_blank" style="color: #cccccc; text-decoration: none;">Contracausa</a></div>
+            </div>
+
+            <div class="col-lg-5 col-sm-12 col-md-12 ">
+              <iframe width="100%" height="160" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/305134348&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/user-580720655" title="Liliana Sánchez" target="_blank" style="color: #cccccc; text-decoration: none;">Liliana Sánchez</a> · <a href="https://soundcloud.com/user-580720655/esperanza-jhasz-ft-kien-c" title="ESPERANZA. JHASZ FT KIEN C" target="_blank" style="color: #cccccc; text-decoration: none;">ESPERANZA. JHASZ FT KIEN C</a></div>
+
+            </div>
+
+          </div>
+          </div>
+
+
+          <div class="fotogaleria container-fluid " style="background: #00420044;">
+
+            <div class="col-lg-8 col-sm-10 m-auto p-4  ">
+              <!-- Photo Grid 4 columns Galeria-->
+              <div class="row">
+                <div class="column">
+                  <img src="https://static.wixstatic.com/media/697903_82dd66d741e8416f8e05bc60b6e704bc~mv2_d_2592_1936_s_2.jpg/v1/fill/w_1097,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_82dd66d741e8416f8e05bc60b6e704bc~mv2_d_2592_1936_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_a908e4b0c07d4448afbc9921a51d20e6~mv2_d_2592_1728_s_2.jpg/v1/fill/w_1229,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_a908e4b0c07d4448afbc9921a51d20e6~mv2_d_2592_1728_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_1568805147ce48699dab681dda68eccc~mv2_d_1936_2592_s_2.jpg/v1/fill/w_612,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_1568805147ce48699dab681dda68eccc~mv2_d_1936_2592_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_d99b880610264154a19b78ecb079f3b7~mv2_d_3648_5472_s_4_2.jpg/v1/fill/w_546,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_d99b880610264154a19b78ecb079f3b7~mv2_d_3648_5472_s_4_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_79dffb75d8094fc3bc09b1991acfa695~mv2_d_1956_1361_s_2.jpg/v1/fill/w_1177,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_79dffb75d8094fc3bc09b1991acfa695~mv2_d_1956_1361_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                </div>
+                <div class="column">
+                  <img src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_1229,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_13e67cfedf7749e59655245ffd2e6a4b~mv2_d_4858_3239_s_4_2.jpg/v1/fill/w_1228,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_13e67cfedf7749e59655245ffd2e6a4b~mv2_d_4858_3239_s_4_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_77fde7d57fcc4a6a9e636714df2ebe78~mv2_d_1936_2592_s_2.jpg/v1/fill/w_612,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_77fde7d57fcc4a6a9e636714df2ebe78~mv2_d_1936_2592_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_ad0037271ec54e64bb887af302d8c1ab~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_1229,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_ad0037271ec54e64bb887af302d8c1ab~mv2_d_5472_3648_s_4_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_82ef1edd2ac14bcabb00f04820d018e3~mv2.jpg/v1/fill/w_1161,h_781,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_82ef1edd2ac14bcabb00f04820d018e3~mv2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                </div>
+                <div class="column">
+                  <img src="https://static.wixstatic.com/media/697903_fccfcd6e6e164a0c86c838f704a4eab9~mv2_d_2750_1616_s_2.jpg/v1/fill/w_1394,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_fccfcd6e6e164a0c86c838f704a4eab9~mv2_d_2750_1616_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_c4c9f4507aca4d568d7596d2a84b2f79~mv2_d_2592_1456_s_2.jpg/v1/fill/w_1458,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_c4c9f4507aca4d568d7596d2a84b2f79~mv2_d_2592_1456_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_c633b458e7584918ac4b46f55ddc014b~mv2_d_1936_2592_s_2.jpg/v1/fill/w_612,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_c633b458e7584918ac4b46f55ddc014b~mv2_d_1936_2592_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_d8a6f9ef048442f89f3be85b35f9d712~mv2_d_4141_2761_s_4_2.jpg/v1/fill/w_1228,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_d8a6f9ef048442f89f3be85b35f9d712~mv2_d_4141_2761_s_4_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_61d1197c155c4524bb0f0f67ea621838~mv2.jpg/v1/fill/w_1170,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_61d1197c155c4524bb0f0f67ea621838~mv2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                </div>
+                <div class="column">
+                  <img src="https://static.wixstatic.com/media/697903_3b1f3dfeb380450daed67c36bd3c5a6f~mv2_d_2592_1728_s_2.jpg/v1/fill/w_1229,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_3b1f3dfeb380450daed67c36bd3c5a6f~mv2_d_2592_1728_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_1568805147ce48699dab681dda68eccc~mv2_d_1936_2592_s_2.jpg/v1/fill/w_612,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_1568805147ce48699dab681dda68eccc~mv2_d_1936_2592_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_d771fc481dcb4471b1c0a7730847a919~mv2_d_5472_3648_s_4_2.jpg/v1/fill/w_1229,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_d771fc481dcb4471b1c0a7730847a919~mv2_d_5472_3648_s_4_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_f52be9f4124b4306a995af4fc6e239bd~mv2_d_1936_2592_s_2.jpg/v1/fill/w_612,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_f52be9f4124b4306a995af4fc6e239bd~mv2_d_1936_2592_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                  <img src="https://static.wixstatic.com/media/697903_08e75e718b2745ab90bf87220596b283~mv2_d_1956_1332_s_2.jpg/v1/fill/w_1203,h_819,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/697903_08e75e718b2745ab90bf87220596b283~mv2_d_1956_1332_s_2.jpg" style="width:100%;cursor:pointer" data-bs-toggle="modal" data-bs-target="#fotoGaleriaModal" onclick="document.getElementById('fotoGaleriaModalImg').src=this.src;">
+                </div>
+              </div>
+            </div>
+    <!-- Modal para galería grid fotogaleria -->
+    <div class="modal fade " id="fotoGaleriaModal" tabindex="-1" aria-labelledby="fotoGaleriaModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" style="max-width:900px;">
+        <div class="modal-content bg-dark position-relative">
+          <button id="fotoGaleriaClose" type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" data-bs-dismiss="modal" aria-label="Cerrar" style="z-index:1051;"></button>
+          <button id="fotoGaleriaPrev" type="button" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y ms-2" style="z-index:1050;opacity:0.7;" aria-label="Anterior"><i class="fa fa-chevron-left fa-2x"></i></button>
+          <button id="fotoGaleriaNext" type="button" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y me-2" style="z-index:1050;opacity:0.7;" aria-label="Siguiente"><i class="fa fa-chevron-right fa-2x"></i></button>
+          <div class="modal-body p-0 text-center m-3" >
+            <img id="fotoGaleriaModalImg" src="" alt="Foto ampliada" style="width:100%;max-height:80vh;object-fit:contain;">
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+
+
+
+
+     
+    </main>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <h5 class="text-light">Follow us for further information</h5>
+        <div class="d-flex justify-content-center mt-3  col-lg-5 m-auto ">
+          <input type="email" class="form-control subscribe-input " placeholder="Enter Your Email">
+          <button class="btn btn-success   ms-1">Subscribe</button>
+        </div>
+        <div class="row text-start mt-5   d-flex flex-wrap">
+          <div class="what-we col-md-3 ">
+            <h6 class="text-light">What We Do</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Education</a></li>
+              <li><a href="#">Medical Aid</a></li>
+              <li><a href="#">Entrepreneurship</a></li>
+              <li><a href="#">Environment</a></li>
+              <li><a href="#">Blood Bureau</a></li>
+              <li><a href="#">Health</a></li>
+              <li><a href="#">Animal Welfare</a></li>
+              <li><a href="#">Sports</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 what-we">
+            <h6 class="text-light">Donations</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">How to Donate</a></li>
+              <li><a href="#">Donation List</a></li>
+              <li><a href="#">Recent Causes</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 what-we">
+            <h6 class="text-light">We are on Social</h6>
+            <a href="#">Facebook</a> | <a href="#">Twitter</a>
+            <div class="mt-2 imagen-foot">
+              <img src="https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5438.jpg?w=648" alt="Social Image">
+            </div>
+            <div class="social-icons mt-2">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-md-3 text-light what-we">
+            <h6>Contact</h6>
+            <p>No: 5/52B, Dr.Vaikhegi Street, Venkatesapuram, Kolathukottam, Chennai - 600041, Tamilnadu, India.</p>
+            <p>044 24468099</p>
+            <p>+91 9551555550</p>
+            <p>+91 9848888088</p>
+            <p><a href="mailto:info@maatratrust.org">info@maatratrust.org</a></p>
+            <p><a href="mailto:maatratrust@gmail.com">maatratrust@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // --- Fotogaleria Modal Next/Prev y Cierre ---
+      (function() {
+        var galleryImgs = Array.from(document.querySelectorAll('.fotogaleria img[data-bs-target="#fotoGaleriaModal"]'));
+        var modalImg = document.getElementById('fotoGaleriaModalImg');
+        var currentIdx = -1;
+        function showImg(idx) {
+          if(idx < 0) idx = galleryImgs.length-1;
+          if(idx >= galleryImgs.length) idx = 0;
+          currentIdx = idx;
+          modalImg.src = galleryImgs[idx].src;
+        }
+        galleryImgs.forEach(function(img, i) {
+          img.addEventListener('click', function() {
+            showImg(i);
+          });
+        });
+        document.getElementById('fotoGaleriaPrev').onclick = function(e) {
+          e.preventDefault();
+          showImg(currentIdx-1);
+        };
+        document.getElementById('fotoGaleriaNext').onclick = function(e) {
+          e.preventDefault();
+          showImg(currentIdx+1);
+        };
+        // Cierre del modal con el botón X
+        var modal = document.getElementById('fotoGaleriaModal');
+        var closeBtn = document.getElementById('fotoGaleriaClose');
+        closeBtn.addEventListener('click', function() {
+          var bsModal = bootstrap.Modal.getOrCreateInstance(modal);
+          bsModal.hide();
+        });
+        // Sincroniza el índice al abrir el modal
+        modal.addEventListener('show.bs.modal', function() {
+          var src = modalImg.src;
+          var idx = galleryImgs.findIndex(function(img){ return img.src === src; });
+          if(idx >= 0) currentIdx = idx;
+        });
+        // Limpia la imagen al cerrar el modal para evitar persistencia
+        modal.addEventListener('hidden.bs.modal', function() {
+          modalImg.src = '';
+        });
+      })();
+    </script>
+
+
+    <script>
+      // --- Fotogaleria Modal Next/Prev ---
+      (function() {
+        // Recopila todas las imágenes de la galería
+        var galleryImgs = Array.from(document.querySelectorAll('.fotogaleria img[data-bs-target="#fotoGaleriaModal"]'));
+        var modalImg = document.getElementById('fotoGaleriaModalImg');
+        var currentIdx = -1;
+        function showImg(idx) {
+          if(idx < 0) idx = galleryImgs.length-1;
+          if(idx >= galleryImgs.length) idx = 0;
+          currentIdx = idx;
+          modalImg.src = galleryImgs[idx].src;
+        }
+        galleryImgs.forEach(function(img, i) {
+          img.addEventListener('click', function() {
+            showImg(i);
+          });
+        });
+        document.getElementById('fotoGaleriaPrev').onclick = function(e) {
+          e.preventDefault();
+          showImg(currentIdx-1);
+        };
+        document.getElementById('fotoGaleriaNext').onclick = function(e) {
+          e.preventDefault();
+          showImg(currentIdx+1);
+        };
+        // Si abren el modal por otros medios, sincroniza la imagen
+        var modal = document.getElementById('fotoGaleriaModal');
+        modal.addEventListener('show.bs.modal', function() {
+          var src = modalImg.src;
+          var idx = galleryImgs.findIndex(function(img){ return img.src === src; });
+          if(idx >= 0) currentIdx = idx;
+        });
+      })();
+    </script>
+
+     <script>
+    // Modal para macroThum
+    function showModalImg(src) {
+      document.getElementById('macroThumModalImg').src = src;
+      var modal = new bootstrap.Modal(document.getElementById('macroThumModal'));
+      modal.show();
+    }
+
+
+
+    // Lista de videos de YouTube (solo IDs)
+    const videoList = [
+      "IP8gBA3Yr3I",
+      "wx3sSuIlYso"
+    ];
+    let videoIndex = 0;
+    const videoIframe = document.getElementById('carouselVideoIframe');
+    const videoDots = document.getElementById('videoDots');
+    const unmuteBtn = document.getElementById('unmuteBtn');
+
+    function getYoutubeEmbedUrl(id, muted = true) {
+      return `https://www.youtube.com/embed/${id}?rel=0&autoplay=1${muted ? '&mute=1' : ''}`;
+    }
+
+    let isMuted = true;
+
+    function showVideo(idx) {
+      videoIndex = (idx + videoList.length) % videoList.length;
+      videoIframe.src = getYoutubeEmbedUrl(videoList[videoIndex], isMuted);
+      updateVideoDots();
+    }
+
+    function prevVideo() {
+      showVideo(videoIndex - 1);
+    }
+
+    function nextVideo() {
+      showVideo(videoIndex + 1);
+    }
+
+    function getYoutubeThumbnail(id) {
+      return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    }
+
+    function updateVideoDots() {
+      videoDots.innerHTML = videoList.map((id,i) => `
+        <img src='${getYoutubeThumbnail(id)}' onclick='showVideo(${i})' style='width:80%;height:80%;object-fit:cover;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,0.12);cursor:pointer;border:${i===videoIndex?'3px solid #198754':'2px solid #bbb'};transition:border 0.2s;' >
+      `).join('');
+    }
+
+    unmuteBtn.addEventListener('click', function() {
+      isMuted = false;
+      videoIframe.src = getYoutubeEmbedUrl(videoList[videoIndex], false);
+      unmuteBtn.style.display = 'none';
+    });
+
+    // Ocultar el botón si el usuario ya activó el sonido
+    function checkUnmuteBtn() {
+      if (!isMuted) {
+        unmuteBtn.style.display = 'none';
+      } else {
+        unmuteBtn.style.display = 'block';
+      }
+    }
+
+    // Mostrar el botón al cargar
+    checkUnmuteBtn();
+
+    showVideo(0);
+  </script>
+  </body>
+  </html>

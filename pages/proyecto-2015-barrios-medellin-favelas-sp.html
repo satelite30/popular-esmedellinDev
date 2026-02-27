@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+  <link rel="shortcut icon" href="../recursos/img/logoLitt2.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2015 - Barrios populares Medellín y favelas São Paulo - MASO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../css/styletres.css">
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <style>
+      .page-hero { background: #f8f6f2; padding: 60px 0 20px; text-align: center; }
+      .page-hero h1 { font-weight: 800; }
+      .page-hero h1 span { color: #004200; }
+      .page-hero p { max-width: 900px; margin: 10px auto 0; }
+      .page-cover img {
+        max-height: 460px;
+        object-fit: cover;
+        border-radius: 12px;
+        width: 100%;
+        transition: transform 0.3s, box-shadow 0.3s;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      }
+
+      /* .imagesIframes{  display: none; }  */
+
+      .page-cover img:hover {
+        transform: scale(1.04) rotate(-1deg);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        cursor: pointer;
+      }
+    /*   .page-content { max-width: 1000px; margin: 30px auto; } */
+
+        /* Ocultar tooltips de timeline en col-md y menor */
+    @media (max-width: 660px) {
+      .informacion-externa{
+        display: none;  
+      }
+
+      .imagesIframes{
+        display: block;
+        background: rgba(204, 204, 204, 0.788);
+        width: 100%;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+      .imagesIframes img,
+      .imagesIframes .col-lg-10,
+      .imagesIframes .col-md-10,
+      .imagesIframes .col-sm-9 {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        box-sizing: border-box;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        
+      }
+
+
+    }
+
+
+
+    </style>
+  </head>
+  <body>
+     <header>
+    <nav class="navbar d-flex navbar-expand-lg navbar-light  shadow-sm ">
+      <div class="container  row justify-content-center m-auto d-flex ">
+
+        <div class="col-sm-10  col-md-12 col-lg-8  ">
+          <a class="navbar-brand m-4 col-sm-10 col-md-11 col-lg-4  d-block d-lg-flex align-items-center "
+            href="../index.html" style=" justify-content: start ;">
+            <img src="../recursos/img/logo4.png" alt="Logo" width="100%" class="logo d-block mx-auto mx-lg-0   " />
+          </a>
+        </div>
+
+        <div class="col-lg-4  col-md-12 col-sm-12 ">
+          <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="display: flex; justify-content: center; align-items: center;">
+            <span class="navbar-toggler-icon  "></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../pages/red.html">Red</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/actualidades.html">Actualidades</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="badge-pill">proyecto</span>
+          <h1 class="mt-2">2015 <br><span>Barrios populares Medellín y <br> favelas São Paulo</span></h1>
+          <!-- <p>Estudio comparado de memorias urbanas y transformaciones territoriales en Medellín y São Paulo.</p> -->
+        </div>
+      </section>
+
+    <section class="container page-content">
+        <div class="row align-items-start g-4">
+          <div class="col-lg-3 col-md-3 col-12 mb-3 mb-md-0">
+
+            <div class="page-cover">
+              <img id="mainImg" src="https://static.wixstatic.com/media/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg/v1/fill/w_288,h_189,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg" alt="2015 Barrios Medellín y favelas São Paulo" class="img-fluid rounded shadow" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#imgModal" />
+              
+    <!-- Modal Bootstrap para imagen ampliada -->
+    <div class="modal fade" id="imgModal" tabindex="-1" aria-labelledby="imgModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-light" id="imgModalLabel">Imagen ampliada</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center" style="min-height:60vh;">
+            <img id="modalImg" src="" alt="Imagen ampliada" class="img-fluid rounded shadow mx-auto d-block" style="max-height:70vh; object-fit:contain; background:#f8f8f8;" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+              <article class="content mt-4">
+              
+              <p>
+                 La descripción y espacialización de la memoria urbana de la población que habita el área de influencia de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio, comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011, permitió alcanzar la pretensión de la investigación que alude a la consulta de fuentes primarias; complementada por otras fuentes ya identificadas, entre las cuales destacan: información oficial, resultados de investigación publicados, bases de datos, estadísticas, mapas, vídeos, fotografías y resultados de entrevistas a agentes clave que vivieron y participaron la transformación urbanística y social.
+              </p>
+            </article>
+
+
+  
+
+           <a href="http://www.favelasaopaulomedellin.fau.usp.br/taller-santo-domingo-savio/" target="_blank" rel="noopener" class="btn btn-primary mt-1 w-100">Visita la página origen</a>
+  
+            </div>
+          </div>
+
+
+
+   <div class="col-lg-9 col-md-9 col-12">
+         
+    
+   
+
+    
+
+<!--     inicio de contenido para query celular -->
+
+    <div class="imagesIframes col-lg-12 col-md-10 col-sm-10   pt-2 px-2" >
+
+      <p style="text-align: justify; margin-top: 40px; ">
+     <b> Rescatar la voz de la población mediante la implementación de un taller participativo</b> implicó un proceso de planeación previo, con la finalidad de orientar las actividades a desplegar, fijar sus alcances y limitaciones. 
+
+      Lineamientos metodológicos para el Taller de Memoria Urbana
+    </p>
+
+      <div class="textoinves fs-6 mb-4" style="text-align: justify;">
+        <h4 class="fw-bold text-dark mb-2">RESULTADOS POR COMPONENTE</h4>
+        <p class="mb-1"><strong>Vías, movilidad, accesibilidad, espacio público y equipamientos sociales</strong></p>
+        <p class="mb-1"><strong>Institucionalidad</strong> <span class="text-success">Positivo</span></p>
+        <p>Mayor presencia de la administración en la implementación de programas para diferentes sectores de la población y control del territorio por la institucionalidad.</p>
+        <p class="mb-1"><strong>Mobilidad y Economía</strong> <span class="text-success">Positivo</span></p>
+        <p>Familiaridad y sentido de pertenencia con el transporte, libre movilización de la población a diferentes lugares del sector y de la ciudad, menor tiempo para desplazarse de la vivienda al lugar de trabajo.</p>
+        <p class="mb-1"><strong>Economía</strong> <span class="text-success">Positivo</span></p>
+        <p>Apertura al turismo que incentivó la economía del barrio.</p>
+        <p class="mb-1"><strong>Visibilidad del barrio</strong> <span class="text-success">Positivo</span></p>
+        <p>Atracción del turismo local, nacional y extranjero promueve el reconocimiento del sector.</p>
+        <p class="mb-1"><strong>Espacio público</strong> <span class="text-success">Positivo</span></p>
+        <p>Respeto, uso y apropiación social, sentido de pertenencia y cuidado de los espacios y equipamientos para reunión o encuentro, realización y convergencia de múltiples actividades que unen poblaciones de diferentes barrios.</p>
+        <hr>
+        <p class="mb-1"><span class="text-danger">Negativo</span></p>
+        <p>Disminución de la acción colectiva para la resolución de las problemáticas comunitarias, la urbanización fue centrada en el área del metrocable.</p>
+        <p class="mb-1"><span class="text-danger">Negativo</span></p>
+        <p>Nueva precariedad urbana en términos de desempleo de la población masculina que antes de la intervención, conducía las líneas de transporte público tradicional (bus, colectivo) desaparecidas tras la implementación del sistema articulado de transporte público.</p>
+        <p class="mb-1"><span class="text-danger">Negativo</span></p>
+        <p>El comercio en zonas específicas como la calle “Puerto rico” invade los andenes y el espacio público, el ruido producido por las distintas actividades comerciales irrumpe en la tranquilidad de los habitantes.</p>
+        <p class="mb-1"><span class="text-danger">Negativo</span></p>
+        <p>Las contradicciones presentes: “antes de la biblioteca, Santo Domingo no existía. Ahora todos quieren ir a visitarla y esto generara la sensación de que todo está bien, sin embargo, algunos conflictos permanecen”.</p>
+        <p class="mb-1"><span class="text-danger">Negativo</span></p>
+        <p>Las construcciones y mejoras de espacio público estuvieron concentradas alrededor del Metrocable y la Biblioteca España, lo demás, continúo siendo territorio olvidado por el gobierno.</p>
+      </div>
+
+      <small class="text-muted d-block mb-2" style="font-size: 0.95em; font-style: italic;">
+        origen &copy; <a href="http://www.favelasaopaulomedellin.fau.usp.br" target="_blank" rel="noopener" class="text-decoration-underline text-muted">favelasaopaulomedellin.fau.usp.br</a>
+      </small>
+
+
+      <img src="http://www.favelasaopaulomedellin.fau.usp.br/wp-content/uploads/2016/02/02_Movilidad-espacio-p%C3%BAblico-y-usos-antes.jpg" class="col-lg-10" alt="">
+      <small class="text-muted d-block mt-2" style="font-size: 0.95em; font-style: italic;">
+        Crédito fotográfico &copy; <a href="http://www.favelasaopaulomedellin.fau.usp.br" target="_blank" rel="noopener" class="text-decoration-underline text-muted">favelasaopaulomedellin.fau.usp.br</a>
+      </small>
+
+      <img src="http://www.favelasaopaulomedellin.fau.usp.br/wp-content/uploads/2016/02/02_Movilidad-espacio-p%C3%BAblico-y-usos-despu%C3%A9s.jpg" class="col-lg-10 py-4" alt="">
+       <small class="text-muted d-block mt-2" style="font-size: 0.95em; font-style: italic;">
+        Crédito fotográfico &copy; <a href="http://www.favelasaopaulomedellin.fau.usp.br" target="_blank" rel="noopener" class="text-decoration-underline text-muted">favelasaopaulomedellin.fau.usp.br</a>
+      </small>
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+
+
+    </div>
+
+    
+ <div class="informacion-externa align-items-center text-center border my-3">
+    <iframe src="http://www.favelasaopaulomedellin.fau.usp.br/taller-santo-domingo-savio/"  width="100%" height="500px" title="Sitio"></iframe>
+     <small class="text-muted d-block mt-2" style="font-size: 0.95em; font-style: italic;">
+        Sitio web &copy; <a href="http://www.favelasaopaulomedellin.fau.usp.br/taller-santo-domingo-savio/" target="_blank" rel="noopener" class="text-decoration-underline text-muted">favelasaopaulomedellin.fau.usp.br</a>
+      </small>
+    </div> 
+
+          </div>
+        </div>
+      </section>
+
+        
+
+
+    </main>
+
+  <div class="container-fluid paginacion">
+    <div class="container  nuevapaginacion py-5">
+        <nav aria-label="Paginación de proyectos" class="my-3">
+        <ul class="pagination justify-content-center flex-wrap">
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2023-juntanzas-latinoamericanas.html" data-bs-toggle="tooltip" data-bs-placement="top" title="2023 - Juntanzas latinoamericanas">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2022-compartires-populares.html" data-bs-toggle="tooltip" data-bs-placement="top" title="2022 - CompartirES PopularES">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2018-transformacion-favelas.html" data-bs-toggle="tooltip" data-bs-placement="top" title="2018 - Transformación de favelas">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2017-sentipensar-barrio.html" data-bs-toggle="tooltip" data-bs-placement="top" title="2017 - Sentipensar el barrio">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2016-memoria-caminando.html" data-bs-toggle="tooltip" data-bs-placement="top" title="2016 - La memoría se construye caminando">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+          <li class="page-item active">
+            <span class="page-link bg-success text-white border-success" data-bs-toggle="tooltip" data-bs-placement="top" title="2015 - Barrios Medellín y favelas SP">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </span>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="proyecto-2014-apropiacion-conocimiento.html" data-bs-toggle="tooltip" data-bs-placement="top" title="2014 - Apropiación social del conocimiento">
+              <i class="fa-solid fa-compact-disc fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+      tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    });
+  </script>
+
+    <footer class="footer text-center">
+        <div class="container" id="pie">
+            <h5 class="text-light"> Grupo de investigación <br> Medio
+                Ambiente y Sociedad - MASO, Facultad de Ciencias Sociales y Humanas  - Universidad de Antioquia - UdeA
+            </h5>
+
+            <div class="row text-start mt-5   d-flex flex-wrap">
+                <div class="what-we col-md-3 ">
+                    <h6 class="text-light">Nuestro sitio web</h6>
+                    <p class="text-light">
+                        Este sitio muestra la relación de la línea de investigación "Planeación, Ciudadanía, Territorio y Ambiente" del grupo MASO, con la sociedad.
+                    </p>
+
+                    <div class="socialNet">
+                         <div class="social-icons mt-4 text-center " style="justify-content: space-between;">
+                        <a href="https://www.youtube.com/@lilianamariasanchezmazo9442/videos" target="_blank"><i
+                                class="col-3 fab fa-youtube" style="font-size: 34px;"></i></a>
+                        <a href="#pie"><i class="fa-solid fa-envelope" style="font-size: 34px;"></i></a>
+                        <a href="https://www.instagram.com/cancionhuellasdebarrio/"><i class="col-3 fab fa-instagram"
+                                target="_blank" style="font-size: 34px;"></i></a>
+                    </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-3 what-we">
+                    <div class="bloque" >
+                      <a href="./index.html">
+                            <img src="https://github.com/satelite30/-logossitio/blob/main/Udea1-3.png?raw=true" style="filter: brightness(0) invert(1);" alt="" >
+                        </a>
+
+                        <a href="./index.html" class="text-center">
+                            <img  src="https://github.com/satelite30/-logossitio/blob/main/logo03.png?raw=true"
+                                style="filter: brightness(0) invert(1); width: 90%;" alt="" class="text-center justify-content-center ">
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 what-we">
+                    <h6 class="text-light">Visita también</h6>
+                    <div class="mt-2 imagen-foot">
+                        <a href="https://maps.app.goo.gl/Z26f1sb9rBiyAX83A">
+                            <img src="https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5438.jpg?w=648"
+                                alt="Social Image">
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-3 text-light what-we fs-5">
+                    <h6>Contacto e información</h6>
+
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:info@maatratrust.org">grupomaso@udea.edu.co</a></li>
+                        <li>Contáctanos</li>
+                        <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/sede-investigacion-universitaria/acerca-siu" target="_blank"><b>Sede de Investigación Universitaria (SIU)</b></a>  <br> Calle 62 #52-59</li>
+                        <li>Medellín - Colombia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Modal para imagen principal
+    document.addEventListener('DOMContentLoaded', function() {
+      var mainImg = document.getElementById('mainImg');
+      var modalImg = document.getElementById('modalImg');
+      if(mainImg && modalImg) {
+        mainImg.addEventListener('click', function() {
+          modalImg.src = mainImg.src;
+        });
+      }
+    });
+  </script>
+  </body>
+  </html>

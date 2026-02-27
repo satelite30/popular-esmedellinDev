@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="shortcut icon" href="../recursos/img/logoLitt2.ico" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CompartirES PopularES (2022 - Actual) - MASO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/styletres.css">
+    <!-- <link rel="stylesheet" href="../style.css" /> -->
+    <style>
+        html,
+        body {
+            max-width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .image-hdb {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.18);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .image-hdb:hover {
+            transform: scale(1.04) rotate(-1deg);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.28);
+        }
+
+        /* X blanca en el modal de galería */
+        .modal-content .btn-close {
+            filter: invert(1) grayscale(1) brightness(2);
+            opacity: 1;
+        }
+
+        .page-hero {
+            background: #f8f6f2;
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+
+        .page-hero h1 {
+            font-weight: 800;
+        }
+
+        .page-hero h1 span {
+            color: #004200;
+        }
+
+        .page-hero p {
+            max-width: 900px;
+            margin: 10px auto 0;
+        }
+
+        .page-cover {
+            height: 100%;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .page-cover img {
+            height: 100%;
+            width: 100%;
+            max-height: 460px;
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+        }
+
+        .page-cover img:hover {
+            transform: scale(1.04) rotate(-1deg);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            cursor: pointer;
+        }
+
+        .page-content {
+            max-width: 1000px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+
+        .video-container {
+            max-width: 100%;
+            margin: 0 auto;
+            max-height: 50%;
+
+        }
+
+
+
+        .videoyt {
+            height: 80vh;
+
+        }
+
+        .conyoutube {
+            width: 90vw;
+
+        }
+
+
+        footer {
+            width: 100%;
+        }
+
+
+        /* Ocultar tooltips de timeline en col-md y menor */
+        @media (max-width: 660px) {
+            .textoDesc {
+                padding: 0px 50px;
+                text-align: justify;
+            }
+
+        }
+
+        @media (max-width: 400px) {
+            .textoDesc p {
+                font-size: 16px;
+                padding: 0px 20px;
+            }
+
+        }
+
+        @media (max-width: 320px) {
+            .textoDesc p {
+                font-size: 14px;
+                padding: 0px 0px;
+            }
+
+        }
+
+        /* 📌 Pantallas medianas (menos de 900px) */
+        @media (max-width: 1000px) {
+
+
+
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                /* Pasa a 2 columnas */
+            }
+
+            .grid-item.large {
+                grid-column: span 1;
+                /* Ocupa solo 1 columna */
+                grid-row: span 1;
+                height: 300px;
+            }
+
+            .logo {
+
+                width: 90%;
+            }
+
+
+
+            .video-container {
+                max-width: 100%;
+                margin: 0 auto;
+                max-height: 50%;
+
+            }
+
+            .videoyt {
+                height: 40vh;
+
+            }
+
+            .conyoutube {
+                width: 90vw;
+
+            }
+
+
+            .espaciogaleria {
+                width: 99%;
+            }
+
+
+        }
+
+        /* Ajustes para que el embed de Instagram ocupe todo el ancho del contenedor */
+        .contenido-instagram {
+            width: 100%;
+            
+        }
+        .contenido-instagram blockquote.instagram-media {
+            max-width: 100% !important;
+            min-width: 0 !important;
+            width: 100% !important;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar d-flex navbar-expand-lg navbar-light  shadow-sm ">
+            <div class="container  row justify-content-center m-auto d-flex ">
+
+                <div class="col-sm-10  col-md-12 col-lg-8  ">
+                    <a class="navbar-brand m-4 col-sm-10 col-md-11 col-lg-4  d-block d-lg-flex align-items-center "
+                        href="../index.html" style=" justify-content: start ;">
+                        <img src="../recursos/img/logo4.png" alt="Logo" width="100%"
+                            class="logo d-block mx-auto mx-lg-0   " />
+                    </a>
+                </div>
+
+                <div class="col-lg-4  col-md-12 col-sm-12 ">
+                    <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        style="display: flex; justify-content: center; align-items: center;">
+                        <span class="navbar-toggler-icon  "></span>
+                    </button>
+                    <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
+                            <li class="nav-item m-auto m-2">
+                                <a class="nav-link " href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item m-auto m-2">
+                                <a class="nav-link " href="../pages/red.html">Red</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                                <a class="nav-link" href="../pages/actualidades.html">Actualidades</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                                <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+                            </li>
+                            <li class="nav-item m-auto">
+                                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main class="textoprincipal">
+
+<div class="columnascontenido container">
+    <div class="row ">
+        <div class="col-12 col-lg-4 mt-3" >
+            <!-- Contenido izquierdo (col-4) -->
+            <h3 class="pt-4" > Juntanza latinoamericana <br>
+            Escuela de Verano: Territorialidades popularES en América Latina hoy
+            </h3 >
+
+            <div class="col-12 ">
+            <img class="rounded-3 mt-3" src="https://github.com/satelite30/-logossitio/blob/main/imagenesprom/DSC_9326-1.png?raw=true" alt="" width="100%">
+                </div>
+
+        </div>
+        <div class="col-12 col-lg-8 pt-5">
+            <!-- Contenido derecho (col-8) -->
+<!-- 
+            <h3 class="pt-4" > Juntanza latinoamericana <br>
+            Escuela de Verano: territorialidades popularES en América Latina hoy
+            </h3 > -->
+
+            <p class="textoproyectojun">
+                La Escuela de Verano: territorialidades popularES en América Latina hoy es un evento de ciudad dinamizado por una juntanza latinoamericana que actúa como red constituida representantes de universidades públicas de Colombia, Chile, Uruguay, México, Brasil, Argentina y Francia; servidores públicos y habitantes de barrios populares. 
+                <br><br>
+                Su pretensión es contribuir a la actualización de debates teóricos, metodológicos y empíricos en torno a lo popular en América Latina, desde el análisis de casos concretos, así como la incidencia territorial in situ como posibilidad para realizar la misión universitaria en vínculo con la sociedad. Para ello concentrará, en una semana, acciones de cooperación académica y social en docencia (minicursos), extensión (exposición de investigación creativa, documental, acciones territoriales implicadas en barrios populares, recorridos urbanos con sentido formativo), investigación e internacionalización (seminario académico, prelanzamiento de libro). 
+                <br><br>
+                La riqueza y potencialidad articuladora de la Escuela de Verano se encuentra en que es en sí misma una plataforma inter, transdisciplinar y estratégica que fundamenta la proyección de una agenda de trabajo de largo aliento. En esta se contempla la formulación e implementación de proyectos de investigación y extensión, de pasantías, la divulgación de nuevo conocimiento, la gestión de recursos, entre otros.
+                <br><br>
+                El evento es planeado y gestionado entre diferentes universidades participantes, siendo responsable de su organización e implementación, en esta primera versión, la Universidad de Antioquia, particularmente, la Facultad de Ciencias Sociales y Humanas FCSH mediante el Departamento de Trabajo Social, el grupo de investigación Medio Ambiente y Sociedad-MASO, el Centro de Articulación para la Innovación y la Transformación Social-CAITS; y el Instituto de Estudios Regionales-INER desde el Grupo Estudios del Territorio-GET.
+                <br><br>
+                Las actividades son posible por el aporte de varias unidades académicas de la UdeA como la Facultad de Ciencias Sociales y Humanas (Departamento de Trabajo Social, Grupo Medio Ambiente y Sociedad de la FCSH, Centro de Articulación para la Innovación y la Transformación Social-CAITS/FCSH, Fondo Editorial Facultad de Ciencias Sociales y Humanas de la Universidad de Antioquia); el Instituto de Estudios Regionales desde el grupo Estudios del Territorio (GET); la Dirección de Relaciones Internacionales y Extensión-UdeA. También financian la Escuela de Verano la Fundación Universidad de Antioquia, habitantes y colectivas vecinales e institucionales del barrio Bello Oriente, de la zona nororiental y de Nuevo Occidente; Alcaldía de Medellín (Sistema de Bibliotecas Públicas de Medellín -Parque Biblioteca Nuevo Occidente Lusitania, Parque Biblioteca Nororiental-), Corporación Región, el Metro de Medellín y la fundacion Bureau de Convenciones de Medellín.
+            </p>
+
+        
+        <!-- contenido instagram señales de humo -->
+            <div class="contenido-instagram mt-5 ">
+            <blockquote class="instagram-media  border" data-instgrm-permalink="https://www.instagram.com/p/DOKQGJ4DMRh/?utm_source=ig_web_copy_link&img_index=1" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+                <div style="padding:16px;"> 
+                    <a href="https://www.instagram.com/p/DOKQGJ4DMRh/?utm_source=ig_web_copy_link&img_index=1" style="background:#FFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> 
+                        <div style="display: flex; flex-direction: row; align-items: center;"> 
+                            <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> 
+                            <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> 
+                                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> 
+                                <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <div style="padding: 19% 0;"></div>
+                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+                        <svg width="80px" height="80px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                            <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g transform="translate(-511.000000, -20.000000)" fill="#000000">
+                                    <g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60 C535.114,60 530.342,55.228 530.342,49.342 L530.342,9.656 C530.342,3.77 535.114,0 541,0 L556.456,0 C562.342,0 567.114,4.772 567.114,10.658 L567.114,50.342 C567.114,56.23 562.342,60 556.456,60 L541,60 Z M541,1.802 C536.596,1.802 532.143,5.007 532.143,9.656 L532.143,50.342 C532.143,54.991 536.596,58.198 541,58.198 L556.456,58.198 C560.86,58.198 565.313,54.991 565.313,50.342 L565.313,9.656 C565.313,5.007 560.86,1.802 556.456,1.802 L541,1.802 Z M541,38.348 C535.114,38.348 530.342,33.576 530.342,27.69 C530.342,21.804 535.114,17.032 541,17.032 C546.886,17.032 551.658,21.804 551.658,27.69 C551.658,33.576 546.886,38.348 541,38.348 Z M541,19.138 C537.701,19.138 535.038,21.801 535.038,25.1 C535.038,28.399 537.701,31.062 541,31.062 C544.299,31.062 546.962,28.399 546.962,25.1 C546.962,21.801 544.299,19.138 541,19.138 Z"></path></g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div style="padding-top: 8px;">
+                        <div style="color:#505050; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver esta publicación en Instagram</div>
+                    </div>
+                    <div style="padding: 12.5% 0;"></div>
+                    <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5%; width: 12.5%;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5%; width: 12.5%; margin-left: 14px;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5%; width: 12.5%; margin-left: 14px;"></div>
+                    </div>
+                </div>
+            </blockquote>
+        </div>
+
+        </div>
+
+        
+    </div>
+</div>
+
+
+
+    </main>
+
+
+
+
+    <div class="container-fluid paginacion">
+        <div class="container  nuevapaginacion py-5">
+            <nav aria-label="Paginación de proyectos" class="my-3">
+                <ul class="pagination justify-content-center flex-wrap">
+
+                    <li class="page-item active">
+                        <span class="page-link bg-success text-white border-success" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="2023-juntanzas-latinoamericanas ">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </span>
+                    </li>
+
+
+                    <li class="page-item" >
+                        <a class="page-link" href="proyecto-2022-compartires-populares.html" data-bs-toggle="tooltip" 
+                        data-bs-placement="top" title="2022 - CompartirES PopularES">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </a>
+                    </li>
+
+                    
+                    <li class="page-item">
+                        <a class="page-link" href="proyecto-2018-transformacion-favelas.html" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="2018 - Transformación de favelas">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="proyecto-2017-sentipensar-barrio.html" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="2017 - Sentipensar el barrio">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="proyecto-2016-memoria-caminando.html" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="2016 - La memoría se construye caminando">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="proyecto-2015-barrios-medellin-favelas-sp.html"
+                            data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="2015 - Barrios Medellín y favelas SP">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="proyecto-2014-apropiacion-conocimiento.html" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="2014 - Apropiación social del conocimiento">
+                            <i class="fa-solid fa-compact-disc fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+                new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+
+    <!-- foooter -->
+
+   <footer class="footer text-center">
+        <div class="container" id="pie">
+            <h5 class="text-light"> Grupo de investigación <br> Medio
+                Ambiente y Sociedad - MASO, Facultad de Ciencias Sociales y Humanas  - Universidad de Antioquia - UdeA
+            </h5>
+
+            <div class="row text-start mt-5   d-flex flex-wrap">
+                <div class="what-we col-md-3 ">
+                    <h6 class="text-light">Nuestro sitio web</h6>
+                    <p class="text-light">
+                        Este sitio muestra la relación de la línea de investigación "Planeación, Ciudadanía, Territorio y Ambiente" del grupo MASO, con la sociedad.
+                    </p>
+
+                    <div class="socialNet">
+                         <div class="social-icons mt-4 text-center " style="justify-content: space-between;">
+                        <a href="https://www.youtube.com/@lilianamariasanchezmazo9442/videos" target="_blank"><i
+                                class="col-3 fab fa-youtube" style="font-size: 34px;"></i></a>
+                        <a href="#pie"><i class="fa-solid fa-envelope" style="font-size: 34px;"></i></a>
+                        <a href="https://www.instagram.com/cancionhuellasdebarrio/"><i class="col-3 fab fa-instagram"
+                                target="_blank" style="font-size: 34px;"></i></a>
+                    </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-3 what-we">
+                    <div class="bloque" >
+                      <a href="./index.html">
+                            <img src="https://github.com/satelite30/-logossitio/blob/main/Udea1-3.png?raw=true" style="filter: brightness(0) invert(1);" alt="" >
+                        </a>
+
+                        <a href="./index.html" class="text-center">
+                            <img  src="https://github.com/satelite30/-logossitio/blob/main/logo03.png?raw=true"
+                                style="filter: brightness(0) invert(1); width: 90%;" alt="" class="text-center justify-content-center ">
+                        </a>
+
+
+                    </div>
+                </div>
+
+                <div class="col-md-3 what-we">
+                    <h6 class="text-light">Visita también</h6>
+                    <div class="mt-2 imagen-foot">
+                        <a href="https://maps.app.goo.gl/Z26f1sb9rBiyAX83A">
+                            <img src="https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5438.jpg?w=648"
+                                alt="Social Image">
+                        </a>
+                    </div>
+                   
+                </div>
+
+                <div class="col-md-3 text-light what-we fs-5">
+                    <h6>Contacto e información</h6>
+
+                    <ul class="list-unstyled">
+                        <li><a href="mailto:info@maatratrust.org">grupomaso@udea.edu.co</a></li>
+                        <li>Contáctanos</li>
+                        <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/sede-investigacion-universitaria/acerca-siu" target="_blank"><b>Sede de Investigación Universitaria (SIU)</b></a>  <br> Calle 62 #52-59</li>
+                        <li>Medellín - Colombia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Modal para galería de imágenes -->
+    <div class="modal fade " id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content bg-dark ">
+                <div class="modal-header border-0 flex-column align-items-start">
+                    <h4 class="modal-title w-100 text-center text-light fw-bold mb-2" id="galleryModalLabel">
+                        Compartir-ES popular-ES</h4>
+                    <button type="button" class="btn-close  ms-auto" data-bs-dismiss="modal"
+                        aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center align-items-center position-relative"
+                    style="min-height:60vh;">
+                    <button id="prevImgBtn" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y"
+                        style="z-index:2;" aria-label="Anterior"><i class="fa fa-chevron-left fa-2x"></i></button>
+                    <img id="modalGalleryImg" src="" alt="Imagen ampliada"
+                        class="img-fluid rounded shadow mx-auto d-block"
+                        style="max-height:70vh; object-fit:contain; background:#f8f8f8;" />
+                    <button id="nextImgBtn" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y"
+                        style="z-index:2;" aria-label="Siguiente"><i class="fa fa-chevron-right fa-2x"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Array de URLs de las imágenes de la columna
+        const galleryImages = [
+            'https://github.com/satelite30/logo-test/blob/main/02.jpeg?raw=true',
+            'https://github.com/satelite30/logo-test/blob/main/04.jpeg?raw=true',
+            '../recursos/img/ParteIVElcorazóndelbarrio-ObedYepes-2021.jpg'
+        ];
+        let currentImgIdx = 0;
+
+        // Asignar evento click a cada imagen de la columna
+        document.addEventListener('DOMContentLoaded', function () {
+            const imgNodes = document.querySelectorAll('.col-lg-5 .page-cover img');
+            imgNodes.forEach((img, idx) => {
+                img.style.cursor = 'pointer';
+                img.addEventListener('click', function () {
+                    openGalleryModal(idx);
+                });
+            });
+            document.getElementById('prevImgBtn').addEventListener('click', function (e) {
+                e.stopPropagation();
+                showGalleryImg(currentImgIdx - 1);
+            });
+            document.getElementById('nextImgBtn').addEventListener('click', function (e) {
+                e.stopPropagation();
+                showGalleryImg(currentImgIdx + 1);
+            });
+        });
+
+        function openGalleryModal(idx) {
+            currentImgIdx = idx;
+            showGalleryImg(currentImgIdx);
+            const modal = new bootstrap.Modal(document.getElementById('galleryModal'));
+            modal.show();
+        }
+
+        function showGalleryImg(idx) {
+            if (idx < 0) idx = galleryImages.length - 1;
+            if (idx >= galleryImages.length) idx = 0;
+            currentImgIdx = idx;
+            document.getElementById('modalGalleryImg').src = galleryImages[currentImgIdx];
+        }
+    </script>
+
+    <!-- Instagram Embed Script -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script>
+        // Reinitialize Instagram embed after page load
+        window.addEventListener('load', function() {
+            if (window.instgrm) {
+                window.instgrm.Embeds.process();
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
