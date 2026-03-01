@@ -1,5 +1,4 @@
-
-    // Lista de imágenes del modal/lightbox para cada slide del carousel
+// Lista de imágenes del modal/lightbox para cada slide del carousel
     let carouselModalImageSrcs = [
       './recursos/img/DSC_9320-copy.jpg',
       'https://github.com/satelite30/-logossitio/blob/main/imagenesprom/prom2.jpg?raw=true',
@@ -67,6 +66,12 @@
       });
     });
 
-    
- 
-  
+    // Ensure no zoom effect is applied to carousel items
+    const carouselItems = document.querySelectorAll('.carousel-item');
+    carouselItems.forEach(item => {
+      item.style.transform = 'none';
+      item.style.transition = 'none';
+    });
+
+
+
