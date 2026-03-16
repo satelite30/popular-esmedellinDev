@@ -170,7 +170,7 @@ info procesos
       compartires pages
 
       <!-- <div class="container  m-auto col-sm-11 col-md-11 col-lg-12  justify-content-center p-4 ">
-          <img src="https://github.com/satelite30/-logossitio/blob/main/HdB2.webp?raw=true" alt="logo huellas de barrio" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.836);"  class="image-hdb col-lg-12 col-sm-6 col-md-10 m-auto  justify-content-center " id="hdbLogoImg" data-bs-toggle="modal" data-bs-target="#hdbModal">
+          <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/HdB2.webp" alt="logo huellas de barrio" style="box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.836);"  class="image-hdb col-lg-12 col-sm-6 col-md-10 m-auto  justify-content-center " id="hdbLogoImg" data-bs-toggle="modal" data-bs-target="#hdbModal">
           
           </div> -->
 
@@ -875,10 +875,10 @@ info procesos
 
 <div class="row">
     <div class="page-cover align-items-end  col-6">
-            <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine4.jpeg?raw=true" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
+            <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/main/imagenesBase/fanzine4.jpeg" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
           </div>
           <div class="page-cover align-items-end col-6 ">
-            <img src="https://github.com/satelite30/blog-Popular-es/blob/main/imagenesBase/fanzine5.jpeg?raw=true" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
+            <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/main/imagenesBase/fanzine5.jpeg" alt="CompartirES PopularES" style="object-fit: contain;padding:20px 10px;" class="img-fluid rounded shadow" />
           </div>
 
 </div>
