@@ -204,6 +204,15 @@
             width: 100% !important;
 
         }
+        /* Hover effect for podcast cards: smooth scale, bg-light and stronger shadow */
+        .podcast2 .card {
+            transition: transform 0.28s ease, background-color 0.28s ease, box-shadow 0.28s ease;
+        }
+        .podcast2 .card:hover {
+            transform: scale(1.03);
+            background-color: #f8f9fa !important; /* override inline bg */
+            box-shadow: 0 12px 30px rgba(0,0,0,0.18) !important;
+        }
     </style>
 </head>
 
