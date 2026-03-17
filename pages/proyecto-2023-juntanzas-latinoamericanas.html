@@ -201,12 +201,21 @@
             width: 100% !important;
             
         }
-        /* Make embedded iframes responsive and match the width of the previous image */
+        /* Make embedded iframes fill the parent container (responsive wrapper) */
+        .conyoutubedos {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+        }
+
         .conyoutubedos iframe {
+            position: absolute !important;
+            top: 0;
+            left: 0;
             width: 100% !important;
-            max-width: 100% !important;
-            height: auto !important;
-            aspect-ratio: 16/9;
+            height: 100% !important;
+            border: 0;
         }
     </style>
 </head>
@@ -272,7 +281,7 @@
                 </div>
 
                 <!-- video  conyoutubedos -->
-          <div class="container m-3 align-items-center justify-content-center m-auto ">
+          <div class="container  mt-5  align-items-center justify-content-center m-auto ">
             <div class="video-container  d-flex justify-content-center align-items-center ">
                                 <div class="col-lg-10 col-md-12 col-sm-12 mx-auto conyoutubedos">
                                 <iframe src="https://www.youtube.com/embed/J02kBM4kkCA" title="Escuela de Verano 2025, Territorialidades populares en América Latina hoy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="w-100"></iframe>
