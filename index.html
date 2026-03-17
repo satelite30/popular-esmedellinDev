@@ -11,11 +11,9 @@
     content="Grupo MASO-UdeA. Investigación, memoria urbana y transformación social en barrios populares de Medellín y América Latina. Experiencias, recursos y publicaciones." />
 
   <!-- Palabras clave (SEO) -->
-  <meta name="keywords"
-            audio.muted = true;
-            audio.play(); >
+  <meta name="keywords" audio.muted=true; audio.play();>
 
-            <!-- autor -->  
+  <!-- autor -->
   <meta name="author" content="Grupo MASO - Universidad de Antioquia" />
 
   <!-- Robots (indexar y seguir enlaces) -->
@@ -58,37 +56,37 @@
       width: 100%;
       height: 100%;
       min-height: 100%;
-  background-size: cover;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box;
+      background-size: cover;
+      margin: 0 !important;
+      padding: 0 !important;
+      box-sizing: border-box;
       background-position: center center;
       background-repeat: no-repeat;
       display: block;
-      
+
     }
 
 
-.cables{
-  background: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/poste2.png); 
-  width: 100vw;
-  min-width: 100vw;
-  height: 100vh;
-  min-height: 100vh;
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: block;
-  box-sizing: border-box;
-  
+    .cables {
+      background: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/poste2.png);
+      width: 100vw;
+      min-width: 100vw;
+      height: 100vh;
+      min-height: 100vh;
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: block;
+      box-sizing: border-box;
 
-}
 
- .texto-intro p{ 
+    }
+
+    .texto-intro p {
       font-size: 24px;
     }
 
-  
-    #logoMasoCarousel .carousel-item{
+
+    #logoMasoCarousel .carousel-item {
       padding-top: 20px;
 
     }
@@ -98,6 +96,7 @@
       opacity: 0;
       transition: opacity 0.5s ease-in-out;
     }
+
     #logoMasoCarousel .carousel-item.active {
       opacity: 1;
     }
@@ -106,50 +105,63 @@
     #logoMasoCarousel .carousel-item img {
       pointer-events: none;
       cursor: auto !important;
-      
-    
+
+
     }
 
     /* Change zoom effect on hover for carousel items */
     .carousel-inner .carousel-item:hover {
-      transform: none; /* Disable scaling */
-      transition: ease 3s ; /* Remove transition */
+      transform: none;
+      /* Disable scaling */
+      transition: ease 3s;
+      /* Remove transition */
     }
 
-        
+
 
     /* Overlay entre el background y las cards en .fondocard */
     .fondocard {
       position: relative;
       z-index: 0;
     }
+
     .overlay-fondocard {
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(5, 5, 5, 0.534); /* Blanco semitransparente, ajusta opacidad aquí */
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(5, 5, 5, 0.534);
+      /* Blanco semitransparente, ajusta opacidad aquí */
       z-index: 1;
       pointer-events: none;
     }
-    .fondocard > *:not(.overlay-fondocard) {
+
+    .fondocard>*:not(.overlay-fondocard) {
       position: relative;
       z-index: 2;
     }
+
     /* Opacidad del fondo en .fondocard */
     .fondocard {
       position: relative;
       z-index: 0;
-      background-image: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/arbolpng2.png);       
+      background-image: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/arbolpng2.png);
       background-size: cover;
-       background-position: center;
-        background-repeat: no-repeat;
-      
-      
+      background-position: center;
+      background-repeat: no-repeat;
+
+
     }
+
     .fondocard::before {
       content: "";
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-image: linear-gradient(rgba(0,66,0,0.5), rgba(0,66,0,0.5)), inherit;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(rgba(0, 66, 0, 0.5), rgba(0, 66, 0, 0.5)), inherit;
       background-size: cover;
       background-position: inherit;
       background-repeat: inherit;
@@ -157,47 +169,56 @@
       z-index: 0;
       pointer-events: none;
     }
-    .fondocard > * {
+
+    .fondocard>* {
       position: relative;
       z-index: 1;
     }
-      /* Overlay entre el background y las cards en .fondocard */
-      .fondocard {
-        position: relative;
-        z-index: 0;
-        background-image: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/arbolpng2.png);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        overflow: hidden;
-        min-height: 400px;
-        width: 100%;
-        box-sizing: border-box;
-      }
 
-          .overlay-fondocard {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.336); /* Blanco semitransparente, ajusta opacidad aquí */
-        z-index: 1;
-        pointer-events: none;
-        display: block;
-      }
-      .fondocard > *:not(.overlay-fondocard) {
-        position: relative;
-        z-index: 2;
-      }
+    /* Overlay entre el background y las cards en .fondocard */
+    .fondocard {
+      position: relative;
+      z-index: 0;
+      background-image: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/arbolpng2.png);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+      min-height: 400px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .overlay-fondocard {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.336);
+      /* Blanco semitransparente, ajusta opacidad aquí */
+      z-index: 1;
+      pointer-events: none;
+      display: block;
+    }
+
+    .fondocard>*:not(.overlay-fondocard) {
+      position: relative;
+      z-index: 2;
+    }
+
     /* Opacidad del fondo de la sección maso-bg-container */
     #maso-bg-container {
       position: relative;
       z-index: 1;
     }
+
     #maso-bg-container::before {
       content: "";
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background-image: inherit;
       background-size: cover;
       background-position: inherit;
@@ -206,140 +227,140 @@
       z-index: 0;
       pointer-events: none;
     }
-    #maso-bg-container > * {
+
+    #maso-bg-container>* {
       position: relative;
       z-index: 1;
     }
-    
 
 
-      @media (min-width: 1900px) {
-          /* Asegura que la imagen de fondo de .cables ocupe todo el container-fluid */
-    .cables {
-      width: 100%;
-      height: 100%;
-      min-height: 100%;
-  background-size: cover;
-  margin: 0 !important;
-  padding: 80px auto !important;
-  box-sizing: border-box;
-      background-position: center center;
-      background-repeat: no-repeat;
-      display: block;
-      
-    }
 
+    @media (min-width: 1900px) {
 
-.cables{
-  background: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/poste2.png); 
-  background-position: center center;
-  background-repeat: no-repeat;
-  display: block;
-  box-sizing: border-box;
-  
-  
-
-}
-}
-
- @media (min-width: 1021px) {
-    .cables{
-       max-height: 40vh;
-    }
+      /* Asegura que la imagen de fondo de .cables ocupe todo el container-fluid */
+      .cables {
+        width: 100%;
+        height: 100%;
+        min-height: 100%;
+        background-size: cover;
+        margin: 0 !important;
+        padding: 80px auto !important;
+        box-sizing: border-box;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
 
       }
 
 
-      @media (max-width: 991px) {
-        .fondocard {
-          background-position: center top;
-          min-height: 300px;
-        }
+      .cables {
+        background: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/poste2.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: block;
+        box-sizing: border-box;
 
-        .texto-intro p{
-      
-      font-size: 22px;
-    }
 
 
       }
-      @media (max-width: 767px) {
-        .fondocard {
-          background-position: center top;
-          min-height: 200px;
-        }
-
-        .texto-intro p{
-     
-      font-size: 22px;
-    }
-      }
-      @media (max-width: 575px) {
-        .fondocard {
-          background-position: center top;
-          min-height: 20%;
-          
-        }
-
-        .texto-intro p{  
-      font-size: 18px;
     }
 
-    #logoMasoCarousel .carousel-item{
-      max-height: 70%;
-      transform: scale(0.9); 
-      
-    }
- 
+    @media (min-width: 1021px) {
+      .cables {
+        max-height: 40vh;
       }
 
-      @media (max-width: 435px) {
-        .fondocard {
-          background: white;
-          background-position: center;
-          object-fit: cover;
-          min-height: 100%;
-         
-        }
-
-        .cables{
-       max-height: 1200px;
-       
-    }
-
-    .texto-intro p{
-      font-size: 18px;
-    }
-
-    #logoMasoCarousel .carousel-item{
-      max-height: 70%;
-      transform: scale(0.9); 
-      padding:0;
-    }
-
-        }
-
-         @media (max-width: 365px) {
-       
-        .cables{
-       max-height: 1200px;
-    }
-
-    .texto-intro p{
-      font-size: 16px;
     }
 
 
-    #logoMasoCarousel .carousel-item{
-      padding-top: 1px;
-      padding-bottom: 20px;
+    @media (max-width: 991px) {
+      .fondocard {
+        background-position: center top;
+        min-height: 300px;
+      }
+
+      .texto-intro p {
+
+        font-size: 22px;
+      }
+
+
     }
 
-        }
+    @media (max-width: 767px) {
+      .fondocard {
+        background-position: center top;
+        min-height: 200px;
+      }
+
+      .texto-intro p {
+
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 575px) {
+      .fondocard {
+        background-position: center top;
+        min-height: 20%;
+
+      }
+
+      .texto-intro p {
+        font-size: 18px;
+      }
+
+      #logoMasoCarousel .carousel-item {
+        max-height: 70%;
+        transform: scale(0.9);
+
+      }
+
+    }
+
+    @media (max-width: 435px) {
+      .fondocard {
+        background: white;
+        background-position: center;
+        object-fit: cover;
+        min-height: 100%;
+
+      }
+
+      .cables {
+        max-height: 1200px;
+
+      }
+
+      .texto-intro p {
+        font-size: 18px;
+      }
+
+      #logoMasoCarousel .carousel-item {
+        max-height: 70%;
+        transform: scale(0.9);
+        padding: 0;
+      }
+
+    }
+
+    @media (max-width: 365px) {
+
+      .cables {
+        max-height: 1200px;
+      }
+
+      .texto-intro p {
+        font-size: 16px;
+      }
 
 
-  
+      #logoMasoCarousel .carousel-item {
+        padding-top: 1px;
+        padding-bottom: 20px;
+      }
 
+    }
   </style>
 
 
@@ -347,12 +368,13 @@
 
 <style>
   /* Mostrar sólo 6 cards por defecto dentro del contenedor de procesos */
-  #procesoscard.collapsed .row > *:nth-child(n+7) {
+  #procesoscard.collapsed .row>*:nth-child(n+7) {
     display: none !important;
   }
+
   /* Si quieres una transición suave puedes añadir visibility/height cambios aquí */
   @media (max-width: 767px) {
-    #procesoscard.collapsed .row > *:nth-child(n+7) {
+    #procesoscard.collapsed .row>*:nth-child(n+7) {
       display: none !important;
     }
   }
@@ -362,7 +384,7 @@
 
 
   <header>
-    <nav class="navbar d-flex navbar-expand-lg navbar-light bg-white shadow-sm "  >
+    <nav class="navbar d-flex navbar-expand-lg navbar-light bg-white shadow-sm ">
       <div class="container  row justify-content-center m-auto d-flex ">
 
         <div class="col-sm-10  col-md-12 col-lg-8 ">
@@ -403,17 +425,16 @@
 
   <main>
 
-    <div class="container-fluid d-flex justify-content-center p-0" >
+    <div class="container-fluid d-flex justify-content-center p-0">
       <div class="carousel-container w-90">
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner slidePrincipal">
 
             <!--         primer slide -->
             <div class="carousel-item slideImage active" data-bs-interval="15000">
-              <img src="./recursos/img/DSC_93.jpg"
-                alt="First slide" onclick="openLightbox(this.src)">
+              <img src="./recursos/img/DSC_93.jpg" alt="First slide" onclick="openLightbox(this.src)">
 
-             <!--  <div
+              <!--  <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-end  align-items-center rounded-3  "
                 style="height:30%;background:rgba(243, 243, 243, 0.425);backdrop-filter:blur(2px);z-index:2;">
                 <div class="col-11 justify-content-center text-center m-auto fs-5 boxtexto" >
@@ -437,8 +458,9 @@
                 style="height:30%;background:rgba(2, 58, 0, 0.87);backdrop-filter:blur(2px);z-index:2;">
                 <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
                   <h2 class="text-light">Escuela de Verano 2025</h2>
-                  <p class="text-light pb-2 " style="font-size: 24px;"> Territorialidades popularES en América Latina hoy <br> 
-                     23 al 31 de agosto en Medellín - Colombia<br>Grupo MASO, UdeA.</p>
+                  <p class="text-light pb-2 " style="font-size: 24px;"> Territorialidades popularES en América Latina
+                    hoy <br>
+                    23 al 31 de agosto en Medellín - Colombia<br>Grupo MASO, UdeA.</p>
                 </div>
               </div>
             </div>
@@ -446,8 +468,7 @@
 
             <!--      Nueva imagen 3 -->
             <div class="carousel-item slideImage" data-bs-interval="12000">
-              <img
-                src="https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/DSC_9321-4.jpg"
+              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/DSC_9321-4.jpg"
                 class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute start-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
@@ -493,8 +514,8 @@
 
             <!--      Nueva imagen 5 -->
             <div class="carousel-item slideImage" data-bs-interval="12000">
-              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
-                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)">
+              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
+                alt="Third slide" onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
@@ -507,8 +528,8 @@
 
             <!--      Nueva imagen 6 -->
             <div class="carousel-item slideImage" data-bs-interval="2000">
-              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
-                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)">
+              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
+                alt="Third slide" onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
@@ -520,8 +541,8 @@
             </div>
             <!--      Nueva imagen 7 -->
             <div class="carousel-item slideImage" data-bs-interval="2000">
-              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
-                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)">
+              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
+                alt="Third slide" onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
@@ -566,165 +587,165 @@
 
 
     <!-- Nueva Sección audio cancion huellas de barrio-->
-<div class="container-fluid m-auto" data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="500" style="background-color: #0B2447;" >
+    <div class="container-fluid m-auto" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+      data-aos-duration="500" style="background-color: #0B2447;">
 
-<div class="container 
-    align-items-center row  m-auto mx-6 " style="padding-top: 10px;"  >
+      <div class="container 
+    align-items-center row  m-auto mx-6 " style="padding-top: 10px;">
 
-      <div class="wave-top"></div>
+        <div class="wave-top"></div>
 
-<div class="cancionhuellas  ">
-  <div class="container-fluid huellas text-center my-4">
-  
-<div class="row d-flex ">
+        <div class="cancionhuellas  ">
+          <div class="container-fluid huellas text-center my-4">
 
-  <audio id="audioHuellas" class="shadow-lg rounded-5 py-2 col-lg-8 col-md-12 col-sm-12  " controls style="outline:none;"  >
-    <source src="./recursos/docs/huellas master final.mp4"  type="audio/mpeg" >
-    Tu navegador no soporta el elemento de audio.
-  </audio>
+            <div class="row d-flex ">
 
-
-  <div class="mt-2 col-lg-4 col-md-12 col-sm-12 end-0  contenedorcontrol " >
-    <div class="row gap-2 d-flex  justify-content-center m-auto" >
-    <button onclick="document.getElementById('audioHuellas').play()" class="btn btn-success me-2 col-lg-5 col-md-10 col-sm-12 gap-2 mb-3"><i class="fa fa-play"></i> Reproducir</button>
-    <button onclick="document.getElementById('audioHuellas').pause()" class="btn btn-light col-lg-5 col-md-10 col-sm-12 gap-2 mb-3"><i class="fa fa-pause"></i> Pausar</button>
-    </div>
-  </div>
-</div>
-
-<div class="descripcioncancion col-lg-3 col-md-12  ">
-  <small class="text-light ">Conoce nuestra cancion: 
-    <span> <a href="./pages/proyecto-2022-compartires-populares.html">  Huellas de barrio </a></span>
-        </small>
-
-</div>
-
-</div>
-</div>
-
-</div>
-</div>
+              <audio id="audioHuellas" class="shadow-lg rounded-5 py-2 col-lg-8 col-md-12 col-sm-12  " controls
+                style="outline:none;">
+                <source src="./recursos/docs/huellas master final.mp4" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+              </audio>
 
 
-
-<!--    informacion logos  -->
-<div class="container-fluid  w-100"  >
-  
-<div class="container pt-5  ">
-      <div class="info row d-flex w-100   m-auto">
-
-        <!-- Borde superior ondulado -->
-        <div class="container col-lg-8 col-xl-5 col-sm-12 col-md-12  justify-content-center  text-center  p-3  ">
-
-          <span class="badge-pill mb-3">Red</span>
-
-          <div class="texto-intro m-auto px-2 col-sm-10 col-lg-10  col-md-10 ">
-          <h2>
-            <span class="text-dark">Popular</span><span class="text" style="color: #004200;">ES</span>
-            
-          </h2>
-
-          <p style="font-size: 18px;">
-
-            Este sitio muestra la relación de la línea 
-             "Planeación, Ciudadanía, Territorio y Ambiente"
-            del grupo de investigación Medio Ambiente y Sociedad-MASO, Facultad de Ciencias Sociales
-            y Humanas de la Universidad de Antioquia, con barrios de Medellín, América Latina y aliados institucionales.
-
-          </p>
-          </div>
-        </div>
-
-        <!-- Carousel de Logos del Grupo MASO -->
-
-        <div class="col-lg-5 container logosmaso ">
-
-          <!-- Carousel de logotipos automático -->
-          <div id="logoMasoCarousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="4000"
-            style="background:transparent;height:500px; ">
-            <div class="carousel-inner text-center">
-              <div class="carousel-item active" style="height: 100%; ">
-                        <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
-                  class="d-block mx-auto" alt="Logo 1"
-                  style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;"
-                  draggable="false">
-              </div>
-
-              <div class="carousel-item " style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/HdB.jpeg" class="d-block mx-auto"
-                  alt="Logo 3" style="max-width:100%;max-height:390px;object-fit: cover; cursor:auto;"
-                  draggable="false">
-              </div>
-
-              <div class="carousel-item" style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Micomuna1.png"
-                  class="d-block mx-auto" alt="Logo 2"
-                  style="max-width:100%;max-height:400px;object-fit: contain; cursor:auto;" draggable="false">
-              </div>
-              
-              <div class="carousel-item" style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/calleytinta-1.jpeg"
-                  class="d-block mx-auto" alt="Logo 2"
-                  style="max-width:100%;max-height:400px;object-fit: contain; cursor:auto;" draggable="false">
-              </div>
-
-              <div class="carousel-item " style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/lasierra2.png"
-                  class="d-block mx-auto" alt="Logo 4"
-                  style="max-width:100%;max-height:200px;cursor:auto;" draggable="false">
-              </div>
-              <div class="carousel-item " style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/SBPM.jpeg"
-                  class="d-block mx-auto" alt="Logo 5"
-                  style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;"
-                  draggable="false">
-              </div>
-              <div class="carousel-item " style="height: 100%;">
-                <img
-                  src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Casa%20Piedra%20en%20el%20Camino.png"
-                  class="d-block mx-auto" alt="Logo 6"
-                  style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;"
-                  draggable="false">
-              </div>
-              <div class="carousel-item" style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea2.jpeg"
-                  class="d-block mx-auto" alt="Logo UdeA"
-                  style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;"
-                  draggable="false">
-              </div>
-              <div class="carousel-item" style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg"
-                  class="d-block mx-auto" alt="Logo UdeA 1"
-                  style="max-width:100%;max-height:300px;object-fit: contain;padding-top: 60px; cursor:auto;"
-                  draggable="false">
-              </div>
-              <div class="carousel-item" style="height: 100%;">
-                <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/sonbat%C3%A1.png"
-                  class="d-block mx-auto" alt="Logo Sonbatá"
-                  style="max-width:100%;max-height:300px;object-fit: cover;padding-top: 10px; cursor:auto;"
-                  draggable="false">
+              <div class="mt-2 col-lg-4 col-md-12 col-sm-12 end-0  contenedorcontrol ">
+                <div class="row gap-2 d-flex  justify-content-center m-auto">
+                  <button onclick="document.getElementById('audioHuellas').play()"
+                    class="btn btn-success me-2 col-lg-5 col-md-10 col-sm-12 gap-2 mb-3"><i class="fa fa-play"></i>
+                    Reproducir</button>
+                  <button onclick="document.getElementById('audioHuellas').pause()"
+                    class="btn btn-light col-lg-5 col-md-10 col-sm-12 gap-2 mb-3"><i class="fa fa-pause"></i>
+                    Pausar</button>
+                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#logoMasoCarousel" data-bs-slide="prev"
-              style="background:none;border:none;top:40%;">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#logoMasoCarousel" data-bs-slide="next"
-              style="background:none;border:none;top:40%;">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Siguiente</span>
-            </button>
-          </div>
 
+            <div class="descripcioncancion col-lg-3 col-md-12  ">
+              <small class="text-light ">Conoce nuestra cancion:
+                <span> <a href="./pages/proyecto-2022-compartires-populares.html"> Huellas de barrio </a></span>
+              </small>
+
+            </div>
+
+          </div>
         </div>
 
       </div>
+    </div>
+
+
+
+    <!--    informacion logos  -->
+    <div class="container-fluid  w-100">
+
+      <div class="container pt-5  ">
+        <div class="info row d-flex w-100   m-auto">
+
+          <!-- Borde superior ondulado -->
+          <div class="container col-lg-8 col-xl-5 col-sm-12 col-md-12  justify-content-center  text-center  p-3  ">
+
+            <span class="badge-pill mb-3">Red</span>
+
+            <div class="texto-intro m-auto px-2 col-sm-10 col-lg-10  col-md-10 ">
+              <h2>
+                <span class="text-dark">Popular</span><span class="text" style="color: #004200;">ES</span>
+
+              </h2>
+
+              <p style="font-size: 18px;">
+
+                Este sitio muestra la relación de la línea
+                "Planeación, Ciudadanía, Territorio y Ambiente"
+                del grupo de investigación Medio Ambiente y Sociedad-MASO, Facultad de Ciencias Sociales
+                y Humanas de la Universidad de Antioquia, con barrios de Medellín, América Latina y aliados
+                institucionales.
+
+              </p>
+            </div>
+          </div>
+
+          <!-- Carousel de Logos del Grupo MASO -->
+
+          <div class="col-lg-5 container logosmaso ">
+
+            <!-- Carousel de logotipos automático -->
+            <div id="logoMasoCarousel" class="carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="4000"
+              style="background:transparent;height:500px; ">
+              <div class="carousel-inner text-center">
+                <div class="carousel-item active" style="height: 100%; ">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
+                    class="d-block mx-auto" alt="Logo 1"
+                    style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;" draggable="false">
+                </div>
+
+                <div class="carousel-item " style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/HdB.jpeg"
+                    class="d-block mx-auto" alt="Logo 3"
+                    style="max-width:100%;max-height:390px;object-fit: cover; cursor:auto;" draggable="false">
+                </div>
+
+                <div class="carousel-item" style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Micomuna1.png"
+                    class="d-block mx-auto" alt="Logo 2"
+                    style="max-width:100%;max-height:400px;object-fit: contain; cursor:auto;" draggable="false">
+                </div>
+
+                <div class="carousel-item" style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/calleytinta-1.jpeg"
+                    class="d-block mx-auto" alt="Logo 2"
+                    style="max-width:100%;max-height:400px;object-fit: contain; cursor:auto;" draggable="false">
+                </div>
+
+                <div class="carousel-item " style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/lasierra2.png"
+                    class="d-block mx-auto" alt="Logo 4" style="max-width:100%;max-height:200px;cursor:auto;"
+                    draggable="false">
+                </div>
+                <div class="carousel-item " style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/SBPM.jpeg"
+                    class="d-block mx-auto" alt="Logo 5"
+                    style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;" draggable="false">
+                </div>
+                <div class="carousel-item " style="height: 100%;">
+                  <img
+                    src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Casa%20Piedra%20en%20el%20Camino.png"
+                    class="d-block mx-auto" alt="Logo 6"
+                    style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;" draggable="false">
+                </div>
+                <div class="carousel-item" style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea2.jpeg"
+                    class="d-block mx-auto" alt="Logo UdeA"
+                    style="max-width:100%;max-height:300px;object-fit: contain; cursor:auto;" draggable="false">
+                </div>
+                <div class="carousel-item" style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg"
+                    class="d-block mx-auto" alt="Logo UdeA 1"
+                    style="max-width:100%;max-height:300px;object-fit: contain;padding-top: 60px; cursor:auto;"
+                    draggable="false">
+                </div>
+                <div class="carousel-item" style="height: 100%;">
+                  <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/sonbat%C3%A1.png"
+                    class="d-block mx-auto" alt="Logo Sonbatá"
+                    style="max-width:100%;max-height:300px;object-fit: cover;padding-top: 10px; cursor:auto;"
+                    draggable="false">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#logoMasoCarousel"
+                data-bs-slide="prev" style="background:none;border:none;top:40%;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#logoMasoCarousel"
+                data-bs-slide="next" style="background:none;border:none;top:40%;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
       </div>
-      </div>
+    </div>
 
 
 
@@ -739,386 +760,404 @@
 
 
     <!-- descripción del grupo -->
-<div class="gradient-bar border border-info border-4  "></div>
-<!--     agregar imagen background -->
-  <div id="maso-bg-container" class="container-fluid  m-auto " style="background-image: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/003b.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; transition: background-position 0.7s cubic-bezier(.4,2,.6,1); z-index: 30;">
-   <div class="row justify-content-center align-items-center texto text-center w-80 " style="background: #eeeeeea2;">
+    <div class="gradient-bar border border-info border-4  "></div>
+    <!--     agregar imagen background -->
+    <div id="maso-bg-container" class="container-fluid  m-auto "
+      style="background-image: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/003b.jpg); background-size: cover; background-position: center; background-repeat: no-repeat; transition: background-position 0.7s cubic-bezier(.4,2,.6,1); z-index: 30;">
+      <div class="row justify-content-center align-items-center texto text-center w-80 " style="background: #eeeeeea2;">
 
-      <div class="col-lg-12 col-md-12 col-sm-4 text-center d-flex m-auto text-center pt-4  w-80 ">
+        <div class="col-lg-12 col-md-12 col-sm-4 text-center d-flex m-auto text-center pt-4  w-80 ">
 
-          <div class="col-lg-8  col-md-6 col-sm-10 text-center m-auto pt-4  d-flex flex-row justify-content-center align-items-center gap-3" data-aos="zoom-in-up">
-          <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg" class="img-fluid mx-2" alt="logo Udea" style="max-width:40%;">
-          <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="img-fluid mx-2" alt="logo MASO" style="max-width:40%;">
-          
-        </div>
-      </div>
+          <div
+            class="col-lg-8  col-md-6 col-sm-10 text-center m-auto pt-4  d-flex flex-row justify-content-center align-items-center gap-3"
+            data-aos="zoom-in-up">
+            <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg" class="img-fluid mx-2"
+              alt="logo Udea" style="max-width:40%;">
+            <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="img-fluid mx-2"
+              alt="logo MASO" style="max-width:40%;">
 
-      
-
-      <!-- Texto descripción con acordeón -->
-      <div class="col-lg-9 col-md-10 col-sm-12  d-flex fs-4  ">
-        <div id="maso-description" class="w-100">
-          <div class="p-4 w-100" style="text-align: justify;">
-            <p>
-              Grupo de investigación MASO, clasificado en categoría A1 por MinCiencias, adscrito a la Facultad de Ciencias Sociales y
-              Humanas desde 1995. Promueve la investigación científica, la extensión universitaria y la formación de
-              estudiantes de pregrado y posgrado en diferentes programas de las ciencias sociales y humanas, con foco en
-              el estudio de la relación grupos humanos-ambiente, analizando múltiples elementos que contribuyen en la
-              mejora de condiciones de vida. La línea de investigación está compuesta por colectivos de profesores,
-              estudiantes e investigadores comunitarios que han avanzado en conocimientos teóricos y metodológicos en
-              materia de planeación y ordenamiento territorial, participación popular, política pública en asentamientos
-              precarios, transformaciones territoriales, turismo en favelas y barrios populares, patrimonio cultural,
-              metodologías de intervención participativas, producción y apropiación social de conocimiento.
-            </p>
           </div>
-          <div id="maso-extra" style="display:none;">
-            <div class="p-4 w-100 " style="text-align: justify;">
+        </div>
+
+
+
+        <!-- Texto descripción con acordeón -->
+        <div class="col-lg-9 col-md-10 col-sm-12  d-flex fs-4  ">
+          <div id="maso-description" class="w-100">
+            <div class="p-4 w-100" style="text-align: justify;">
               <p>
-                El trabajo articulado entre academia, gobierno y habitantes se ha suscrito en alianzas estratégicas y en
-                convenios interinstitucionales que han permitido formular e implementar procesos de investigación y
-                extensión. Los resultados obtenidos han sido sustento de la participación en eventos nacionales, la
-                organización de publicaciones, el diseño y realización de pasantías internacionales, la recepción de
-                estudiantes y profesores visitantes en el grupo, el acompañamiento de agendas comunitarias, el diseño de
-                talleres y cursos internacionales entre universidades, la evaluación de material académico, la
-                formulación de política pública local, así como de nuevas ideas de extensión y de investigación que dan
-                continuidad a los procesos.
+                Grupo de investigación MASO, clasificado en categoría A1 por MinCiencias, adscrito a la Facultad de
+                Ciencias Sociales y
+                Humanas desde 1995. Promueve la investigación científica, la extensión universitaria y la formación de
+                estudiantes de pregrado y posgrado en diferentes programas de las ciencias sociales y humanas, con foco
+                en
+                el estudio de la relación grupos humanos-ambiente, analizando múltiples elementos que contribuyen en la
+                mejora de condiciones de vida. La línea de investigación está compuesta por colectivos de profesores,
+                estudiantes e investigadores comunitarios que han avanzado en conocimientos teóricos y metodológicos en
+                materia de planeación y ordenamiento territorial, participación popular, política pública en
+                asentamientos
+                precarios, transformaciones territoriales, turismo en favelas y barrios populares, patrimonio cultural,
+                metodologías de intervención participativas, producción y apropiación social de conocimiento.
               </p>
             </div>
-          </div>
-          <div class="text-center mt-2">
-            <button id="toggle-desc" style="background:none;border:none;cursor:pointer;font-size:24px;"
-              aria-label="Mostrar más">
-              <i id="arrow" class="fa-solid fa-angle-down" style="font-size: 50px; color: rgba(0, 0, 0, 0.363);"></i>
-            </button>
+            <div id="maso-extra" style="display:none;">
+              <div class="p-4 w-100 " style="text-align: justify;">
+                <p>
+                  El trabajo articulado entre academia, gobierno y habitantes se ha suscrito en alianzas estratégicas y
+                  en
+                  convenios interinstitucionales que han permitido formular e implementar procesos de investigación y
+                  extensión. Los resultados obtenidos han sido sustento de la participación en eventos nacionales, la
+                  organización de publicaciones, el diseño y realización de pasantías internacionales, la recepción de
+                  estudiantes y profesores visitantes en el grupo, el acompañamiento de agendas comunitarias, el diseño
+                  de
+                  talleres y cursos internacionales entre universidades, la evaluación de material académico, la
+                  formulación de política pública local, así como de nuevas ideas de extensión y de investigación que
+                  dan
+                  continuidad a los procesos.
+                </p>
+              </div>
+            </div>
+            <div class="text-center mt-2">
+              <button id="toggle-desc" style="background:none;border:none;cursor:pointer;font-size:24px;"
+                aria-label="Mostrar más">
+                <i id="arrow" class="fa-solid fa-angle-down" style="font-size: 50px; color: rgba(0, 0, 0, 0.363);"></i>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
 
-<!-- 
+    <!-- 
 https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.jpg -->
 
-    <div class="fondo" >
+    <div class="fondo">
 
       <!-- Tarjetas -->
-    <div class="container-fluid fondocard " >
-  <div class="overlay-fondocard"></div>
-      
- 
-      <div class="container  pt-5">
-        <div class="container-fluid mt-1 text-center  row justify-content-center ">
-          <div class="encabezado col-sm-10 col-md-10 col-lg-8 col-xl-10 ">
-            <span class="badge-pill " >Procesos</span>
+      <div class="container-fluid fondocard ">
+        <div class="overlay-fondocard"></div>
 
 
-            <h1> Entre barrios populares <span style="color: #004200;"> y favelas </span> </h1>
+        <div class="container  pt-5">
+          <div class="container-fluid mt-1 text-center  row justify-content-center ">
+            <div class="encabezado col-sm-10 col-md-10 col-lg-8 col-xl-10 ">
+              <span class="badge-pill ">Procesos</span>
 
+
+              <h1> Entre barrios populares <span style="color: #004200;"> y favelas </span> </h1>
+
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div id="procesoscard" class="container">
-        <div class="row mt-5 s">
+        <div id="procesoscard" class="container">
+          <div class="row mt-5 s">
 
-          <!-- card 0-01 -->
-          <div class="col-md-4 py-4 " data-aos="fade-up"
-          data-aos-duration="600">
-            <div class="card-custom " style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2022-compartires-populares.html"> <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/DSC_9326-1.png"
-                    alt="Imagen 1" /> </a>
-              </div>
-
-              <div class="container " style="padding-bottom: 90px;">
-                <h4 class="text-center">
-                  
-                  2023-  Actual
-                  <br>
-                  <p>Juntanza latinoamericana </p>
-                  <p>Escuela de Verano: Territorialidades popularES en América Latina hoy
-Universidad de Antioquia-Colombia</p>
-                  
-                </h4>
-                <p style="text-align: justify;">
-                  La Escuela de Verano: Territorialidades popularES en América Latina hoy es un evento llevado a cabo en la Universidad de Antioquia-Medellín-Colombia, dinamizado por una juntanza latinoamericana que actúa como red constituida representantes de universidades públicas de Colombia, Chile, Uruguay, México, Brasil, Argentina y Francia; servidores públicos y habitantes de barrios populares.
-                </p>
-              </div>
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2023-juntanzas-latinoamericanas.html" class="btn-pill ">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-           
-
-
-
-          <!-- card 1 -->
-          <div class="col-md-4 py-4 " data-aos="fade-up"
-          data-aos-duration="600">
-            <div class="card-custom " style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2022-compartires-populares.html"> <img src="./recursos/img/corazon1.jpeg"
-                    alt="Imagen 1" /> </a>
-              </div>
-
-              <div class="container " style="padding-bottom: 90px;">
-                <h4 class="text-center">
-                  2022 - 2026 
-                  <br>
-                  Laboratorio
-                  <br>
-                  CompartirES PopularES
-                </h4>
-                <p style="text-align: justify;">
-                 El laboratorio “Compartir-es Popular-es”, tiene como pilar los conocimientos teóricos y metodológicos
-                generados en la investigación “Transformación en favelas de Río de Janeiro y barrios populares de
-                Medellín por prácticas de turismo 2019-25372”, culminada en 2022, registrada en SIIU y financiada por la
-                Universidad de Antioquia, El Banco de la República, sede Medellín, El Sistema de Bibliotecas Públicas de
-                Medellín y diversos colectivos comunitarios de las comunas 1 (Popular), 2 (Santa Cruz), 8 (Doce de
-                Octubre) y 13 (San Javier). 
-                </p>
-              </div>
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2022-compartires-populares.html" class="btn-pill ">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!--         card 2-2 -->
-          <div class="col-md-4 py-4" data-aos="fade-up"
-          data-aos-duration="500">
-            <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html">
-                  <img
-                    src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/main/fotoCom13.jpeg"
-                    alt="Imagen 3" />
-                </a>
-              </div>
-              <div class="container " style="padding-bottom: 26px;">
-                <h4 class="text-center">2021 <br>
-                  Patrimonio cultural comuna 13 - más que turismo</h4>
-                <p style="text-align: justify;">
-                 El eje  de este proceso es el patrimonio cultural inmaterial y vivo vinculado a espacios culturales. Vincula elementos del patrimonio intangible, material y natural significativos en la construcción de barrios populares de la comuna 13San Javier desde acciones de resistencia social como indicador de paz territorial. También se incluye la diversidad y riqueza cultural vista desde las artes populares y la organización social con sus prácticas populares de producción de hábitat y cotidiano barrial, resaltando características fundamentales en la construcción de los barrios como la solidaridad, la construcción colectiva y el tejido social y organizativo. La propuesta con énfasis en esta área contribuye con el fomento de potencialidades territoriales históricamente significativas para la población originaria de la comuna 13, materializadas en diversidad de personas, procesos sociales y lugares.
-              </div>
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html" class="btn-pill ">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!--         card 2 -->
-          <div class="col-md-4 py-4" data-aos="fade-up"
-          data-aos-duration="500">
-            <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2018-transformacion-favelas.html">
-                  <img
-                    src="https://static.wixstatic.com/media/697903_14a4e71cde2f4069a2180282fa7410a4~mv2.jpg/v1/fill/w_317,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5769_JPG.jpg"
-                    alt="Imagen 3" />
-                </a>
-              </div>
-              <div class="container " style="padding-bottom: 26px;">
-                <h4 class="text-center">2018 <br>
-                  Transformación de favelas
-                  en Río de Janeiro-Brasil
-                  y barrios populares
-                  de Medellín-Colombia
-                  por prácticas de turismo</h4>
-                <p style="text-align: justify;">
-                  Se hace memoria de lo propio, se hace memoria de los lugares que sentimos propios,
-                  a veces nos quitan los lugares que nos pertenecen y nos imponen otros caminos, otros formas de habitar
-                  y
-                  es ejercicio personal y colectivo re-significar las formas de estar en lo nuevo.
-                </p>
-              </div>
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2018-transformacion-favelas.html" class="btn-pill ">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!--           card 3 -->
-          <div class="col-md-4 py-4" data-aos="fade-up"
-          data-aos-duration="500" >
-            <div class="card-custom" style="box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2017-sentipensar-barrio.html">
-                  <img
-                    src="https://static.wixstatic.com/media/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg/v1/fill/w_288,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg"
-                    alt="Imagen 3" />
-                </a>
-              </div>
-              <div class="container " style="padding-bottom: 140px;">
-                <h4 class="text-center">2017 <br> Sentipensar el barrio</h4>
-                <p style="text-align: justify;">
-                  La descripción y espacialización de la memoria urbana de la población que habita el área de influencia
-                  de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
-                  comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
-                </p>
-              </div>
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2017-sentipensar-barrio.html" class="btn-pill">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- card 4 -->
-          <div class="col-md-4 pb-4" data-aos="fade-up"
-          data-aos-duration="500">
-            <div class="card-custom" style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2016-memoria-caminando.html">
-                  <img
-                    src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_308,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg"
-                    alt="Imagen 3" />
-                </a>
-              </div>
-              <div class="container cardsegundas" style="padding-bottom: 60px;">
-              <h4 class="text-center">2016 <br> La memoría se construye caminando</h4>
-              <p style="text-align: justify;">
-                El eje de este proceso es el patrimonio cultural inmaterial y vivo. Vincula elementos del patrimonio intangible, material y natural significativos en la construcción de barrios populares de la comuna 13, San Javier, desde acciones de resistencia social como indicador de paz territorial. También se incluye la diversidad y riqueza cultural vista desde las artes populares y la organización social. El proyecto contribuye al el fomento de potencialidades territoriales históricamente significativas para la población originaria de la comuna 13, materializadas en diversidad de personas, procesos sociales y lugares.
-              </p>
-              </div>
-
-
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2016-memoria-caminando.html" class="btn-pill">Ver más</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- card 5 -->
-
-          <div class="col-md-4 pb-4" data-aos="fade-up"
-          data-aos-duration="500">
-            <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
-              <div class="circle-img">
-                <a href="./pages/proyecto-2015-barrios-medellin-favelas-sp.html">
-                  <img
-                    src="https://static.wixstatic.com/media/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg/v1/fill/w_288,h_189,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg"
-                    alt="Imagen 3" />
-                </a>
-              </div>
-              <div class="container cardsegundas" style="padding-bottom: 60px;">
-              <h4 class="text-center">2015 <br>
-                Barrios populares Medellín y favelas São Paulo</h4>
-              <p style="text-align: justify;">
-                La descripción y espacialización de la memoria urbana de la población que habita el área de influencia
-                de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
-                comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
-              </p>
-              </div>
-              <div class="container col-12 text-center ">
-                <a href="./pages/proyecto-2015-barrios-medellin-favelas-sp.html" class="btn-pill">Ver más</a>
-              </div>
-            </div>
-          </div>
-          <!-- card 6 -->
-          <div class="col-md-4 pb-4" data-aos="fade-up"
-          data-aos-duration="500">
-            <div class="card-custom" style="box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.589);">
-
-              <a href="./pages/proyecto-2014-apropiacion-conocimiento.html">
+            <!-- card 0-01 -->
+            <div class="col-md-4 py-4 " data-aos="fade-up" data-aos-duration="600">
+              <div class="card-custom " style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
                 <div class="circle-img">
-                  <img
-                    src="https://static.wixstatic.com/media/697903_89872cd8ba19413fad554c887da5f2e0~mv2.jpg/v1/fill/w_300,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_89872cd8ba19413fad554c887da5f2e0~mv2.jpg"
-                    alt="Imagen 2" />
-              </a>
-            </div>
-            <div class="container cardsegundas" style="padding-bottom: 60px;">
-            <h4 class="text-center">2014 <br> Apropiación social del conocimiento</h4>
-            <p style="text-align: justify;">
-              Entendida como construcción social participativa y contextualizada en torno al conocimiento que
-              permite a los sujetos que lo generan, reflexionar, aprehender, usar y potenciar sus saberes
-              para la transformación positiva de su realidad (Gutiérrez, et al., 2014)
-            </p>
+                  <a href="./pages/proyecto-2022-compartires-populares.html"> <img
+                      src="https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/DSC_9326-1.png"
+                      alt="Imagen 1" /> </a>
+                </div>
+
+                <div class="container " style="padding-bottom: 90px;">
+                  <h4 class="text-center">
+
+                    2023- Actual
+                    <br>
+                    <p>Juntanza latinoamericana </p>
+                    <p>Escuela de Verano: Territorialidades popularES en América Latina hoy
+                      Universidad de Antioquia-Colombia</p>
+
+                  </h4>
+                  <p style="text-align: justify;">
+                    La Escuela de Verano: Territorialidades popularES en América Latina hoy es un evento llevado a cabo
+                    en la Universidad de Antioquia-Medellín-Colombia, dinamizado por una juntanza latinoamericana que
+                    actúa como red constituida representantes de universidades públicas de Colombia, Chile, Uruguay,
+                    México, Brasil, Argentina y Francia; servidores públicos y habitantes de barrios populares.
+                  </p>
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2023-juntanzas-latinoamericanas.html" class="btn-pill ">Ver más</a>
+                </div>
+              </div>
             </div>
 
-            <div class="container col-12 text-center ">
-              <a href="./pages/proyecto-2014-apropiacion-conocimiento.html" class="btn-pill">Ver más</a>
+
+
+
+
+            <!-- card 1 -->
+            <div class="col-md-4 py-4 " data-aos="fade-up" data-aos-duration="600">
+              <div class="card-custom " style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2022-compartires-populares.html"> <img src="./recursos/img/corazon1.jpeg"
+                      alt="Imagen 1" /> </a>
+                </div>
+
+                <div class="container " style="padding-bottom: 90px;">
+                  <h4 class="text-center">
+                    2022 - 2026
+                    <br>
+                    Laboratorio
+                    <br>
+                    CompartirES PopularES
+                  </h4>
+                  <p style="text-align: justify;">
+                    El laboratorio “Compartir-es Popular-es”, tiene como pilar los conocimientos teóricos y
+                    metodológicos
+                    generados en la investigación “Transformación en favelas de Río de Janeiro y barrios populares de
+                    Medellín por prácticas de turismo 2019-25372”, culminada en 2022, registrada en SIIU y financiada
+                    por la
+                    Universidad de Antioquia, El Banco de la República, sede Medellín, El Sistema de Bibliotecas
+                    Públicas de
+                    Medellín y diversos colectivos comunitarios de las comunas 1 (Popular), 2 (Santa Cruz), 8 (Doce de
+                    Octubre) y 13 (San Javier).
+                  </p>
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2022-compartires-populares.html" class="btn-pill ">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <!--         card 2-2 -->
+            <div class="col-md-4 py-4" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html">
+                    <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/main/fotoCom13.jpeg"
+                      alt="Imagen 3" />
+                  </a>
+                </div>
+                <div class="container " style="padding-bottom: 26px;">
+                  <h4 class="text-center">2021 <br>
+                    Patrimonio cultural comuna 13 - más que turismo</h4>
+                  <p style="text-align: justify;">
+                    El eje de este proceso es el patrimonio cultural inmaterial y vivo vinculado a espacios culturales.
+                    Vincula elementos del patrimonio intangible, material y natural significativos en la construcción de
+                    barrios populares de la comuna 13San Javier desde acciones de resistencia social como indicador de
+                    paz territorial. 
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html" class="btn-pill ">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <!--         card 2 -->
+            <div class="col-md-4 py-4" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2018-transformacion-favelas.html">
+                    <img
+                      src="https://static.wixstatic.com/media/697903_14a4e71cde2f4069a2180282fa7410a4~mv2.jpg/v1/fill/w_317,h_212,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5769_JPG.jpg"
+                      alt="Imagen 3" />
+                  </a>
+                </div>
+                <div class="container " style="padding-bottom: 26px;">
+                  <h4 class="text-center">2018 <br>
+                    Transformación de favelas
+                    en Río de Janeiro-Brasil
+                    y barrios populares
+                    de Medellín-Colombia
+                    por prácticas de turismo</h4>
+                  <p style="text-align: justify;">
+                    Se hace memoria de lo propio, se hace memoria de los lugares que sentimos propios,
+                    a veces nos quitan los lugares que nos pertenecen y nos imponen otros caminos, otros formas de
+                    habitar
+                    y
+                    es ejercicio personal y colectivo re-significar las formas de estar en lo nuevo.
+                  </p>
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2018-transformacion-favelas.html" class="btn-pill ">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <!--           card 3 -->
+            <div class="col-md-4 py-4" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-custom" style="box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2017-sentipensar-barrio.html">
+                    <img
+                      src="https://static.wixstatic.com/media/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg/v1/fill/w_288,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg"
+                      alt="Imagen 3" />
+                  </a>
+                </div>
+                <div class="container " style="padding-bottom: 140px;">
+                  <h4 class="text-center">2017 <br> Sentipensar el barrio</h4>
+                  <p style="text-align: justify;">
+                    La descripción y espacialización de la memoria urbana de la población que habita el área de
+                    influencia
+                    de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
+                    comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
+                  </p>
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2017-sentipensar-barrio.html" class="btn-pill">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- card 4 -->
+            <div class="col-md-4 pb-4" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-custom" style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2016-memoria-caminando.html">
+                    <img
+                      src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_308,h_200,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg"
+                      alt="Imagen 3" />
+                  </a>
+                </div>
+                <div class="container cardsegundas" style="padding-bottom: 60px;">
+                  <h4 class="text-center">2016 <br> La memoría se construye caminando</h4>
+                  <p style="text-align: justify;">
+                    El eje de este proceso es el patrimonio cultural inmaterial y vivo. Vincula elementos del patrimonio
+                    intangible, material y natural significativos en la construcción de barrios populares de la comuna
+                    13, San Javier, desde acciones de resistencia social como indicador de paz territorial. También se
+                    incluye la diversidad y riqueza cultural vista desde las artes populares y la organización social.
+                    El proyecto contribuye al el fomento de potencialidades territoriales históricamente significativas
+                    para la población originaria de la comuna 13, materializadas en diversidad de personas, procesos
+                    sociales y lugares.
+                  </p>
+                </div>
+
+
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2016-memoria-caminando.html" class="btn-pill">Ver más</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 5 -->
+
+            <div class="col-md-4 pb-4" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-custom" style="box-shadow: 1px 20px  20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2015-barrios-medellin-favelas-sp.html">
+                    <img
+                      src="https://static.wixstatic.com/media/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg/v1/fill/w_288,h_189,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg"
+                      alt="Imagen 3" />
+                  </a>
+                </div>
+                <div class="container cardsegundas" style="padding-bottom: 60px;">
+                  <h4 class="text-center">2015 <br>
+                    Barrios populares Medellín y favelas São Paulo</h4>
+                  <p style="text-align: justify;">
+                    La descripción y espacialización de la memoria urbana de la población que habita el área de
+                    influencia
+                    de la intervención PUI-NOR, realizada en la centralidad de Santo Domingo Savio,
+                    comuna 1 del Municipio de Medellín (Colombia) entre 2004 y 2011
+                  </p>
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2015-barrios-medellin-favelas-sp.html" class="btn-pill">Ver más</a>
+                </div>
+              </div>
+            </div>
+            <!-- card 6 -->
+            <div class="col-md-4 pb-4" data-aos="fade-up" data-aos-duration="500">
+              <div class="card-custom" style="box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.589);">
+
+                <a href="./pages/proyecto-2014-apropiacion-conocimiento.html">
+                  <div class="circle-img">
+                    <img
+                      src="https://static.wixstatic.com/media/697903_89872cd8ba19413fad554c887da5f2e0~mv2.jpg/v1/fill/w_300,h_192,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_89872cd8ba19413fad554c887da5f2e0~mv2.jpg"
+                      alt="Imagen 2" />
+                </a>
+              </div>
+              <div class="container cardsegundas" style="padding-bottom: 60px;">
+                <h4 class="text-center">2014 <br> Apropiación social del conocimiento</h4>
+                <p style="text-align: justify;">
+                  Entendida como construcción social participativa y contextualizada en torno al conocimiento que
+                  permite a los sujetos que lo generan, reflexionar, aprehender, usar y potenciar sus saberes
+                  para la transformación positiva de su realidad (Gutiérrez, et al., 2014)
+                </p>
+              </div>
+
+              <div class="container col-12 text-center ">
+                <a href="./pages/proyecto-2014-apropiacion-conocimiento.html" class="btn-pill">Ver más</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mas m-auto text-center pb-4">
-        <a id="btn-more-publications" href="#galeriadeexperiencias" class="btn mt-1 m-auto "
-          style="border: 2px solid ;background-color: #004200; color: white; border-radius: 30px;font-size: 30px;">Más
-          publicaciones</a>
-      </div>
+        <div class="mas m-auto text-center pb-4">
+          <a id="btn-more-publications" href="#galeriadeexperiencias" class="btn mt-1 m-auto "
+            style="border: 2px solid ;background-color: #004200; color: white; border-radius: 30px;font-size: 30px;">Más
+            publicaciones</a>
+        </div>
 
-      
-<!--       cierre contenedor  cards -->
+
+        <!--       cierre contenedor  cards -->
       </div>
 
 
     </div>
 
-  <div class="container-fluid pb-4 pt-5" style="background: #eeeeeec4;">
-    <!-- Nueva Sección Popular-es dentro del contenedor de Barrios populares -->
-    <div class="text-center ">
-      <span class="badge-pill mb-4 " >Recursos audiovisuales</span>
+    <div class="container-fluid pb-4 pt-5" style="background: #eeeeeec4;">
+      <!-- Nueva Sección Popular-es dentro del contenedor de Barrios populares -->
+      <div class="text-center ">
+        <span class="badge-pill mb-4 ">Recursos audiovisuales</span>
 
-      <!-- <h2 class="mt-3" style="color: rgb(1, 63, 1); font-size: 39px;">PopularES</h2> -->
+        <!-- <h2 class="mt-3" style="color: rgb(1, 63, 1); font-size: 39px;">PopularES</h2> -->
 
-    </div>
+      </div>
 
-    <!-- video -->
-    <div class="container-fluid m-3 align-items-center justify-content-center m-auto ">
-      <div class="video-container  d-flex justify-content-center align-items-center " style=" max-height: 80vh;">
-        <div class="col-lg-10 col-md-12 col-sm-12 mx-auto conyoutube">
-          <iframe class="text-center w-100 videoyt" style=" display: block; margin: auto; max-height: 80vh;"
-            src="https://www.youtube.com/embed/W9zla7jn9VU?list=RDW9zla7jn9VU&autoplay=1&mute=1&controls=1"
-            title="YouTube video" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+      <!-- video -->
+      <div class="container-fluid m-3 align-items-center justify-content-center m-auto ">
+        <div class="video-container  d-flex justify-content-center align-items-center " style=" max-height: 80vh;">
+          <div class="col-lg-10 col-md-12 col-sm-12 mx-auto conyoutube">
+            <iframe class="text-center w-100 videoyt" style=" display: block; margin: auto; max-height: 80vh;"
+              src="https://www.youtube.com/embed/W9zla7jn9VU?list=RDW9zla7jn9VU&autoplay=1&mute=1&controls=1"
+              title="YouTube video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </div>
       </div>
-    </div>
-<!--     cierre de container video -->
+      <!--     cierre de container video -->
     </div>
 
     <div class="container tituloGaleria pt-4 pb-3">
       <h1 class="text-center " style="font-weight: bolder;color: rgba(0, 0, 0, 0.938);">Galeria y experiencias
-        <span style="color: #004200;">Poplurales</span> </h1>
+        <span style="color: #004200;">Poplurales</span>
+      </h1>
 
     </div>
 
     <div class="container-fluid" id="galeriadeexperiencias2" data-aos="zoom-in">
       <!-- gallery image -->
       <div class="container-fluid
-         pt-1  espaciogaleria" >
+         pt-1  espaciogaleria">
         <div class="grid-container galeriacont  ">
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600" 
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_60df5a7ca68243f3ad29f701254ff9a1~mv2.jpg/v1/fill/w_441,h_294,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_60df5a7ca68243f3ad29f701254ff9a1~mv2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5053-1.jpg?w=648','Medicina para niños vulnerables')">
             <h3>Transformación de favelas
               y barrios populares</h3>
             <p>Barrios populares Medellin</p>
           </div>
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_1887af5c1d2549ac96f73b502a9cc103~mv2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5559.jpg?w=648','Más de una vida transformada')">
             <h3>Recorridos territoriales</h3>
             <p>Barrios populares Medellin</p>
           </div>
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://raw.githubusercontent.com/satelite30/logo-test/main/corazon1.jpeg'); cursor:pointer;"
             onclick="openGalleryModal('https://https://static.wixstatic.com/media/697903_d049ad16f5b64016bac4ea2ab76a3f7a~mv2.jpg','Agua para la niñez')">
             <h3>CompartirES PopularES</h3>
             <p>Barrios populares Medellin</p>
           </div>
 
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_d049ad16f5b64016bac4ea2ab76a3f7a~mv2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://i0.wp.com/lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/img_37882.jpg?w=310&h=272&ssl=1','Apoyo a las familias')">
             <h3>
@@ -1128,37 +1167,32 @@ Universidad de Antioquia-Colombia</p>
           </div>
 
 
-          <div class="grid-item large" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item large" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5057.jpg?w=648'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5057.jpg?w=648','Ayuda para la niñez del oriente')">
             <h3>Barrios PopularES</h3>
             <p>Barrios populares Medellin</p>
           </div>
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_e864aec55079428a834a6f4a2d90ddc7~mv2_d_6048_4176_s_4_2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/01/img_8764.jpg?w=648','Juventud en las comunas de Medellín')">
             <h3>La memoría se construye caminando</h3>
             <p>Expresiones juveniles y cultura.</p>
           </div>
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://raw.githubusercontent.com/satelite30/logo-test/main/fotos-2014/Socializaci%C3%B3n-vias-movilidad.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc4533-editar-5.jpg?w=648','Crecimiento comunitario')">
             <h3 class="px-2">Barrios populares Medellín y favelas São Paulo</h3>
             <p>Construyendo un mejor futuro.</p>
           </div>
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_c09ff3f9aeb647538d83402ac6a345b0~mv2.jpg'); cursor:pointer; "
             onclick="openGalleryModal('https://i0.wp.com/lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc4519-editar-1.jpg?w=388&h=702&ssl=1','Educación para todos')">
             <h3 style="font-size: 16px;">Transformación de favelas en Río de Janeiro-Brasil y barrios populares de
               Medellín-Colombia por prácticas de turismo</h3>
             <p>Barrios populares Medellin</p>
           </div>
-          <div class="grid-item" data-aos="fade-up"
-          data-aos-duration="600"
+          <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://raw.githubusercontent.com/satelite30/logo-test/main/3843c177-be6f-4c1d-8426-490abe6b404e.png'); cursor:pointer;"
             onclick="openGalleryModal('https://i0.wp.com/lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5518-editar-1.jpg?w=324&h=277&ssl=1','Apoyo a las familias')">
             <h3>Apropiación social del conocimiento</h3>
@@ -1170,36 +1204,34 @@ Universidad de Antioquia-Colombia</p>
     </div>
 
     <!-- Modal para galería -->
-          <div class="modal fade " id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg col-lg-10" style="height:90vh;">
-              <div class="modal-content bg-dark position-relative" style="height:90vh;">
-                <div class="modal-header border-0">
-                  <h5 class="modal-title text-light" id="galleryModalLabel"></h5>
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center position-relative  "
-                  style="height:calc(80vh - 56px);display:flex;align-items:center;justify-content:center;">
-                  <button id="galleryPrev" type="button"
-                    class="btn btn-dark position-absolute top-50 start-0 translate-middle-y"
-                    style="z-index:2;left:10px;font-size:2rem;" aria-label="Anterior"><i
-                      class="fa-solid fa-angle-left"></i></button>
-                  <div class="container  ">
-                    <img id="galleryModalImg" src="" alt="Imagen galería"
-                      style="max-width:90%;max-height:85vh;border-radius:10px;box-shadow:0 2px 20px #000;object-fit:contain; ">
-                    <p class="mt-1  text-white" style="text-decoration: none;">
-                      <a class="enlacecontenidos bg-dark btn btn-dark fs-4" href="#" target="_blank">Enlace</a>
-                    </p>
-                  </div>
-                  <button id="galleryNext" type="button"
-                    class="btn btn-dark position-absolute top-50 end-0 translate-middle-y"
-                    style="z-index:2;right:10px;font-size:2rem;" aria-label="Siguiente"><i
-                      class="fa-solid fa-angle-right"></i></button>
-                </div>
-              </div>
-            </div>
+    <div class="modal fade " id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg col-lg-10" style="height:90vh;">
+        <div class="modal-content bg-dark position-relative" style="height:90vh;">
+          <div class="modal-header border-0">
+            <h5 class="modal-title text-light" id="galleryModalLabel"></h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body text-center position-relative  "
+            style="height:calc(80vh - 56px);display:flex;align-items:center;justify-content:center;">
+            <button id="galleryPrev" type="button"
+              class="btn btn-dark position-absolute top-50 start-0 translate-middle-y"
+              style="z-index:2;left:10px;font-size:2rem;" aria-label="Anterior"><i
+                class="fa-solid fa-angle-left"></i></button>
+            <div class="container  ">
+              <img id="galleryModalImg" src="" alt="Imagen galería"
+                style="max-width:90%;max-height:85vh;border-radius:10px;box-shadow:0 2px 20px #000;object-fit:contain; ">
+              <p class="mt-1  text-white" style="text-decoration: none;">
+                <a class="enlacecontenidos bg-dark btn btn-dark fs-4" href="#" target="_blank">Enlace</a>
+              </p>
+            </div>
+            <button id="galleryNext" type="button"
+              class="btn btn-dark position-absolute top-50 end-0 translate-middle-y"
+              style="z-index:2;right:10px;font-size:2rem;" aria-label="Siguiente"><i
+                class="fa-solid fa-angle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Decoraciones -->
     <div class="decor-right"></div>
@@ -1210,7 +1242,7 @@ Universidad de Antioquia-Colombia</p>
     <!-- carrousel -->
     <div class="container  p-5 ">
       <div class="slide-track">
-        
+
         <div class="slide">
           <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" alt="Logo MASO"
             class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
@@ -1223,12 +1255,12 @@ Universidad de Antioquia-Colombia</p>
           <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/HdB.jpeg" alt="Logo HdB2"
             class="moveimg" style="max-width:200px;max-height:200px;object-fit:contain;">
         </div>
-        
+
         <div class="slide">
-          <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/calleytinta-1.jpeg" alt="Logo calleytinta"
-            class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
+          <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/calleytinta-1.jpeg"
+            alt="Logo calleytinta" class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
         </div>
-        
+
         <div class="slide">
           <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/lasierra2.png" alt="Logo La Sierra"
             class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
@@ -1241,7 +1273,7 @@ Universidad de Antioquia-Colombia</p>
           <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/Casa%20Piedra%20en%20el%20Camino.png"
             alt="Logo Casa Piedra" class="moveimg" style="max-width:180px;max-height:180px;object-fit:contain;">
         </div>
-         <div class="slide">
+        <div class="slide">
           <img src="https://raw.githubusercontent.com/Sektor30/dise-oProyecto3/main/assets/logo-remove.png" alt=""
             class="moveimg">
         </div>
@@ -1274,8 +1306,8 @@ Universidad de Antioquia-Colombia</p>
           <img src="https://raw.githubusercontent.com/Sektor30/dise-oProyecto3/main/assets/logo-remove.png" alt=""
             class="moveimg">
         </div>
-        
-       
+
+
       </div>
     </div>
 
@@ -1292,10 +1324,10 @@ Universidad de Antioquia-Colombia</p>
   </main>
 
 
- 
 
 
-   <footer class="footer text-center">
+
+  <footer class="footer text-center">
     <div class="container" id="pie">
       <h5 class="text-light"> Grupo de investigación <br> Medio
         Ambiente y Sociedad - MASO, Facultad de Ciencias Sociales y Humanas - Universidad de Antioquia - UdeA
@@ -1527,56 +1559,57 @@ Universidad de Antioquia-Colombia</p>
 
 </body>
 
-  <!-- AOS Animaciones -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    // Intentar reproducir el audio automáticamente al cargar el sitio
-    window.addEventListener('DOMContentLoaded', function() {
-      var audio = document.getElementById('audioHuellas');
-      if (audio) {
-        var playPromise = audio.play();
-        if (playPromise !== undefined) {
-          playPromise.catch(function(error) {
-            // Si el navegador bloquea la reproducción automática, intenta silenciar y reproducir
-            audio.muted = false;
-            audio.play();
-          });
-        }
+<!-- AOS Animaciones -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script>
+  // Intentar reproducir el audio automáticamente al cargar el sitio
+  window.addEventListener('DOMContentLoaded', function () {
+    var audio = document.getElementById('audioHuellas');
+    if (audio) {
+      var playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(function (error) {
+          // Si el navegador bloquea la reproducción automática, intenta silenciar y reproducir
+          audio.muted = false;
+          audio.play();
+        });
+      }
+    }
+  });
+</script>
+<script>
+  // Toggle entre "Más publicaciones" y "Ver menos"
+  document.addEventListener('DOMContentLoaded', function () {
+    const procesos = document.getElementById('procesoscard');
+    const btn = document.getElementById('btn-more-publications');
+    if (!procesos || !btn) return;
+
+    // Colapsar inicialmente
+    procesos.classList.add('collapsed');
+
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      const isCollapsed = procesos.classList.contains('collapsed');
+
+      if (isCollapsed) {
+        // Expandir
+        procesos.classList.remove('collapsed');
+        btn.innerHTML = '<i class="fa-solid fa-angle-up"></i>';
+        const target = document.getElementById('galeriadeexperiencias');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // Colapsar
+        procesos.classList.add('collapsed');
+        btn.textContent = 'Más publicaciones';
+        // Scroll hacia el botón/sección de procesos
+        btn.scrollIntoView({ behavior: 'smooth' });
       }
     });
-  </script>
-  <script>
-    // Toggle entre "Más publicaciones" y "Ver menos"
-    document.addEventListener('DOMContentLoaded', function() {
-      const procesos = document.getElementById('procesoscard');
-      const btn = document.getElementById('btn-more-publications');
-      if (!procesos || !btn) return;
-
-      // Colapsar inicialmente
-      procesos.classList.add('collapsed');
-
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        const isCollapsed = procesos.classList.contains('collapsed');
-        
-        if (isCollapsed) {
-          // Expandir
-          procesos.classList.remove('collapsed');
-          btn.innerHTML = '<i class="fa-solid fa-angle-up"></i>';
-          const target = document.getElementById('galeriadeexperiencias');
-          if (target) target.scrollIntoView({ behavior: 'smooth' });
-        } else {
-          // Colapsar
-          procesos.classList.add('collapsed');
-          btn.textContent = 'Más publicaciones';
-          // Scroll hacia el botón/sección de procesos
-          btn.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
+  });
+</script>
 </body>
+
 </html>
