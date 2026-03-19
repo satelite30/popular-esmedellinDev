@@ -117,22 +117,25 @@
       /* Remove transition */
     }
 
-    /* ajuste de tamaño de imagen carousel card 4 */
-.slideImage {
-  position: relative;
-  overflow: hidden;
-}
 
-.slideImage img.raise-20 {
-  position: absolute !important;
-  bottom: 0px !important;
-  left: 0;
-  right: 0;
-  width: 100% !important;
-  height: auto !important;
-  object-fit: cover !important;
-  margin: 0 auto;
-}
+    /* ajuste de tamaño de imagen carousel card 4 */
+    .slideImage {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slideImage img.raise-20 {
+      position: absolute !important;
+      bottom: 0px !important;
+      left: 0;
+      right: 0;
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+      margin: 0 auto;
+    }
+
+
 
 
     /* Overlay entre el background y las cards en .fondocard */
@@ -276,9 +279,10 @@
         display: block;
         box-sizing: border-box;
 
-
-
       }
+
+      
+
     }
 
     @media (min-width: 1021px) {
@@ -300,8 +304,16 @@
         font-size: 22px;
       }
 
+      .carCuatro {
+        position: absolute !important;
+        bottom: 0px !important;
+        object-fit: cover;
+      }
 
-      
+      .carCuatro .carousel-lightbox-overlay{
+        visibility: hidden;
+
+      }
 
     }
 
@@ -316,7 +328,7 @@
         font-size: 22px;
       }
 
-      
+
     }
 
     @media (max-width: 575px) {
@@ -336,7 +348,7 @@
 
       }
 
-      
+
 
     }
 
@@ -471,6 +483,28 @@
               </div> -->
             </div>
 
+
+
+
+            <!--         slide 1-1 -->
+            <div class="carousel-item slideImage " data-bs-interval="15000">
+              <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/Lanzamiento%20LibroUniversidad%20FederaldeRiodeJaneiro%202026-01-28.jpeg" alt="Second slide" onclick="openLightbox(this.src)">
+
+              <!--  <div
+                class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-end  align-items-center rounded-3  "
+                style="height:30%;background:rgba(243, 243, 243, 0.425);backdrop-filter:blur(2px);z-index:2;">
+                <div class="col-11 justify-content-center text-center m-auto fs-5 boxtexto" >
+                      <a href="https://blog.popular-esmedellin.com/"> <i
+                      class="fa-solid fa-hand-pointer text-center justify-content-center;"
+                      style="color: rgb(255, 255, 255); font-size: 50px; transform: rotate(-25rad); "></i></a>
+                  <p class="mb-0 mt-2 boxtexto" style="color:#ffffff;">Recorrido por la memoria urbana <br> de la
+                    Comuna 1.<br>Historias y
+                    transformación social.<br>Grupo MASO, UdeA.</p>
+                </div>
+
+              </div> -->
+            </div>
+
             <!--      Nueva imagen 2 -->
             <div class="carousel-item slideImage" style="object-fit:cover;" data-bs-interval="12000">
               <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/HdB.jpeg"
@@ -481,10 +515,11 @@
                 <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
                   <h2 class="text-light">Escuela de Verano 2025</h2>
                   <p class="text-light pb-2 " style="font-size: 20px;"> Territorialidades popularES en América Latina
-                    hoy 
-                    </p>
+                    hoy
+                  </p>
 
-                    <p class="text-light" style="font-size: 16px;">23 al 31 de agosto en Medellín - Colombia<br>Grupo MASO, UdeA.</p>
+                  <p class="text-light" style="font-size: 16px;">23 al 31 de agosto en Medellín - Colombia<br>Grupo
+                    MASO, UdeA.</p>
                 </div>
               </div>
             </div>
@@ -499,7 +534,7 @@
                 style="height:30%;background:rgba(0, 0, 0, 0.5);backdrop-filter:blur(2px);z-index:2;">
                 <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
                   <h2 class="text-light">Memoria gráfica Huellas de Barrio</h2>
-                  <p class="text-light pb-2 ">Visita nuestra galeria  <br> con los barrios
+                  <p class="text-light pb-2 ">Visita nuestra galeria <br> con los barrios
                     populares <br>Medellín-Colombia</p>
                 </div>
 
@@ -509,15 +544,19 @@
             </div>
 
             <!--      Nueva imagen 4 -->
-            <div class="carousel-item slideImage " data-bs-interval="12000">
-              <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/Grupo%20completo%20en%20paraninfo%202025-08-24.jpg"
-                class="d-block w-100 m-auto raise-20" style="object-fit: cover;" alt="Third slide" onclick="openLightbox(this.src)" >
+            <div class="carousel-item slideImage carCuatro " data-bs-interval="12000">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/Grupo%20completo%20en%20paraninfo%202025-08-24.jpg"
+                class="d-block w-100 m-auto " style="object-fit: cover; position: absolute ; bottom: 0px ;
+  left: 0; right: 0; width: 100% ; height: auto ; object-fit: cover ; margin: 0 auto;" alt="Third slide"
+                onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute start-0 bottom-0  d-flex justify-content-end align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.692);backdrop-filter:blur(2px);z-index:2;">
 
                 <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
-                  <a href="./pages/proyecto-2023-juntanzas-latinoamericanas.html" style="text-decoration: underline 2px;object-fit: contain;">
+                  <a href="./pages/proyecto-2023-juntanzas-latinoamericanas.html"
+                    style="text-decoration: underline 2px;object-fit: contain;">
                     <h2 class="text-light fs-4">Conoce las experiencia al conversatorio
                       Tramas urbana al revés</h2>
                   </a>
@@ -538,8 +577,9 @@
 
             <!--      Nueva imagen 5 -->
             <div class="carousel-item slideImage" data-bs-interval="12000">
-              <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/WhatsApp%20Image%202026-01-28%20at%2012.50.57%20PM.jpeg" class="d-block w-100"
-                alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: cover;">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/WhatsApp%20Image%202026-01-28%20at%2012.50.57%20PM.jpeg"
+                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: cover;">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2; visibility:hidden;">
@@ -552,8 +592,9 @@
 
             <!--      Nueva imagen 6 -->
             <div class="carousel-item slideImage" data-bs-interval="2000">
-              <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural2.jpeg" class="d-block w-100"
-                alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: cover;">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural2.jpeg"
+                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: cover;">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;visibility:hidden;">
@@ -562,7 +603,7 @@
                 </div>
               </div>
             </div>
-            
+
             <!--      Nueva imagen 7 -->
             <div class="carousel-item slideImage" data-bs-interval="2000">
               <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
@@ -571,7 +612,8 @@
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
                 <div class="col-11 justify-content-center m-auto fs-5">
-                  <p class="text-light mb-0">Grupo de investigacón<br>Medio Ambiente y Sociedad (MASO).<br>Universidad de Antioquia</p>
+                  <p class="text-light mb-0">Grupo de investigacón<br>Medio Ambiente y Sociedad (MASO).<br>Universidad
+                    de Antioquia</p>
                 </div>
               </div>
             </div>
@@ -962,8 +1004,8 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                   <p style="text-align: justify;">
                     El eje de este proceso es el patrimonio cultural inmaterial y vivo vinculado a espacios culturales.
                     Vincula elementos del patrimonio intangible, material y natural significativos en la construcción de
-                    barrios populares de la comuna 13San Javier desde acciones de resistencia social como indicador de
-                    paz territorial. 
+                    barrios populares de la comuna 13 San Javier desde acciones de resistencia social como indicador de
+                    paz territorial.
                 </div>
                 <div class="container col-12 text-center ">
                   <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html" class="btn-pill ">Ver más</a>

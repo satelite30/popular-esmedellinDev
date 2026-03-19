@@ -64,7 +64,7 @@
             height: 100%;
             min-height: 300px;
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             justify-content: flex-start;
         }
 
@@ -72,15 +72,21 @@
             height: 100%;
             width: 100%;
             max-height: 460px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 12px;
             transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.10);
+        /* Reduce espacio entre la imagen principal y las imágenes de referencia */
+        .page-cover + .container {
+            margin-top: 0;
+            padding-top: 0;
+        }
+            
         }
 
         .page-cover img:hover {
             transform: scale(1.04) rotate(-1deg);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.18);
             cursor: pointer;
         }
 
@@ -288,13 +294,32 @@
 
         <section class="container page-content mt-4  p-4 page-hero">
             <div class="row align-items-start g-4 ">
-                <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0 ">
-                    <div class="page-cover">
+
+                <div class="container  col-lg-5 col-md-6 pt-4">
+
+                <div class="col-lg-12 ">
+                    <div class="page-cover  ">
                         <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg"
                             alt="img" class="img-fluid rounded shadow main-img-modal"
                             style="object-fit: contain; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
                             data-bs-toggle="modal" data-bs-target="#mainImgModal2018" />
+
                     </div>
+
+                    <!-- imagen referencia turism -->
+<div class="container ">
+    <div class="row d-flex">
+
+                <div class=" col-lg-6 align-items-center  d-flex pb-3   ">
+            <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-1.jpg" alt="" style="width: 100%;"  data-bs-toggle="modal" data-bs-target="#mainImgModal2018">
+        </div>
+
+        <div class=" col-lg-6 align-items-center  d-flex  pb-3">
+            <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-2.jpg" alt="" style="width: 100%;"  data-bs-toggle="modal" data-bs-target="#mainImgModal2018">
+        </div>
+
+    </div>
+</div>
 
                     <!-- <div class="botones  ">
 
@@ -322,6 +347,8 @@
 
                 </div>
 
+                </div>
+
 
                 <div class="col-lg-7 col-md-6 col-12  ">
                     <article class="content">
@@ -335,9 +362,12 @@
                         </p>
                     </article>
                 </div>
+</div>
+<!-- cierre primer row -->
+            
 
+            
 
-            </div>
 
         </section>
 
@@ -823,8 +853,8 @@
         // Array de URLs de las imágenes de la columna
         const galleryImages = [
             'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg',
-            'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg',
-            'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg'
+            'https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-1.jpg',
+            'https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-2.jpg'
         ];
         let currentImgIdx = 0;
 
