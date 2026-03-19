@@ -98,7 +98,7 @@
         }
 
 
-        /* cambio de imagen en blur a visible con hover */
+        /* cambio de imagen en blur a visible con el hover */
 
         .imagen1,
         .imagen2,
@@ -110,16 +110,66 @@
             overflow: hidden;
         }
 
-        .imagen1::before,
-        .imagen2::before,
-        .imagen3::before,
-        .imagen4::before,
-        .imagen5::before,
-        .imagen6::before {
+        .imagen1::before {
             content: "";
             position: absolute;
             inset: 0;
             background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-5.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen2::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-2.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen3::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-8.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen4::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-6.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen5::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-3.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen6::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-4.jpeg') center calc(100% - 0px) / cover no-repeat;
             filter: blur(5px);
             transition: filter 0.35s ease;
             transform: translateZ(0);
@@ -146,7 +196,7 @@
         }
 
         .titulo {
-            color: rgb(201, 201, 201);
+            color: rgb(255, 255, 255);
         }
 
         .imagen1:hover h3,
@@ -155,20 +205,16 @@
         .imagen4:hover h3,
         .imagen5:hover h3,
         .imagen6:hover h3,
-        .imagen1:hover h5,
-        .imagen2:hover h5,
-        .imagen3:hover h5,
-        .imagen4:hover h5,
-        .imagen5:hover h5,
-        .imagen6:hover h5,
         .imagen1:hover .titulo,
         .imagen2:hover .titulo,
         .imagen3:hover .titulo,
         .imagen4:hover .titulo,
         .imagen5:hover .titulo,
         .imagen6:hover .titulo {
-            color: #fff;
+            color: #ffffff;
         }
+
+        
 
 
         iframe {
@@ -483,7 +529,7 @@
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
                             <div class="card-body imagen2 d-flex flex-column">
-                                <h5 class="card-title">Podcast Patrimonio, turismo comunitario y conservación</h5>
+                                <h5 class="titulo">Podcast Patrimonio, turismo comunitario y conservación</h5>
                                 <p class="card-text"><!-- Testimonios y experiencias de participantes del proyecto. -->
                                 </p>
                                 <audio controls preload="none" class="mt-auto w-100">
@@ -500,7 +546,7 @@
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
                             <div class="card-body imagen3 d-flex flex-column">
-                                <h5 class="card-title">Podcast Mujeres de las independencias</h5>
+                                <h5 class="titulo">Podcast Mujeres de las independencias</h5>
                                 <p class="card-text">
                                     <!-- Análisis breve sobre turismo comunitario y transformaciones. -->
                                 </p>
@@ -521,7 +567,7 @@
                     <div class="col-12 col-md-12 col-lg-3 ">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
                             <div class="card-body imagen4 d-flex flex-column">
-                                <h5 class="card-title">Podcast Las Dalias</h5>
+                                <h5 class="titulo">Podcast Las Dalias</h5>
                                 <p class="card-text"><!-- Breve reflexión sobre la memoria y el territorio. --></p>
                                 <audio controls preload="none" class="mt-auto w-100">
                                     <source src="../recursos/audio/Podcast Las Dalias.mp3.mp3" type="audio/mpeg">
@@ -535,7 +581,7 @@
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm " style="background-color: #c9c9c9;">
                             <div class="card-body imagen5 d-flex flex-column">
-                                <h5 class="card-title">Podcast El arte como expresión de diversidad cultural</h5>
+                                <h5 class="titulo">Podcast El arte como expresión de diversidad cultural</h5>
                                 <p class="card-text"><!-- Testimonios y experiencias de participantes del proyecto. -->
                                 </p>
                                 <audio controls preload="none" class="mt-auto w-100">
@@ -550,9 +596,9 @@
 
                     <!-- Cápsula 6 -->
                     <div class="col-12 col-md-12 col-lg-3">
-                        <div class="card h-100 shadow-sm " style="background-color: #ff5757;">
+                        <div class="card h-100 shadow-sm " >
                             <div class="card-body imagen6 d-flex flex-column">
-                                <h5 class="card-title">Canción Somos territorio vivo somos territorio de paz Comuna
+                                <h5 class="titulo">Canción Somos territorio vivo somos territorio de paz Comuna
                                     13.mp3</h5>
                                 <p class="card-text">
                                     <!-- Análisis breve sobre turismo comunitario y transformaciones. -->
