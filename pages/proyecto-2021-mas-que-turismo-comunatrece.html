@@ -97,6 +97,80 @@
             text-align: justify;
         }
 
+
+        /* cambio de imagen en blur a visible con hover */
+
+        .imagen1,
+        .imagen2,
+        .imagen3,
+        .imagen4,
+        .imagen5,
+        .imagen6 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .imagen1::before,
+        .imagen2::before,
+        .imagen3::before,
+        .imagen4::before,
+        .imagen5::before,
+        .imagen6::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-5.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen1:hover::before,
+        .imagen2:hover::before,
+        .imagen3:hover::before,
+        .imagen4:hover::before,
+        .imagen5:hover::before,
+        .imagen6:hover::before {
+            filter: blur(0);
+        }
+
+        .imagen1 > *,
+        .imagen2 > *,
+        .imagen3 > *,
+        .imagen4 > *,
+        .imagen5 > *,
+        .imagen6 > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .titulo {
+            color: rgb(201, 201, 201);
+        }
+
+        .imagen1:hover h3,
+        .imagen2:hover h3,
+        .imagen3:hover h3,
+        .imagen4:hover h3,
+        .imagen5:hover h3,
+        .imagen6:hover h3,
+        .imagen1:hover h5,
+        .imagen2:hover h5,
+        .imagen3:hover h5,
+        .imagen4:hover h5,
+        .imagen5:hover h5,
+        .imagen6:hover h5,
+        .imagen1:hover .titulo,
+        .imagen2:hover .titulo,
+        .imagen3:hover .titulo,
+        .imagen4:hover .titulo,
+        .imagen5:hover .titulo,
+        .imagen6:hover .titulo {
+            color: #fff;
+        }
+
+
         iframe {
             width: 73%;
         }
@@ -381,6 +455,11 @@
         
         <!-- <hr class="container"> -->
 
+        <div class="container  ">
+            <div class="col-lg-12 pt-3 text-center justify-content-center">
+            <h3>Podcasts y experiencias sonoras</h3>
+            </div>
+        </div>
 
         <div class="podcast2  container justify-content-center align-items-center pb-4 mt-4  ">
             <div class="container  ">
@@ -388,8 +467,8 @@
                     <!-- Cápsula 1 -->
                     <div class="col-12 col-md-12 col-lg-3  ">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Podcast Patrimonio y comunidad</h5>
+                            <div class="card-body imagen1 d-flex flex-column">
+                                <h5 class="titulo" >Podcast Patrimonio y comunidad</h5>
                                 <p class="card-text"><!-- Breve reflexión sobre la memoria y el territorio. --></p>
                                 <audio controls preload="none" class="mt-auto w-100">
                                     <source src="../recursos/audio/Podcast Patrimonio y comunidad.mp3"
@@ -403,7 +482,7 @@
                     <!-- Cápsula 2 -->
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body imagen2 d-flex flex-column">
                                 <h5 class="card-title">Podcast Patrimonio, turismo comunitario y conservación</h5>
                                 <p class="card-text"><!-- Testimonios y experiencias de participantes del proyecto. -->
                                 </p>
@@ -420,7 +499,7 @@
                     <!-- Cápsula 3 -->
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body imagen3 d-flex flex-column">
                                 <h5 class="card-title">Podcast Mujeres de las independencias</h5>
                                 <p class="card-text">
                                     <!-- Análisis breve sobre turismo comunitario y transformaciones. -->
@@ -441,7 +520,7 @@
                     <!-- Cápsula 4 -->
                     <div class="col-12 col-md-12 col-lg-3 ">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body imagen4 d-flex flex-column">
                                 <h5 class="card-title">Podcast Las Dalias</h5>
                                 <p class="card-text"><!-- Breve reflexión sobre la memoria y el territorio. --></p>
                                 <audio controls preload="none" class="mt-auto w-100">
@@ -455,7 +534,7 @@
                     <!-- Cápsula 5 -->
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm " style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body imagen5 d-flex flex-column">
                                 <h5 class="card-title">Podcast El arte como expresión de diversidad cultural</h5>
                                 <p class="card-text"><!-- Testimonios y experiencias de participantes del proyecto. -->
                                 </p>
@@ -472,7 +551,7 @@
                     <!-- Cápsula 6 -->
                     <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm " style="background-color: #ff5757;">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body imagen6 d-flex flex-column">
                                 <h5 class="card-title">Canción Somos territorio vivo somos territorio de paz Comuna
                                     13.mp3</h5>
                                 <p class="card-text">
