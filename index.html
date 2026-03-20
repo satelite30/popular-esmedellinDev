@@ -125,6 +125,22 @@
       color: white;
     }
 
+    /* Centrar lightbox overlays dentro de su contenedor */
+    .dos-lightbox-overlay {
+      position: absolute !important;
+      top: 80% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      max-width: 90%;
+      width: auto;
+      margin: 0 auto;
+      pointer-events: auto;
+    }
+
+    .dos-lightbox-overlay * {
+      pointer-events: auto;
+    }
+
     /* ajuste de tamaño de imagen carousel card 4 */
     .slideImage {
       position: relative;
@@ -142,6 +158,28 @@
       margin: 0 auto;
     }
 
+    /* Botón de cierre con FontAwesome */
+        .btn-close-fa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.55);
+            color: #353535;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .btn-close-fa:hover {
+            background: rgba(0, 73, 28, 0.85);
+            color: #ffffff;
+        }
+
+        .btn-close-fa i {
+            font-size: 20px;
+        }
 
 
 
@@ -493,39 +531,85 @@
 
 
 
-            <!--         slide 1-1 -->
+            <!--         slide 1-1 --><!-- agregar modala con informacion del libro y enlace a la publicación -->
             <div class="carousel-item slideImage " data-bs-interval="15000">
               <img
                 src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/Lanzamiento%20LibroUniversidad%20FederaldeRiodeJaneiro%202026-01-28.jpeg"
                 alt="Second slide" onclick="openLightbox(this.src)">
 
-              <div
-                class="carousel-lightbox-overlay position-absolute justify-content-center bottom-0 d-flex align-items-center rounded-3 "
-                style="height:30%;background:#023a007c;backdrop-filter:blur(2px);z-index:2;">
-                <div class="col-11 justify-content-center text-center m-auto fs-5">
-                  <div class="row align-items-center gx-2">
-                    <div class="col-12 col-md-5">
-                      <a href="https://libros.udea.edu.co/index.php/editorial_fcsh/catalog/book/663" target="_blank"
-                        rel="noopener noreferrer">
-                        <img
-                          src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/tramas-urbanas-al-reves.webp"
-                          alt="libro tramas urbanas" class="img-fluid"
-                          style="max-height:250px; object-fit:cover; width:auto;">
-                      </a>
-                    </div>
-                    <div class="col-12 col-md-7">
-                      <p class=" m-auto justify-content-center align-items-center text-center text-light"
-                        style="font-size:20px; font-weight: bold; margin: auto;"> Conoce nuestra publicación académica
-                      </p>
-                      <p class="text-light" style="font-size: 18px; ">Tramas urbanas al revés: Intercambios entre
-                        políticas públicas, prácticas de turismo y participación social en barrios populares de Medellín
-                        y favelas de Río de Janeiro en el siglo XXI</p>
+              <div class="container">
+
+                <div class="dos-lightbox-overlay position-absolute  d-flex  rounded-3  w-50  "
+                  style="height:30%;background:#adadad7c;backdrop-filter:blur(2px);z-index:4; "
+                  onclick="event.stopPropagation();">
+
+
+                  <div class="col-11 justify-content-center text-center m-auto fs-5" style="z-index:2;">
+                    <div class="row align-items-center gx-2">
+                      <div class="col-12 col-md-5">
+                        <a href="https://libros.udea.edu.co/index.php/editorial_fcsh/catalog/book/663"
+                          data-bs-toggle="modal" data-bs-target="#modalCarousel" rel="noopener noreferrer">
+                          <img
+                            src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/tramas-urbanas-al-reves.webp"
+                            alt="libro tramas urbanas" style="max-height:250px; object-fit:cover; width:auto;">
+                        </a>
+                      </div>
+                      <div class="col-12 col-md-7">
+                        <p class=" m-auto justify-content-center align-items-center text-center text-light"
+                          style="font-size:22px; font-weight: bold; margin: auto;"> Conoce nuestra publicación académica
+                        </p>
+                        <p class="text-light" style="font-size: 18px; ">Tramas urbanas al revés: Intercambios entre
+                          políticas públicas, prácticas de turismo y participación social en barrios populares de
+                          Medellín
+                          y favelas de Río de Janeiro en el siglo XXI</p>
+                      </div>
                     </div>
                   </div>
+
                 </div>
 
               </div>
             </div>
+
+
+
+
+            <!-- inicia modal  -->
+
+            <div class="modal fade" id="modalCarousel" tabindex="-1" aria-labelledby="modalfinal" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Tramas urbanas al revés: Intercambios entre
+                      políticas públicas, prácticas de turismo y participación social en barrios populares de Medellín
+                      y favelas de Río de Janeiro en el siglo XXI </h5>
+                    <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close" onclick="closeLightbox()">
+                      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class=" col-lg-12 rounded-3 justify-content-center d-flex mb-3 ">
+                      <iframe src="https://libros.udea.edu.co/index.php/editorial_fcsh/catalog/book/663" frameborder="0"
+                        style="width:90vw;height:99vh"></iframe>
+
+                      </iframe>
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
 
             <!--      Nueva imagen 2 -->
             <div class="carousel-item slideImage" style="object-fit:cover;" data-bs-interval="12000">
@@ -666,7 +750,7 @@
     <!-- Lightbox -->
 
     <!-- Lightbox -->
-    <div class="lightbox-overlay" id="lightbox">
+    <div class="lightbox-overlay" id="lightbox" style="z-index: 1;">
       <div class="lightbox-content">
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
         <img src="" alt="Lightbox image" id="lightbox-img">
@@ -1027,7 +1111,11 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                   <h4 class="text-center">2021 <br>
                     Patrimonio cultural comuna 13 - más que turismo</h4>
                   <p style="text-align: justify;">
-                    Se reconocen patrimonios culturales inmateriales y vivos entendidos como potencialidades territoriales significativas para la población de barrios de la comuna 13 San Javier, desde acciones de resistencia social como indicador de paz territorial. Resaltan la diversidad y riqueza natural y cultural, así como la organización social basada en la solidaridad, la construcción colectiva y el tejido social.
+                    Se reconocen patrimonios culturales inmateriales y vivos entendidos como potencialidades
+                    territoriales significativas para la población de barrios de la comuna 13 San Javier, desde acciones
+                    de resistencia social como indicador de paz territorial. Resaltan la diversidad y riqueza natural y
+                    cultural, así como la organización social basada en la solidaridad, la construcción colectiva y el
+                    tejido social.
                 </div>
                 <div class="container col-12 text-center ">
                   <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html" class="btn-pill ">Ver más</a>
