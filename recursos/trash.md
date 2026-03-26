@@ -1040,3 +1040,14 @@ info procesos
                     </ul>
                 </div>
                 -->
+
+
+
+
+                <!-- 2021 comuna 13 -->
+
+                
+        <!-- imagen referencia turism -->
+                <div class="container col-lg-12 align-items-center justify-content-center d-flex  ">
+            <img src="../recursos/img/flayer13.jpeg" alt="">
+        </div>
