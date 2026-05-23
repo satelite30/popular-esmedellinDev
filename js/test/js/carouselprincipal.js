@@ -2,11 +2,9 @@
     // Lista de imágenes del modal/lightbox para cada slide del carousel
     let carouselModalImageSrcs = [
       './recursos/img/DSC_9320-copy.jpg',
-      'https://github.com/satelite30/-logossitio/blob/main/imagenesprom/prom2.jpg?raw=true',
+      'https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/prom2.jpg',
       'https://static.wixstatic.com/media/697903_5754937e97d540729d134900f2f4fc8e~mv2.jpg/v1/fill/w_730,h_487,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_5754937e97d540729d134900f2f4fc8e~mv2.jpg',
-      'https://github.com/satelite30/-logossitio/blob/main/imagenesprom/prom6.jpg?raw=true',
-      'https://github.com/satelite30/-logossitio/blob/main/imagenesprom/prom6.jpg?raw=true','https://github.com/satelite30/-logossitio/blob/main/imagenesprom/prom7.jpg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true','https://github.com/satelite30/-logossitio/blob/main/Udea1.jpeg?raw=true'
-    ];
+      'https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/prom6.jpg','https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/prom6.jpg','https://raw.githubusercontent.com/satelite30/-logossitio/main/imagenesprom/prom7.jpg','https://raw.githubusercontent.com/satelite30/logo-test/main/flayers-hdb/70ddf6a5-bf78-4ee7-a6f0-aa82a18b73a5.jpg','','','https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg','https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg','https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg','https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg','https://raw.githubusercontent.com/satelite30/-logossitio/main/Udea1.jpeg'
 
     // Renderiza inputs para editar los links del modal/lightbox
     function renderCarouselModalImageInputs() {

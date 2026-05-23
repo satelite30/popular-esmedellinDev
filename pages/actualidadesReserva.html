@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="../recursos/img/logoLitt2.ico" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="../style.css" /> -->
+  <link rel="stylesheet" href="../css/styletres.css">
+  <title>publicaciones-huellas-de-barrio</title>
+
+
+  <style>
+    @media (min-width: 992px) {
+      .logo {
+        margin-left: 0 !important;
+        margin-right: auto !important;
+        display: block !important;
+        justify-content: start;
+        width: 100%;
+        /* border: 3px dashed black; */
+      }
+
+      .navbar-brand {
+        justify-content: flex-start !important;
+
+
+      }
+    }
+
+    @media (max-width: 991.98px) {
+      .logo {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        display: block !important;
+
+      }
+
+      .navbar-brand {
+        justify-content: center !important;
+      }
+    }
+
+    /* Efecto hover para las tarjetas del blog */
+    .blog-card {
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .blog-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar d-flex navbar-expand-lg navbar-light  shadow-sm ">
+      <div class="container  row justify-content-center m-auto d-flex ">
+
+        <div class="col-sm-10  col-md-12 col-lg-8  ">
+          <a class="navbar-brand m-4 col-sm-10 col-md-11 col-lg-4  d-block d-lg-flex align-items-center "
+            href="../index.html" style=" justify-content: start ;">
+            <img src="../recursos/img/logo4.png" alt="Logo" width="100%" class="logo d-block mx-auto mx-lg-0   " />
+          </a>
+        </div>
+
+        <div class="col-lg-4  col-md-12 col-sm-12 ">
+          <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="display: flex; justify-content: center; align-items: center;">
+            <span class="navbar-toggler-icon  "></span>
+          </button>
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item m-auto m-2">
+                <a class="nav-link " href="../pages/red.html">Red</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="https://blog.popular-esmedellin.com/">Actualidades</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/publicaciones.html">Publicaciones</a>
+              </li>
+              <li class="nav-item m-auto">
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <!-- Banner -->
+    <div class="container-fluid" style="background: linear-gradient(135deg, #004200 0%, #006600 100%); height: 100px; display: flex; align-items: center; justify-content: center;">
+      <h2 class="text-white text-center m-0">Actualidades</h2>
+    </div>
+
+    <!-- Contenedor Blog -->
+    <div class="container" style="padding: 30px 15px;">
+      <div class="row">
+        <!-- Columna 8: Tarjetas -->
+        <div class="col-lg-8 col-md-12">
+          <!-- Tarjeta 1 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_14a4e71cde2f4069a2180282fa7410a4~mv2.jpg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5769_JPG.jpg" alt="Imagen 1" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">Transformación de Favelas</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Proceso de investigación participativa en barrios populares de Medellín y favelas de Río de Janeiro, enfocado en la apropiación social del territorio y la memoria urbana.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_44489d95207f4048af7abcd1f5f47edd~mv2.jpeg" alt="Imagen 2" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">Sentipensar el Barrio</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Descripción y espacialización de la memoria urbana de la población que habita el área de influencia de la intervención PUI-NOR en Santo Domingo Savio, comuna 1 de Medellín.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 3 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_f643b0e2fffc45afb2b9a45e856e6a04~mv2_d_2592_1728_s_2.jpg" alt="Imagen 3" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">La Memoria se Construye Caminando</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Ejercicio colectivo de reconstrucción de la memoria urbana mediante recorridos territoriales que permiten re-significar formas de estar y habitar en los barrios populares.</p>
+            </div>
+          </div>
+
+          <!-- Tarjeta 4 -->
+          <div class="card blog-card mb-3" style="display: flex; flex-direction: row; border: none; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); border-radius: 8px; overflow: hidden;">
+            <img src="https://static.wixstatic.com/media/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg/v1/fill/w_400,h_250,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/697903_ca928a40426c40069751ced4417c8c01~mv2_d_2592_1728_s_2.jpg" alt="Imagen 4" style="width: 40%; object-fit: cover; min-width: 150px;">
+            <div class="card-body d-flex flex-column justify-content-center" style="width: 60%; padding: 20px;">
+              <h1 style="font-size: 24px; color: #004200; margin-bottom: 10px;">Barrios Populares y Favelas</h1>
+              <p style="font-size: 16px; color: #555; margin: 0;">Estudio comparativo entre barrios populares de Medellín y favelas de São Paulo, analizando dinámicas de urbanización, participación y transformación social en contextos similares.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna 4: Sidebar -->
+        <div class="col-lg-4 col-md-12">
+          <div style="background: #f8f6f2; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #004200; margin-bottom: 15px;">Categorías</h3>
+            <ul style="list-style: none; padding: 0;">
+              <li style="padding: 10px 0; border-bottom: 1px solid #ddd;"><a href="#" style="color: #004200; text-decoration: none;">Investigación</a></li>
+              <li style="padding: 10px 0; border-bottom: 1px solid #ddd;"><a href="#" style="color: #004200; text-decoration: none;">Participación Comunitaria</a></li>
+              <li style="padding: 10px 0; border-bottom: 1px solid #ddd;"><a href="#" style="color: #004200; text-decoration: none;">Memoria Urbana</a></li>
+              <li style="padding: 10px 0;"><a href="#" style="color: #004200; text-decoration: none;">Transformación Social</a></li>
+            </ul>
+          </div>
+
+          <div style="background: #f8f6f2; padding: 20px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-top: 20px;">
+            <h3 style="color: #004200; margin-bottom: 15px;">Publicaciones Recientes</h3>
+            <p style="font-size: 14px; color: #555; margin-bottom: 10px;"><strong>Patrimonios, memorias e historias</strong> que tejen la periferia urbana latinoamericana.</p>
+            <p style="font-size: 14px; color: #555;"><strong>Urbanismo social en Medellín</strong> entre la garantía de derechos y la complejidad territorial.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+
+
+
+  <!-- foooter -->
+ <footer class="footer text-center">
+    <div class="container" id="pie">
+        <h5 class="text-light"> Grupo de investigación <br> Medio
+            Ambiente y Sociedad - MASO, Facultad de Ciencias Sociales y Humanas  - Universidad de Antioquia - UdeA
+        </h5>
+
+        <!-- Barra de suscripción -->
+        <!--  <div class="d-flex justify-content-center mt-3  col-lg-5 m-auto ">
+    <input type="email" class="form-control subscribe-input " placeholder="Enter Your Email">
+    <button class="btn btn-success   ms-1">Subscribe</button>
+  </div> -->
+
+        <div class="row text-start mt-5   d-flex flex-wrap">
+            <!-- Sección What We Do -->
+            <div class="what-we col-md-3 ">
+                <h6 class="text-light">Nuestro sitio web</h6>
+                <p class="text-light">
+                    Este sitio muestra la relación del grupo MASO con la sociedad.
+                </p>
+
+                <div class="logo-foot">
+                    <a href="../index.html">
+                        <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
+                            style="filter: brightness(0) invert(1);" alt="">
+                    </a>
+                </div>
+
+
+
+                <!-- <ul class="list-unstyled">
+        <li><a href="#">Education</a></li>
+        <li><a href="#">Medical Aid</a></li>
+        <li><a href="#">Entrepreneurship</a></li>
+        <li><a href="#">Environment</a></li>
+        <li><a href="#">Blood Bureau</a></li>
+        <li><a href="#">Health</a></li>
+        <li><a href="#">Animal Welfare</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul> -->
+            </div>
+
+            <!-- Sección Donations -->
+            <div class="col-md-3 what-we">
+                <h6 class="text-light">Enlaces de interés</h6>
+                <ul class="list-unstyled fs-5">
+                    <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-administrativas/vicerrectoria-investigacion"
+                            target="_blank">Vicerrectoría de Investigación UdeA</a></li>
+                    <li><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/institucional/unidades-administrativas/vicerrectoria-investigacion"
+                            target="_blank">Universidad de Antioquia</a></li>
+                    <li><a href="https://bibliotecasmedellin.gov.co/" target="_blank">Sistema de Bibliotecas
+                            públicas de
+                            Medellín</a></li>
+                    <li><a href="https://micomuna.org/" target="_blank">Corporación Mi Comuna</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+
+            <!-- Sección Social -->
+            <div class="col-md-3 what-we">
+                <h6 class="text-light">Visita también</h6>
+                <!-- <a href="#">Facebook</a> | <a href="#">Twitter</a> -->
+                <div class="mt-2 imagen-foot">
+                    <a href="https://maps.app.goo.gl/Z26f1sb9rBiyAX83A">
+                        <img src="https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5438.jpg?w=648"
+                            alt="Social Image">
+                    </a>
+                </div>
+                <div class="social-icons mt-4 text-center ">
+                    <a href="https://www.youtube.com/@lilianamariasanchezmazo9442/videos" target="_blank"><i
+                            class="col-3 fab fa-youtube" style="font-size: 34px;"></i></a>
+                    <a href="#pie"><i class="fa-solid fa-envelope" style="font-size: 34px;"></i></a>
+                    <a href="https://www.instagram.com/cancionhuellasdebarrio/"><i class="col-3 fab fa-instagram"
+                            target="_blank" style="font-size: 34px;"></i></a>
+
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                </div>
+            </div>
+
+
+            <!-- Sección Contact -->
+            <div class="col-md-3 text-light what-we fs-5">
+                <h6>Contacto e información</h6>
+
+                <ul class="list-unstyled">
+                    <li><a href="mailto:info@maatratrust.org">lyly.sanchez74@gmail.com</a></li>
+                    <!-- <li><a href="mailto:maatratrust@gmail.com">grupo.maso@udea.edu.co</a> </li> -->
+                    <li>Contáctanos</li>
+                    <li><b>Sede de Investigación Universitaria (SIU)</b> <br> Calle 62 #52-59</li>
+                    <li>Medellín - Colombia</li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../js/navbar-animation.js"></script>
+
+</body>
+
+</html>
