@@ -851,6 +851,7 @@
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
+    position: relative;
   }
 
   .card-custom:hover{
@@ -912,6 +913,10 @@
     border-radius: 20px;
     text-decoration: none;
     font-weight: bold;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   /* Botón principal "More Courses" */

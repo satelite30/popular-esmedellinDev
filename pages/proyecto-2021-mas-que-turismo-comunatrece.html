@@ -2,9 +2,27 @@
 <html lang="es">
 
 <head>
+
+    <meta property="fb:app_id" content="1628473155145966"/>	
+    
     <link rel="shortcut icon" href="../recursos/img/logoLitt2.ico" type="image/x-icon">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Proyecto 2021: Patrimonio cultural comuna 13 - Más que turismo - MASO">
+    <meta property="og:description"
+        content="Proyecto 2021: Patrimonio cultural comuna 13 - Más que turismo. Investigación en la Comuna 13 de Medellín - Grupo MASO.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/satelite30/-logossitio/refs/heads/main/imagenesprom/com13.png">
+    <meta property="fb:app_id" content="1628473155145966" />
+    <meta property="og:url"
+        content="https://popular-esmedellin.com/pages/proyecto-2021-mas-que-turismo-comunatrece.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+
     <title>CompartirES PopularES (2022 - Actual) - MASO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -64,7 +82,7 @@
             height: 100%;
             min-height: 300px;
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             justify-content: flex-start;
         }
 
@@ -72,15 +90,16 @@
             height: 100%;
             width: 100%;
             max-height: 460px;
-            object-fit: cover;
+            object-fit: contain;
             border-radius: 12px;
             transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.10);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.10);
+
         }
 
         .page-cover img:hover {
             transform: scale(1.04) rotate(-1deg);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.18);
             cursor: pointer;
         }
 
@@ -95,6 +114,156 @@
         .justificado {
             text-align: justify;
         }
+
+        /* Botón de cierre con FontAwesome */
+        .btn-close-fa {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.55);
+            color: #353535;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .btn-close-fa:hover {
+            background: rgba(0, 73, 28, 0.85);
+            color: #ffffff;
+        }
+
+        .btn-close-fa i {
+            font-size: 20px;
+        }
+
+
+        /* cambio de imagen en blur a visible con el hover */
+
+        .imagen1,
+        .imagen2,
+        .imagen3,
+        .imagen4,
+        .imagen5,
+        .imagen6 {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .imagen1::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-5.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen2::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-2.jpeg') center calc(80% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen3::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-8.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen4::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-6.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen5::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-3.jpeg') center calc(50% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen6::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-4.jpeg') center calc(100% - 0px) / cover no-repeat;
+            filter: blur(5px);
+            transition: filter 0.35s ease;
+            transform: translateZ(0);
+            z-index: 0;
+        }
+
+        .imagen1:hover::before,
+        .imagen2:hover::before,
+        .imagen3:hover::before,
+        .imagen4:hover::before,
+        .imagen5:hover::before,
+        .imagen6:hover::before {
+            filter: blur(0);
+        }
+
+        .imagen1>*,
+        .imagen2>*,
+        .imagen3>*,
+        .imagen4>*,
+        .imagen5>*,
+        .imagen6>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .titulo {
+            color: rgb(255, 255, 255);
+        }
+
+        .imagen1:hover h3,
+        .imagen2:hover h3,
+        .imagen3:hover h3,
+        .imagen4:hover h3,
+        .imagen5:hover h3,
+        .imagen6:hover h3,
+        .imagen1:hover .titulo,
+        .imagen2:hover .titulo,
+        .imagen3:hover .titulo,
+        .imagen4:hover .titulo,
+        .imagen5:hover .titulo,
+        .imagen6:hover .titulo {
+            color: #ffffff;
+        }
+
+
+
+
+        iframe {
+            width: 75%;
+        }
+
+
+
 
         .video-container {
             max-width: 100%;
@@ -128,6 +297,13 @@
                 text-align: justify;
             }
 
+            .sonbataDoc {
+                width: 100%;
+            }
+
+
+
+
         }
 
         @media (max-width: 400px) {
@@ -149,6 +325,9 @@
         /* 📌 Pantallas medianas (menos de 900px) */
         @media (max-width: 1000px) {
 
+            iframe {
+                width: 90%;
+            }
 
 
             .grid-container {
@@ -166,6 +345,43 @@
             .logo {
 
                 width: 90%;
+            }
+
+            .imagen1::before {
+                background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-5.jpeg') center calc(80% - 0px) / cover no-repeat;
+
+            }
+
+            .imagen2::before {
+
+                background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-2.jpeg') center calc(50% - 0px) / cover no-repeat;
+
+            }
+
+
+            .imagen3::before {
+
+                background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-8.jpeg') center calc(60% - 0px) / cover no-repeat;
+
+            }
+
+
+
+            .imagen4::before {
+
+                background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-6.jpeg') center calc(50% - 0px) / cover no-repeat;
+
+            }
+
+            .imagen5::before {
+                background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-3.jpeg') center calc(40% - 0px) / cover no-repeat;
+
+            }
+
+
+
+            .imagen6::before {
+                background: url('https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/comuna13/children13-4.jpeg') center calc(50% - 0px) / cover no-repeat;
             }
 
 
@@ -191,6 +407,8 @@
             .espaciogaleria {
                 width: 99%;
             }
+
+
 
 
         }
@@ -288,22 +506,119 @@
 
         <section class="container page-content mt-4  p-4 page-hero">
             <div class="row align-items-start g-4 ">
-                <div class="col-lg-5 col-md-6 col-12 mb-3 mb-md-0 ">
-                    <div class="page-cover">
-                        <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg"
-                            alt="img" class="img-fluid rounded shadow main-img-modal"
-                            style="object-fit: contain; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
-                            data-bs-toggle="modal" data-bs-target="#mainImgModal2018" />
-                    </div>
 
-                    <!-- <div class="botones  ">
+                <div class="container  col-lg-5 col-md-6 pt-4">
+
+                    <div class="col-lg-12 ">
+                        <div class="page-cover  ">
+                            <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg"
+                                alt="img" class="img-fluid rounded shadow main-img-modal"
+                                style="object-fit: contain; transition: transform 0.3s, box-shadow 0.3s; cursor: pointer;"
+                                data-bs-toggle="modal" data-bs-target="#mainImgModal2018" />
+
+                        </div>
+
+                        <!-- imagen referencia turism -->
+                        <div class="container ">
+                            <div class="row d-flex">
+
+                                <div class=" col-lg-6 align-items-center  d-flex pb-3   ">
+                                    <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-1.jpg"
+                                        alt="" style="width: 100%; cursor: pointer;" data-bs-toggle="modal"
+                                        data-bs-target="#modalFlayerUno">
+                                </div>
+
+                                <!-- modal flayer uno -->
+
+                                <div class="modal fade" id="modalFlayerUno" tabindex="-1" aria-labelledby="modalfinal"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="videoModalLabel">Comuna 13 </h5>
+                                                <button type="button" class="btn-close-fa" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <div class=" col-lg-12 rounded-3 justify-content-center d-flex mb-3 ">
+                                                    <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-1.jpg"
+                                                        alt="Imagen del flayer" class="img-fluid rounded shadow"
+                                                        style="max-width: 100%; object-fit: contain; background: #f8f9fa;">
+                                                </div>
+
+                                                <div class=" col-lg-12 rounded-3 justify-content-center d-flex ">
+                                                    <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-2.jpg"
+                                                        alt="Imagen del flayer" class="img-fluid rounded shadow"
+                                                        style="max-width: 100%; object-fit: contain; background: #f8f9fa;">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class=" col-lg-6 align-items-center  d-flex  pb-3">
+                                    <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-2.jpg"
+                                        alt="" style="width: 100%;" data-bs-toggle="modal"
+                                        data-bs-target="#modalFlayerDos">
+                                </div>
+
+                                <!-- modal flayer dos -->
+
+                                <div class="modal fade" id="modalFlayerDos" tabindex="-1" aria-labelledby="modalfinal"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="videoModalLabel">Comuna 13 </h5>
+                                                <button type="button" class="btn-close-fa" data-bs-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <div class=" col-lg-12 rounded-3 justify-content-center d-flex mb-3 ">
+                                                    <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-2.jpg"
+                                                        alt="Imagen del flayer" class="img-fluid rounded shadow"
+                                                        style="max-width: 100%; object-fit: contain; background: #f8f9fa;">
+                                                </div>
+
+                                                <div class=" col-lg-12 rounded-3 justify-content-center d-flex ">
+                                                    <img src="https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-1.jpg"
+                                                        alt="Imagen del flayer" class="img-fluid rounded shadow"
+                                                        style="max-width: 100%; object-fit: contain; background: #f8f9fa;">
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="botones  ">
 
               <p class="mt-4" style="font-size: 16px;font-weight: lighter;font-style: italic;">
                 Visita nuestros informes de Investigación 
               </p> -->
 
-                    <!-- Modal Bootstrap para imagen principal -->
-                    <!-- <div class="modal fade" id="mainImgModal2018" tabindex="-1" aria-labelledby="mainImgModal2018Label" aria-hidden="true">
+                        <!-- Modal Bootstrap para imagen principal -->
+                        <!-- <div class="modal fade" id="mainImgModal2018" tabindex="-1" aria-labelledby="mainImgModal2018Label" aria-hidden="true">
       <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content bg-dark">
           <div class="modal-header border-0 flex-column align-items-start">
@@ -318,7 +633,9 @@
     </div> -->
 
 
-                    <!-- </div> -->
+                        <!-- </div> -->
+
+                    </div>
 
                 </div>
 
@@ -328,32 +645,44 @@
                         <h3></h3>
 
                         <p style="font-size: 18px;text-align: justify;">
-                            El eje  de este proceso es el patrimonio cultural inmaterial y vivo vinculado a espacios culturales. Vincula elementos del patrimonio intangible, material y natural significativos en la construcción de barrios populares de la comuna 13San Javier desde acciones de resistencia social como indicador de paz territorial. También se incluye la diversidad y riqueza cultural vista desde las artes populares y la organización social con sus prácticas populares de producción de hábitat y cotidiano barrial, resaltando características fundamentales en la construcción de los barrios como la solidaridad, la construcción colectiva y el tejido social y organizativo. La propuesta con énfasis en esta área contribuye con el fomento de potencialidades territoriales históricamente significativas para la población originaria de la comuna 13, materializadas en diversidad de personas, procesos sociales y lugares.
+                            Se reconocen patrimonios culturales inmateriales y vivos entendidos como potencialidades
+                            territoriales significativas para la población de barrios de la comuna 13 San Javier, desde
+                            acciones de resistencia social como indicador de paz territorial. Resaltan la diversidad y
+                            riqueza natural y cultural, así como la organización social basada en la solidaridad, la
+                            construcción colectiva y el tejido social.
                         </p>
                         <p style="font-size: 18px; font-style: italic; text-align: justify;">
 
                         </p>
                     </article>
                 </div>
-
-
             </div>
+            <!-- cierre primer row -->
+
+
+
+
 
         </section>
 
 
-        
+
         <!-- <hr class="container"> -->
 
+        <div class="container  ">
+            <div class="col-lg-12 pt-3 text-center justify-content-center">
+                <h3>Podcasts y experiencias sonoras</h3>
+            </div>
+        </div>
 
         <div class="podcast2  container justify-content-center align-items-center pb-4 mt-4  ">
             <div class="container  ">
                 <div class="row gy-3 d-flex justify-content-center align-items-stretch ">
                     <!-- Cápsula 1 -->
-                    <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="col-12 col-md-12 col-lg-3  ">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Podcast Patrimonio y comunidad</h5>
+                            <div class="card-body imagen1 d-flex flex-column">
+                                <h5 class="titulo">Podcast Patrimonio y comunidad</h5>
                                 <p class="card-text"><!-- Breve reflexión sobre la memoria y el territorio. --></p>
                                 <audio controls preload="none" class="mt-auto w-100">
                                     <source src="../recursos/audio/Podcast Patrimonio y comunidad.mp3"
@@ -365,10 +694,10 @@
                     </div>
 
                     <!-- Cápsula 2 -->
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Podcast Patrimonio, turismo comunitario y conservación</h5>
+                            <div class="card-body imagen2 d-flex flex-column">
+                                <h5 class="titulo">Podcast Patrimonio, turismo comunitario y conservación</h5>
                                 <p class="card-text"><!-- Testimonios y experiencias de participantes del proyecto. -->
                                 </p>
                                 <audio controls preload="none" class="mt-auto w-100">
@@ -382,10 +711,10 @@
                     </div>
 
                     <!-- Cápsula 3 -->
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Podcast Mujeres de las independencias</h5>
+                            <div class="card-body imagen3 d-flex flex-column">
+                                <h5 class="titulo">Podcast Mujeres de las independencias</h5>
                                 <p class="card-text">
                                     <!-- Análisis breve sobre turismo comunitario y transformaciones. -->
                                 </p>
@@ -403,10 +732,10 @@
             <div class="container  mt-4">
                 <div class="row gy-3 d-flex justify-content-center align-items-stretch ">
                     <!-- Cápsula 4 -->
-                    <div class="col-12 col-md-6 col-lg-3 ">
+                    <div class="col-12 col-md-12 col-lg-3 ">
                         <div class="card h-100 shadow-sm" style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Podcast Las Dalias</h5>
+                            <div class="card-body imagen4 d-flex flex-column">
+                                <h5 class="titulo">Podcast Las Dalias</h5>
                                 <p class="card-text"><!-- Breve reflexión sobre la memoria y el territorio. --></p>
                                 <audio controls preload="none" class="mt-auto w-100">
                                     <source src="../recursos/audio/Podcast Las Dalias.mp3.mp3" type="audio/mpeg">
@@ -417,10 +746,10 @@
                     </div>
 
                     <!-- Cápsula 5 -->
-                    <div class="col-12 col-md-6 col-lg-3">
+                    <div class="col-12 col-md-12 col-lg-3">
                         <div class="card h-100 shadow-sm " style="background-color: #c9c9c9;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Podcast El arte como expresión de diversidad cultural</h5>
+                            <div class="card-body imagen5 d-flex flex-column">
+                                <h5 class="titulo">Podcast El arte como expresión de diversidad cultural</h5>
                                 <p class="card-text"><!-- Testimonios y experiencias de participantes del proyecto. -->
                                 </p>
                                 <audio controls preload="none" class="mt-auto w-100">
@@ -434,10 +763,10 @@
                     </div>
 
                     <!-- Cápsula 6 -->
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <div class="card h-100 shadow-sm " style="background-color: #ff5757;">
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">Canción Somos territorio vivo somos territorio de paz Comuna
+                    <div class="col-12 col-md-12 col-lg-3">
+                        <div class="card h-100 shadow-sm ">
+                            <div class="card-body imagen6 d-flex flex-column">
+                                <h5 class="titulo">Canción Somos territorio vivo somos territorio de paz Comuna
                                     13.mp3</h5>
                                 <p class="card-text">
                                     <!-- Análisis breve sobre turismo comunitario y transformaciones. -->
@@ -459,27 +788,38 @@
 
 
 
-        <div class="container">
+        <div class="container ">
 
             <div class="sonbata pt-3 " style="text-align: center;">
 
-                <iframe src="../recursos/docs/SonBata-escuela1.pdf#toolbar=0" frameborder="0"
-                    style="width: 73%; height: 95vh; display: block; margin: 0 auto;">
+                <!-- <iframe src="../recursos/docs/SonBata-002 (1).pdf#toolbar=0" frameborder="0"
+                    style=" height: 95vh; display: block; margin: 0 auto;">
 
-                </iframe>
+                </iframe> -->
+                
+
+                <div style="text-align:center; align-items: center;" class="align-items-center"><iframe
+                        src="//v.calameo.com/?bkcode=00798180550976221e933&mode=mini&clickto=view&clicktarget=_self&showmenu=0&showshare=0&showfold=0&showsearch=0&showzoom=0&showfullscreen=0&showprint=0"
+                        showmenu=0, showshare=0, showfold=0, showsearch=0, showzoom=0, showfullscreen=0 showprint=0
+                        width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency allowfullscreen
+                        class="sonbataDoc"
+                        style="height: 95vh; display: block; margin: 0 auto; justify-content: center; align-items: center;"></iframe>
+                </div>
+
+                <div class="col-lg-10 col-md-10 col-sm-12 mt-3 m-auto">
+                    <a href="../recursos/docs/SonBata-002 (1).pdf" target="_blank">
+                        <div class="btn btn-outline-success col-lg-10">ver PDF</div>
+                    </a>
+                </div>
 
 
             </div>
 
         </div>
 
-        <!-- imagen referencia turism -->
-                <div class="container col-lg-12 align-items-center justify-content-center d-flex  ">
-            <img src="../recursos/img/flayer13.jpeg" alt="">
-        </div>
 
         <div class=" container mt-5 ">
-            <div class="col-lg-8 text-center container  justify-content-center">
+            <div class="col-lg-9 col-md-11 col-sm-11 text-center container  justify-content-center">
                 <h3>Contexto teórico, social e institucional de la intervención</h3>
                 <p style="text-align: justify;">
                     Para el año 2021, la Escuela de Artes de Son Batá, tomó una orientación decida por
@@ -505,9 +845,10 @@
                     p. 54-55).
                 </p>
 
-                <div class="col-lg-8 mb-4 pb-4 justify-content-center d-flex align-items-center container">
+                <div
+                    class="col-lg-8 col-md-12 col-sm-12  mb-4 pb-4 justify-content-center d-flex align-items-center container">
                     <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/e8750b81-a87f-475a-894c-b0c2aa1491a6.jpg"
-                        alt="">
+                        alt="map" width="100%">
 
                 </div>
                 <div class="col-12">
@@ -515,7 +856,7 @@
                 </div>
 
 
-                
+
 
                 <p class="justificado">
 
@@ -572,9 +913,10 @@
                 </p>
 
 
-                <div class="col-lg-12 mb-4 pb-4 justify-content-center d-flex align-items-center container">
+                <div
+                    class="col-lg-12 col-md-12 col-sm-12  mb-4 pb-4 justify-content-center d-flex align-items-center container">
                     <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mapaeafit.jpg"
-                        alt="">
+                        alt="eafit map" width="100%">
 
                 </div>
                 <div class="col-12">
@@ -584,51 +926,96 @@
 
 
                 <h3 class="mb-4">
-                Momento 1. Talleres de contextualización y sensibilización frente
-                al patrimonio cultural e inmaterial y el patrimonio vivo.
-            </h3>
+                    Momento 1. Talleres de contextualización y sensibilización frente
+                    al patrimonio cultural e inmaterial y el patrimonio vivo.
+                </h3>
 
-            <p class="justificado">Se identificó, reconoció y reflexionó sobre la historia de la comuna 13 haciendo
-                énfasis en el relacionamiento de los niños, niñas y jóvenes con la diversidad cultural
-                de los barrios populares: culturas afrodescendiente, campesina, urbana, inmigrantes
-                venezolanos, músicas tradicionales, localización de población en barrios específicos;
-                con elementos identitarios y lugares simbólicos de la comuna catalogados como
-                espacios públicos y/o privados que deben valorarse por su carga simbólica
-                positiva/negativa en la construcción de los barrios; y con el tejido social resistente
-                visible en el reconocimiento de líderes y lideresas sociales que han promovido formas
-                de lucha histórica, que pueden ser observadas en festivales barriales, participación
-                socio-política para la paz, jornadas por la paz y la memoria y la no violencia.
-            </p>
+                <p class="justificado">Se identificó, reconoció y reflexionó sobre la historia de la comuna 13 haciendo
+                    énfasis en el relacionamiento de los niños, niñas y jóvenes con la diversidad cultural
+                    de los barrios populares: culturas afrodescendiente, campesina, urbana, inmigrantes
+                    venezolanos, músicas tradicionales, localización de población en barrios específicos;
+                    con elementos identitarios y lugares simbólicos de la comuna catalogados como
+                    espacios públicos y/o privados que deben valorarse por su carga simbólica
+                    positiva/negativa en la construcción de los barrios; y con el tejido social resistente
+                    visible en el reconocimiento de líderes y lideresas sociales que han promovido formas
+                    de lucha histórica, que pueden ser observadas en festivales barriales, participación
+                    socio-política para la paz, jornadas por la paz y la memoria y la no violencia.
+                </p>
 
-            <p class="justificado">
-                Se realizaron 10 talleres con una duración de 2 horas semanales cada uno, para un
-                total de 40 horas. Estuvieron orientados por los talleristas de danza y de música que,
-                mediante la aplicación de técnicas instrumentales en estas artes, vincularon
-                efectivamente reflexiones sobre elementos del patrimonio vivo: diversidad cultural,
-                elementos identitarios y lugares simbólicos, y tejido social (Tabla 1). Asimismo, en
-                cada taller se dispuso de una persona que elaborara ayudas de memoria con agenda,
-                desarrollo y aprendizajes.
-            </p>
+                <p class="justificado">
+                    Se realizaron 10 talleres con una duración de 2 horas semanales cada uno, para un
+                    total de 40 horas. Estuvieron orientados por los talleristas de danza y de música que,
+                    mediante la aplicación de técnicas instrumentales en estas artes, vincularon
+                    efectivamente reflexiones sobre elementos del patrimonio vivo: diversidad cultural,
+                    elementos identitarios y lugares simbólicos, y tejido social (Tabla 1). Asimismo, en
+                    cada taller se dispuso de una persona que elaborara ayudas de memoria con agenda,
+                    desarrollo y aprendizajes.
+                </p>
 
 
             </div>
 
 
-            
 
-            <div class="col-lg-12  mb-4 pb-4 justify-content-center d-flex align-items-center container">
-                <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/talleres.jpg"
-                        alt="">
+            <div class="container pt-3 ">
+                <div class="row d-flex  align-items-center m-auto  w-75">
+                    <div
+                        class="col-lg-6 col-md-12  mb-4 pb-4 justify-content-center d-flex align-items-center container">
+                        <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/talleres.jpg"
+                            alt="" width="100%">
 
+                    </div>
+
+                    <div
+                        class="col-lg-6  col-md-12  mb-4 pb-4 justify-content-center d-flex align-items-center container">
+                        <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/musicSon.jpg"
+                            alt="" width="100%">
+
+                    </div>
+                </div>
             </div>
 
-            <div class="col-lg-12  mb-4 pb-4 justify-content-center d-flex align-items-center container">
-                <img src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/musicSon.jpg"
-                        alt="">
+        </div>
 
+        <!--         documento descargable comuna 13 -->
+
+        <div class=" container-fluid  ">
+
+            <div class="col-12  justify-content-center d-flex ">
+                <button type="button" class="btn btn-outline-primary mt-2 text-center d-flex" data-bs-toggle="modal"
+                    data-bs-target="#modalfinal">
+                    Ver Sistematizacion (PDF)
+                </button>
             </div>
 
 
+            <!-- modal final -->
+
+
+            <div class="modal fade" id="modalfinal" tabindex="-1" aria-labelledby="modalfinal" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="videoModalLabel">Informe
+                                final fondo de apropiación social</h5>
+                            <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close">
+                                <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+
+
+                        <div class="modal-body">
+                            <div class="image  rounded-3 justify-content-center d-flex ">
+                                <iframe src="../recursos/docs/Comuna-13-más-que-turismo.pdf" frameborder="0"
+                                    style="width:90vw;height:99vh;"></iframe>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -653,11 +1040,11 @@
             <nav aria-label="Paginación de proyectos" class="my-3">
                 <ul class="pagination justify-content-center flex-wrap">
 
-                    <li class="page-item active">
-                        <span class="page-link bg-success text-white border-success" data-bs-toggle="tooltip"
-                            data-bs-placement="top" title="2023-juntanzas-latinoamericanas ">
+                    <li class="page-item ">
+                        <a class="page-link" href="proyecto-2023-juntanzas-latinoamericanas.html"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="2023-juntanzas-latinoamericanas ">
                             <i class="fa-solid fa-compact-disc fa-lg"></i>
-                        </span>
+                        </a>
                     </li>
 
 
@@ -668,8 +1055,9 @@
                         </a>
                     </li>
 
-                    <li class="page-item">
-                        <a class="page-link" href="proyecto-2021-mas-que-turismo-comunatrece.html" data-bs-toggle="tooltip"
+                    <li class="page-item active">
+                        <a class="page-link bg-success text-white border-success"
+                            href="proyecto-2021-mas-que-turismo-comunatrece.html" data-bs-toggle="tooltip"
                             data-bs-placement="top" title="2021 - Más que turismo comunitario">
                             <i class="fa-solid fa-compact-disc fa-lg"></i>
                         </a>
@@ -824,8 +1212,8 @@
         // Array de URLs de las imágenes de la columna
         const galleryImages = [
             'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg',
-            'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg',
-            'https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/abd28c46-545a-4110-859d-bd14524e560c.jpg'
+            'https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-1.jpg',
+            'https://raw.githubusercontent.com/satelite30/blog-populares-dev/refs/heads/main/recursos/img/flayer13-2.jpg'
         ];
         let currentImgIdx = 0;
 

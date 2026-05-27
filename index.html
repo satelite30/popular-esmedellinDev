@@ -8,10 +8,11 @@
 
   <!-- Descripción (aparece en resultados de búsqueda) -->
   <meta name="description"
-    content="Grupo MASO-UdeA. Investigación, memoria urbana y transformación social en barrios populares de Medellín y América Latina. Experiencias, recursos y publicaciones." />
+    content="Grupo MASO-UdeA. Investigación, memoria  y transformación social en barrios populares de Medellín y América Latina. Experiencias, recursos y publicaciones." />
 
   <!-- Palabras clave (SEO) -->
-  <meta name="keywords" audio.muted=true; audio.play();>
+  <!-- <meta name="keywords" audio.muted=true; audio.play();> -->
+  <meta name="keywords" content="medio ambiente, sociedad, Medellín, investigación urbana, MASO, barrios populares">
 
   <!-- autor -->
   <meta name="author" content="Grupo MASO - Universidad de Antioquia" />
@@ -19,23 +20,28 @@
   <!-- Robots (indexar y seguir enlaces) -->
   <meta name="robots" content="index, follow" />
 
+  <meta property="fb:app_id" content="1628473155145966"/>	
+
   <!-- Open Graph (para compartir en redes sociales) -->
   <meta property="og:title" content="Medio Ambiente y Sociedad - MASO UdeA" />
   <meta property="og:description"
-    content="Grupo MASO-UdeA. Investigación, memoria urbana y transformación social en barrios populares de Medellín y América Latina. Experiencias, recursos y publicaciones." />
+    content="Grupo MASO-UdeA. Investigación, memoria y transformación social en barrios populares de Medellín y América Latina. Experiencias, recursos y publicaciones." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://popular-esmedellin.com/" />
-  <meta property="og:image" content="https://popular-esmedellin.com/recursos/img/logoLitt2.ico" />
+  <meta property="og:image" property="og:image" content="https://raw.githubusercontent.com/satelite30/-logossitio/refs/heads/main/imagenesprom/stoDomingoPaint.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+	
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Medio Ambiente y Sociedad - MASO UdeA" />
   <meta name="twitter:description"
     content="Grupo MASO-UdeA. Investigación, memoría urbana y transformación social en barrios populares de Medellín y América Latina. Experiencias, recursos y publicaciones." />
-  <meta name="twitter:image" content="https://popular-esmedellin.com/recursos/img/logoLitt2.ico" />
-
-
-
+  <meta name="twitter:image"
+    content="https://raw.githubusercontent.com/satelite30/-logossitio/refs/heads/main/imagenesprom/stoDomingoPaint.png" />
+  
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -115,6 +121,70 @@
       /* Disable scaling */
       transition: ease 3s;
       /* Remove transition */
+    }
+
+    .hoverText {
+      color: greenyellow;
+    }
+
+    .hoverText:hover {
+      color: white;
+    }
+
+    /* Centrar lightbox overlays dentro de su contenedor */
+    .dos-lightbox-overlay {
+      position: absolute !important;
+      top: 80% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      max-width: 90%;
+      width: auto;
+      margin: 0 auto;
+      pointer-events: auto;
+    }
+
+    .dos-lightbox-overlay * {
+      pointer-events: auto;
+    }
+
+    /* ajuste de tamaño de imagen carousel card 4 */
+    .slideImage {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slideImage img.raise-20 {
+      position: absolute !important;
+      bottom: 0px !important;
+      left: 0;
+      right: 0;
+      width: 100% !important;
+      height: auto !important;
+      object-fit: cover !important;
+      margin: 0 auto;
+    }
+
+    /* Botón de cierre con FontAwesome */
+    .btn-close-fa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.55);
+      color: #353535;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .btn-close-fa:hover {
+      background: rgba(0, 73, 28, 0.85);
+      color: #ffffff;
+    }
+
+    .btn-close-fa i {
+      font-size: 20px;
     }
 
 
@@ -233,7 +303,14 @@
       z-index: 1;
     }
 
-
+    /* Estilo responsive global para la imagen en modal/carousel */
+    .imagenLight {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
 
     @media (min-width: 1900px) {
 
@@ -252,6 +329,10 @@
 
       }
 
+      .imagenLight {
+        max-height:15rem;
+        
+      }
 
       .cables {
         background: url(https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/poste2.png);
@@ -260,14 +341,21 @@
         display: block;
         box-sizing: border-box;
 
-
-
       }
+
+
+
     }
 
     @media (min-width: 1021px) {
       .cables {
         max-height: 40vh;
+      }
+
+      .imagenLight {
+        width: auto;
+        max-height: 14rem;
+        
       }
 
     }
@@ -279,13 +367,25 @@
         min-height: 300px;
       }
 
+       .imagenLight{
+        max-height: 8rem;
+      }
+
       .texto-intro p {
 
         font-size: 22px;
       }
 
+      .carCuatro {
+        position: absolute !important;
+        bottom: 0px !important;
+        object-fit: cover;
+      }
 
-      
+      .carCuatro .carousel-lightbox-overlay {
+        visibility: hidden;
+
+      }
 
     }
 
@@ -300,7 +400,7 @@
         font-size: 22px;
       }
 
-      
+
     }
 
     @media (max-width: 575px) {
@@ -320,7 +420,7 @@
 
       }
 
-      
+
 
     }
 
@@ -401,23 +501,23 @@
         </div>
 
         <div class="col-lg-4  col-md-12 col-sm-12 ">
-          <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4 " type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler d-lg-none mx-auto mt-2 mb-4  " type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
             aria-label="Toggle navigation" style="display: flex; justify-content: center; align-items: center;">
             <span class="navbar-toggler-icon  "></span>
           </button>
-          <div class="collapse navbar-collapse d-lg-flex justify-content-center  py-2" id="navbarNavDropdown">
+          <div class="collapse navbar-collapse d-lg-flex justify-content-center   py-2" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto d-flex justify-content-center w-100">
-              <li class="nav-item m-auto m-2">
-                <a class="nav-link pb-1 " href="./pages/red.html">Red</a>
+              <li class="nav-item m-auto m-2 mb-2">
+                <a class="nav-link pb-1  " href="./pages/red.html">Red</a>
               </li>
-              <li class="nav-item m-auto">
-                <a class="nav-link pb-1" href="https://blog.popular-esmedellin.com">Actualidades</a>
+              <li class="nav-item m-auto mb-2">
+                <a class="nav-link pb-1" href="https://blog.popular-esmedellin.com/">Actualidades</a>
               </li>
-              <li class="nav-item m-auto">
+              <li class="nav-item m-auto mb-2">
                 <a class="nav-link pb-1 " href="./pages/publicaciones.html">Publicaciones</a>
               </li>
-              <li class="nav-item m-auto">
+              <li class="nav-item m-auto mb-2">
                 <a class="nav-link pb-1" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
@@ -455,18 +555,115 @@
               </div> -->
             </div>
 
+
+
+
+            <!--         slide 1-1 --><!-- agregar modala con informacion del libro y enlace a la publicación -->
+            <div class="carousel-item slideImage " data-bs-interval="15000">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/Lanzamiento%20LibroUniversidad%20FederaldeRiodeJaneiro%202026-01-28.jpeg"
+                alt="Second slide" onclick="openLightbox(this.src)">
+
+              <div class="container ">
+
+                <div class="dos-lightbox-overlay position-absolute  d-flex  rounded-3  w-50 "
+                  style="height:40%;background:#adadad7c;backdrop-filter:blur(2px);z-index:3;  "
+                  onclick="event.stopPropagation();">
+
+
+                  <div class="col-11 justify-content-center text-center m-auto fs-5 d-flex " style="z-index:2;">
+
+                    <div class="row align-items-center justify-content-center gx-2 m-auto d-flex ">
+
+                      <div class="col-12 col-md-4 col-sm-4 justify-content-center m-auto d-flex" style="max-height: 100%;">
+                        <a href="https://libros.udea.edu.co/index.php/editorial_fcsh/catalog/book/663"
+                          data-bs-toggle="modal" data-bs-target="#modalCarousel" rel="noopener noreferrer">
+                          <img class="imagenLight"
+                            src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/tramas-urbanas-al-reves.webp"
+                            alt="libro tramas urbanas" style="
+                            width:50%;
+                            object-fit:cover; width:auto;">
+                        </a>
+                      </div>
+
+                      <div class="col-12 col-md-7 ">
+                        <a href="https://libros.udea.edu.co/index.php/editorial_fcsh/catalog/book/663" target="_blank" rel="noopener noreferrer">
+                        <div class="btn btn-success"style="font-size:22px; font-weight: bold; margin: auto;" >Conoce nuestra publicación académica</div></a>
+                        <!-- <p class=" m-auto justify-content-center align-items-center text-center text-light"
+                          style="font-size:22px; font-weight: bold; margin: auto;"> Conoce nuestra publicación académica
+                        </p> -->
+                        <p class="text-light" style="font-size: 18px; ">Tramas urbanas al revés: Intercambios entre
+                          políticas públicas, prácticas de turismo y participación social en barrios populares de
+                          Medellín
+                          y favelas de Río de Janeiro en el siglo XXI</p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+
+
+
+            <!-- inicia modal  -->
+
+            <div class="modal fade" id="modalCarousel" tabindex="-1" aria-labelledby="modalfinal" aria-hidden="true">
+              <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalLabel">Tramas urbanas al revés: Intercambios entre
+                      políticas públicas, prácticas de turismo y participación social en barrios populares de Medellín
+                      y favelas de Río de Janeiro en el siglo XXI </h5>
+                    <button type="button" class="btn-close-fa" data-bs-dismiss="modal" aria-label="Close"
+                      onclick="closeLightbox()">
+                      <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class=" col-lg-12 rounded-3 justify-content-center d-flex mb-3 ">
+                      <iframe src="https://libros.udea.edu.co/index.php/editorial_fcsh/catalog/book/663" frameborder="0"
+                        style="width:90vw;height:99vh"></iframe>
+
+                      </iframe>
+
+                    </div>
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
             <!--      Nueva imagen 2 -->
             <div class="carousel-item slideImage" style="object-fit:cover;" data-bs-interval="12000">
               <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/HdB.jpeg"
                 class="d-block w-10 current-img" alt="Second slide" onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute start-0 bottom-0  d-flex justify-content-end align-items-center rounded-3  "
-                style="height:30%;background:rgba(2, 58, 0, 0.87);backdrop-filter:blur(2px);z-index:2;">
-                <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
-                  <h2 class="text-light">Escuela de Verano 2025</h2>
-                  <p class="text-light pb-2 " style="font-size: 24px;"> Territorialidades popularES en América Latina
-                    hoy <br>
-                    23 al 31 de agosto en Medellín - Colombia<br>Grupo MASO, UdeA.</p>
+                style="height:30%;background:#023a00de;backdrop-filter:blur(2px);z-index:2;">
+                <div class="col-11 justify-content-center text-center m-auto py-1 fs-5 ">
+                  <a href="./pages/proyecto-2022-compartires-populares.html" class="hoverText"
+                    style="text-decoration: none ;">
+                    <h2 class=" hoverText">Huellas de Barrio</h2>
+                  </a>
+                  <p class="text-light pb-2 " style="font-size: 20px;"> Laboratorio
+                    CompartirES PopularES
+                  </p>
+
+                  <p class="text-light" style="font-size: 16px;">Experiencia de coproducción y apropiación social del
+                    conocimiento<br>2022-2026</p>
                 </div>
               </div>
             </div>
@@ -481,7 +678,7 @@
                 style="height:30%;background:rgba(0, 0, 0, 0.5);backdrop-filter:blur(2px);z-index:2;">
                 <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
                   <h2 class="text-light">Memoria gráfica Huellas de Barrio</h2>
-                  <p class="text-light pb-2 ">Visita nuestra galeria de experiencias vivas <br> con los barrios
+                  <p class="text-light pb-2 ">Visita nuestra galeria <br> con los barrios
                     populares <br>Medellín-Colombia</p>
                 </div>
 
@@ -491,24 +688,25 @@
             </div>
 
             <!--      Nueva imagen 4 -->
-            <div class="carousel-item slideImage border border-info border-4" data-bs-interval="12000">
-              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png"
-                class="d-block w-100 m-auto border border-info border-4" alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: contain;">
+            <div class="carousel-item slideImage carCuatro " data-bs-interval="12000">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/Grupo%20completo%20en%20paraninfo%202025-08-24.jpg"
+                class="d-block w-100 m-auto " style="object-fit: cover; position: absolute ; bottom: 0px ;
+  left: 0; right: 0; width: 100% ; height: auto ; object-fit: cover ; margin: 0 auto;" alt="Third "
+                onclick="openLightbox(this.src)">
               <div
                 class="carousel-lightbox-overlay position-absolute start-0 bottom-0  d-flex justify-content-end align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.692);backdrop-filter:blur(2px);z-index:2;">
 
                 <div class="col-11 justify-content-center text-center m-auto py-1 fs-5">
-                  <a href="./pages/proyecto-2018-transformacion-favelas.html" style="text-decoration: underline 2px;object-fit: contain;">
-                    <h2 class="text-light fs-4">Conoce las experiencia al conversatorio
-                      Tramas urbana al revés</h2>
+                  <a href="./pages/proyecto-2023-juntanzas-latinoamericanas.html"
+                    style="text-decoration: underline 2px;object-fit: contain;">
+                    <h2 class="text-light fs-4">Escuela de Verano: Territorialidades popularES en América Latina hoy,
+                      Universidad de Antioquia-Colombia</h2>
                   </a>
                   <div class="text-light pb-2 ">
                     <ul style="list-style-type: none;">
-                      <li>Fecha: Lunes 25 de Agosto</li>
-                      <li>Hora: 5:00 pm</li>
-                      <li>Lugar: Bloque 10-203
-                        Ciudad Universitaria</li>
+                      
                     </ul>
 
                   </div>
@@ -520,11 +718,12 @@
 
             <!--      Nueva imagen 5 -->
             <div class="carousel-item slideImage" data-bs-interval="12000">
-              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
-                alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: contain;">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/WhatsApp%20Image%202026-01-28%20at%2012.50.57%20PM.jpeg"
+                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: cover;">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
-                style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
+                style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2; visibility:hidden;">
                 <div class="col-11 justify-content-center m-auto fs-5">
                   <p class="text-light mb-0">Educación y cultura popular.<br>Infancia y juventud.<br>Procesos de cambio.
                   </p>
@@ -534,17 +733,18 @@
 
             <!--      Nueva imagen 6 -->
             <div class="carousel-item slideImage" data-bs-interval="2000">
-              <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
-                alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: contain;">
+              <img
+                src="https://raw.githubusercontent.com/satelite30/blog-Popular-es/refs/heads/main/imagenesBase/mural2.jpeg"
+                class="d-block w-100" alt="Third slide" onclick="openLightbox(this.src)" style="object-fit: cover;">
               <div
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
-                style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
+                style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;visibility:hidden;">
                 <div class="col-11 justify-content-center m-auto fs-5">
-                  <p class="text-light mb-0">Redes de apoyo y solidaridad.<br>Participación barrial.<br>Transformación
-                    social.</p>
+                  <p class="text-light mb-0"><br><br></p>
                 </div>
               </div>
             </div>
+
             <!--      Nueva imagen 7 -->
             <div class="carousel-item slideImage" data-bs-interval="2000">
               <img src="https://raw.githubusercontent.com/satelite30/-logossitio/main/logo03.png" class="d-block w-100"
@@ -553,8 +753,8 @@
                 class="carousel-lightbox-overlay position-absolute end-0 bottom-0  d-flex justify-content-start align-items-center rounded-3  "
                 style="height:30%;background:rgba(0, 0, 0, 0.678);backdrop-filter:blur(2px);z-index:2;">
                 <div class="col-11 justify-content-center m-auto fs-5">
-                  <p class="text-light mb-0">Redes de apoyo y solidaridad.<br>Participación barrial.<br>Transformación
-                    social.</p>
+                  <p class="text-light mb-0">Grupo de investigacón<br>Medio Ambiente y Sociedad (MASO).<br>Universidad
+                    de Antioquia</p>
                 </div>
               </div>
             </div>
@@ -582,7 +782,7 @@
     <!-- Lightbox -->
 
     <!-- Lightbox -->
-    <div class="lightbox-overlay" id="lightbox">
+    <div class="lightbox-overlay border border-info" id="lightbox" style="z-index: 3;">
       <div class="lightbox-content">
         <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
         <img src="" alt="Lightbox image" id="lightbox-img">
@@ -792,19 +992,30 @@
           <div id="maso-description" class="w-100">
             <div class="p-4 w-100" style="text-align: justify;">
               <p>
-                Grupo de investigación MASO, clasificado en categoría A1 por MinCiencias, adscrito a la Facultad de
-                Ciencias Sociales y
-                Humanas desde 1995. Promueve la investigación científica, la extensión universitaria y la formación de
-                estudiantes de pregrado y posgrado en diferentes programas de las ciencias sociales y humanas, con foco
-                en
-                el estudio de la relación grupos humanos-ambiente, analizando múltiples elementos que contribuyen en la
-                mejora de condiciones de vida. La línea de investigación está compuesta por colectivos de profesores,
-                estudiantes e investigadores comunitarios que han avanzado en conocimientos teóricos y metodológicos en
-                materia de planeación y ordenamiento territorial, participación popular, política pública en
-                asentamientos
-                precarios, transformaciones territoriales, turismo en favelas y barrios populares, patrimonio cultural,
-                metodologías de intervención participativas, producción y apropiación social de conocimiento.
+                
+Grupo de investigación MASO, clasificado en categoría A1 por MinCiencias (convocatoria 2025),
+				  adscrito a la Facultad de Ciencias Sociales y Humanas de la UdeA desde 1995.
+				  Promueve procesos en investigación científica, extensión solidaria y la formación de estudiantes de pre
+				  y posgrado en diferentes programas de las ciencias sociales y humanas, en alianza con pares internacionales,
+				  nacionales y locales. En su apuesta por la dimensión socioecológica, aporta a la dignificación de la vida.
+
+
               </p>
+
+				<p>
+				La línea de investigación PCTA, compuesta por un colectivo profesoral, estudiantil, 
+				  por investigadores comunitarios y asesores internacionales, se nuclea en intereses teóricos, 
+				  metodológicos y empíricos en torno a la ciudad popular contemporánea desde debates y
+				  aportes en planeación territorial, transformación urbana, formación ciudadana,
+				  metodologías de intervención participativas, ecología y gestión de organizaciones. 
+				  De dichos intereses emerge una diversidad temática motivo de estudio y de publicación  en:
+				  planeación local y presupuesto participativo, política urbana y ordenamiento territorial, 
+				  márgenes urbanas, patrimonio cultural, vivienda popular, espacio público,
+				  turismo de favela y de barrio popular, infancias, juventudes, género,
+				  producción y apropiación social de conocimiento. 	
+					
+				</p>
+				
             </div>
             <div id="maso-extra" style="display:none;">
               <div class="p-4 w-100 " style="text-align: justify;">
@@ -876,13 +1087,13 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                     <br>
                     <p>Juntanza latinoamericana </p>
                     <p>Escuela de Verano: Territorialidades popularES en América Latina hoy
-                      Universidad de Antioquia-Colombia</p>
+                      </p>
 
                   </h4>
                   <p style="text-align: justify;">
-                    La Escuela de Verano: Territorialidades popularES en América Latina hoy es un evento llevado a cabo
-                    en la Universidad de Antioquia-Medellín-Colombia, dinamizado por una juntanza latinoamericana que
-                    actúa como red constituida representantes de universidades públicas de Colombia, Chile, Uruguay,
+                    La Escuela de Verano: Territorialidades popularES en América Latina hoy se llevó a cabo en agosto de 2025 
+                    en la Universidad de Antioquia-Medellín-Colombia, liderada por una juntanza latinoamericana que
+                    actúa como una red académica constituida por representantes de universidades públicas de Colombia, Chile, Uruguay,
                     México, Brasil, Argentina y Francia; servidores públicos y habitantes de barrios populares.
                   </p>
                 </div>
@@ -913,14 +1124,10 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                     CompartirES PopularES
                   </h4>
                   <p style="text-align: justify;">
-                    El laboratorio “Compartir-es Popular-es”, tiene como pilar los conocimientos teóricos y
-                    metodológicos
-                    generados en la investigación “Transformación en favelas de Río de Janeiro y barrios populares de
-                    Medellín por prácticas de turismo 2019-25372”, culminada en 2022, registrada en SIIU y financiada
-                    por la
-                    Universidad de Antioquia, El Banco de la República, sede Medellín, El Sistema de Bibliotecas
-                    Públicas de
-                    Medellín y diversos colectivos comunitarios de las comunas 1 (Popular), 2 (Santa Cruz), 8 (Doce de
+                    El laboratorio “CompartirEs PopularEs”, tiene como pilar la fundamentación teórica,
+                    metodológica y la evidencia empírica derivada de la investigación “Transformación en favelas de Río de Janeiro y barrios populares de
+                    Medellín por prácticas de turismo”, desarrollada entre 2018-2022, financiada por la Universidad de Antioquia, El Banco de la República, sede Medellín, El Sistema de Bibliotecas
+                    Públicas de Medellín y diversos colectivos comunitarios de las comunas 1 (Popular), 2 (Santa Cruz), 8 (Doce de
                     Octubre) y 13 (San Javier).
                   </p>
                 </div>
@@ -929,6 +1136,49 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                 </div>
               </div>
             </div>
+
+
+			  <!-- card 0-03 new added card info 2026 -->
+            <div class="col-md-4 py-4 " data-aos="fade-up" data-aos-duration="600">
+              <div class="card-custom " style="box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.589);">
+                <div class="circle-img">
+                  <a href="./pages/proyecto-2022-compartires-populares.html"> 
+					  <img src="./recursos/img/engim.jpg"
+                      alt="Imagen Emgim" /> </a>
+                </div>
+
+				  
+                <div class="container " style="padding-bottom: 90px;">
+                  <h4 class="text-center">
+                    2022-2023
+                    <br>
+                    <p>S A C U D I E N D O - NÓS  
+						 </p>
+                    <p>
+						Por una formación juvenil consciente de la integralidad humana
+						<br>
+						Engim-San Paolo, Roma-Italia
+                      </p>
+					  
+                  </h4>
+                  <p style="text-align: justify;">
+                    "Per una formazione cosciente dell’integralità umana Engim–San Paolo, Roma-Italia"
+					  <br>
+                  </p>
+					<p style="text-align: justify;">
+						En el marco del convenio interinstitucional establecido entre Engim,
+					  ONG Italiana y la Universidad de Antioquia, se propone Sacudiendo-NÓS
+					  como una apuesta educativa territorializada que moviliza la
+					  valoración integral de jóvenes, en su dimensión individual, familiar,
+					  social y barrial.
+					</p>
+                </div>
+                <div class="container col-12 text-center ">
+                  <a href="./pages/proyecto-2024-sacudiendo-nos.html" class="btn-pill alt="info-img-engim" ">Ver más</a>
+                </div>
+              </div>
+            </div>
+			  
 
             <!--         card 2-2 -->
             <div class="col-md-4 py-4" data-aos="fade-up" data-aos-duration="500">
@@ -943,10 +1193,11 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                   <h4 class="text-center">2021 <br>
                     Patrimonio cultural comuna 13 - más que turismo</h4>
                   <p style="text-align: justify;">
-                    El eje de este proceso es el patrimonio cultural inmaterial y vivo vinculado a espacios culturales.
-                    Vincula elementos del patrimonio intangible, material y natural significativos en la construcción de
-                    barrios populares de la comuna 13San Javier desde acciones de resistencia social como indicador de
-                    paz territorial. 
+                    Se reconocen patrimonios culturales inmateriales y vivos entendidos como potencialidades
+                    territoriales significativas para la población de barrios de la comuna 13 San Javier, desde acciones
+                    de resistencia social como indicador de paz territorial. Resaltan la diversidad y riqueza natural y
+                    cultural, así como la organización social basada en la solidaridad, la construcción colectiva y el
+                    tejido social.
                 </div>
                 <div class="container col-12 text-center ">
                   <a href="./pages/proyecto-2021-mas-que-turismo-comunatrece.html" class="btn-pill ">Ver más</a>
@@ -967,15 +1218,14 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                 <div class="container " style="padding-bottom: 26px;">
                   <h4 class="text-center">2018 <br>
                     Transformación de favelas
-                    en Río de Janeiro-Brasil
+                    en Rio de Janeiro
                     y barrios populares
-                    de Medellín-Colombia
+                    de Medellín
                     por prácticas de turismo</h4>
                   <p style="text-align: justify;">
                     Se hace memoria de lo propio, se hace memoria de los lugares que sentimos propios,
                     a veces nos quitan los lugares que nos pertenecen y nos imponen otros caminos, otros formas de
-                    habitar
-                    y
+                    habitar y
                     es ejercicio personal y colectivo re-significar las formas de estar en lo nuevo.
                   </p>
                 </div>
@@ -1022,15 +1272,14 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
                   </a>
                 </div>
                 <div class="container cardsegundas" style="padding-bottom: 60px;">
-                  <h4 class="text-center">2016 <br> La memoría se construye caminando</h4>
+                  <h4 class="text-center">2016 <br> La memoria se construye caminando</h4>
                   <p style="text-align: justify;">
-                    El eje de este proceso es el patrimonio cultural inmaterial y vivo. Vincula elementos del patrimonio
-                    intangible, material y natural significativos en la construcción de barrios populares de la comuna
-                    13, San Javier, desde acciones de resistencia social como indicador de paz territorial. También se
-                    incluye la diversidad y riqueza cultural vista desde las artes populares y la organización social.
-                    El proyecto contribuye al el fomento de potencialidades territoriales históricamente significativas
-                    para la población originaria de la comuna 13, materializadas en diversidad de personas, procesos
-                    sociales y lugares.
+					Proceso  vinculante de representantes de la academia,
+					  de la Alcaldía de Medellín y de organizaciones juveniles de la zona nororiental,
+					  que durante un año investigaron y recorrieron diferentes barrios para analizar 
+					  las transformaciones en la apropiación de los espacios públicos por la implementación
+					  de la política urbana de los Proyectos Urbanos Integrales.
+					  
                   </p>
                 </div>
 
@@ -1146,27 +1395,27 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_60df5a7ca68243f3ad29f701254ff9a1~mv2.jpg/v1/fill/w_441,h_294,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/697903_60df5a7ca68243f3ad29f701254ff9a1~mv2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5053-1.jpg?w=648','Medicina para niños vulnerables')">
-            <h3>Transformación de favelas
+            <h3 style="font-size: 16px;">Transformación de favelas
               y barrios populares</h3>
             <p>Barrios populares Medellin</p>
           </div>
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_1887af5c1d2549ac96f73b502a9cc103~mv2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5559.jpg?w=648','Más de una vida transformada')">
-            <h3>Recorridos territoriales</h3>
+            <h3 style="font-size: 16px;">Recorridos territoriales</h3>
             <p>Barrios populares Medellin</p>
           </div>
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://raw.githubusercontent.com/satelite30/logo-test/main/corazon1.jpeg'); cursor:pointer;"
             onclick="openGalleryModal('https://https://static.wixstatic.com/media/697903_d049ad16f5b64016bac4ea2ab76a3f7a~mv2.jpg','Agua para la niñez')">
-            <h3>CompartirES PopularES</h3>
+            <h3 style="font-size: 16px;">CompartirES PopularES</h3>
             <p>Barrios populares Medellin</p>
           </div>
 
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_d049ad16f5b64016bac4ea2ab76a3f7a~mv2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://i0.wp.com/lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/img_37882.jpg?w=310&h=272&ssl=1','Apoyo a las familias')">
-            <h3>
+            <h3 style="font-size: 16px;">
               Deseos participativos
               Socialización con Comunidad</h3>
             <p>Fortaleciendo nuestra comunidad.</p>
@@ -1182,13 +1431,13 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://static.wixstatic.com/media/697903_e864aec55079428a834a6f4a2d90ddc7~mv2_d_6048_4176_s_4_2.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/01/img_8764.jpg?w=648','Juventud en las comunas de Medellín')">
-            <h3>La memoría se construye caminando</h3>
+            <h3 style="font-size: 16px;">La memoría se construye caminando</h3>
             <p>Expresiones juveniles y cultura.</p>
           </div>
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://raw.githubusercontent.com/satelite30/logo-test/main/fotos-2014/Socializaci%C3%B3n-vias-movilidad.jpg'); cursor:pointer;"
             onclick="openGalleryModal('https://lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc4533-editar-5.jpg?w=648','Crecimiento comunitario')">
-            <h3 class="px-2">Barrios populares Medellín y favelas São Paulo</h3>
+            <h3 class="px-2" style="font-size: 16px;">Barrios populares Medellín y favelas São Paulo</h3>
             <p>Construyendo un mejor futuro.</p>
           </div>
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
@@ -1201,7 +1450,7 @@ https://raw.githubusercontent.com/satelite30/logo-test/main/hdb-images/005arbol.
           <div class="grid-item" data-aos="fade-up" data-aos-duration="600"
             style="background-image: url('https://raw.githubusercontent.com/satelite30/logo-test/main/3843c177-be6f-4c1d-8426-490abe6b404e.png'); cursor:pointer;"
             onclick="openGalleryModal('https://i0.wp.com/lamemoriaseconstruyecaminando.wordpress.com/wp-content/uploads/2017/02/dsc5518-editar-1.jpg?w=324&h=277&ssl=1','Apoyo a las familias')">
-            <h3>Apropiación social del conocimiento</h3>
+            <h3 style="font-size: 16px;">Apropiación social del conocimiento</h3>
             <p>Procesos comunitarios</p>
           </div>
 
